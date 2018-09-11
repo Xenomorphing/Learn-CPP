@@ -1,0 +1,13 @@
+/**/ WPCOMSharing.update_facebook_count({
+   "https://www.learncpp.com/cpp-tutorial/11-structure-of-a-program/": {
+      "share": {
+         "comment_count": 0,
+         "share_count": 0
+      },
+      "og_object": {
+         "id": "685537874892600",
+         "type": "website"
+      },
+      "id": "https://www.learncpp.com/cpp-tutorial/11-structure-of-a-program/"
+   }
+});

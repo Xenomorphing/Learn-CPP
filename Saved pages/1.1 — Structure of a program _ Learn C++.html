@@ -1,0 +1,1155 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!-- saved from url=(0064)https://www.learncpp.com/cpp-tutorial/11-structure-of-a-program/ -->
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en-US"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><script async="" src="./1.1 — Structure of a program _ Learn C++_files/saved_resource"></script><script async="" src="./1.1 — Structure of a program _ Learn C++_files/count.json"></script><style></style>
+
+ <title>1.1 — Structure of a program | Learn C++</title> <link rel="shortcut icon" href="https://www.learncpp.com/blog/wp-content/ata-images/learncpp.ico">
+<link rel="profile" href="http://gmpg.org/xfn/11">
+<link rel="pingback" href="https://www.learncpp.com/blog/xmlrpc.php">
+
+<!-- All in One SEO Pack 2.3.15.3 by Michael Torbert of Semper Fi Web Designob_start_detected [-1,-1] -->
+<link rel="canonical" href="https://www.learncpp.com/cpp-tutorial/11-structure-of-a-program/">
+<!-- /all in one seo pack -->
+<link rel="dns-prefetch" href="https://gateway.gear.mycelium.com/">
+<link rel="dns-prefetch" href="https://s0.wp.com/">
+<link rel="dns-prefetch" href="https://s.w.org/">
+<link rel="alternate" type="application/rss+xml" title="Learn C++ » Feed" href="https://www.learncpp.com/feed/">
+<link rel="alternate" type="application/rss+xml" title="Learn C++ » Comments Feed" href="https://www.learncpp.com/comments/feed/">
+<link rel="alternate" type="application/rss+xml" title="Learn C++ » 1.1 — Structure of a program Comments Feed" href="https://www.learncpp.com/cpp-tutorial/11-structure-of-a-program/feed/">
+<link rel="stylesheet" id="mycelium-gear-widget-admin-css" href="./1.1 — Structure of a program _ Learn C++_files/mycelium-gear-widget-admin.css" type="text/css" media="">
+<link rel="stylesheet" id="crayon-css" href="./1.1 — Structure of a program _ Learn C++_files/crayon.min.css" type="text/css" media="all">
+<link rel="stylesheet" id="crayon-theme-familiar-learncppcom-css" href="./1.1 — Structure of a program _ Learn C++_files/familiar-learncppcom.css" type="text/css" media="all">
+<link rel="stylesheet" id="crayon-font-monaco-css" href="./1.1 — Structure of a program _ Learn C++_files/monaco.css" type="text/css" media="all">
+<link rel="stylesheet" id="ad-inserter-devices-css" href="./1.1 — Structure of a program _ Learn C++_files/devices.css" type="text/css" media="all">
+<link rel="stylesheet" id="social-logos-css" href="./1.1 — Structure of a program _ Learn C++_files/social-logos.min.css" type="text/css" media="all">
+<link rel="stylesheet" id="jetpack_css-css" href="./1.1 — Structure of a program _ Learn C++_files/jetpack.css" type="text/css" media="all">
+<!-- This site uses the Google Analytics by MonsterInsights plugin v5.5 - Universal disabled - https://www.monsterinsights.com/ -->
+<script src="./1.1 — Structure of a program _ Learn C++_files/f(5).txt"></script><script src="./1.1 — Structure of a program _ Learn C++_files/f(6).txt"></script><script src="./1.1 — Structure of a program _ Learn C++_files/ca-pub-0588844875925051.js.download"></script><script type="text/javascript" async="" src="./1.1 — Structure of a program _ Learn C++_files/ga.js.download"></script><script type="text/javascript">
+
+	var _gaq = _gaq || [];
+	_gaq.push(['_setAccount', 'UA-2173612-1']);
+	_gaq.push(['_gat._forceSSL']);
+	_gaq.push(['_trackPageview']);
+
+	(function () {
+		var ga = document.createElement('script');
+		ga.type = 'text/javascript';
+		ga.async = true;
+		ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+		var s = document.getElementsByTagName('script')[0];
+		s.parentNode.insertBefore(ga, s);
+	})();
+
+</script>
+<!-- / Google Analytics by MonsterInsights -->
+<script type="text/javascript" src="./1.1 — Structure of a program _ Learn C++_files/jquery.js.download"></script>
+<script type="text/javascript" src="./1.1 — Structure of a program _ Learn C++_files/jquery-migrate.min.js.download"></script>
+<script type="text/javascript">
+/* <![CDATA[ */
+var AjaxCheckClicks = {"ajaxurl":"https:\/\/www.learncpp.com\/blog\/wp-admin\/admin-ajax.php","nonce":"637e198827"};
+/* ]]> */
+</script>
+<script type="text/javascript" src="./1.1 — Structure of a program _ Learn C++_files/checkclicks.js.download"></script>
+<script type="text/javascript">
+/* <![CDATA[ */
+var AjaxUpdateClicks = {"ajaxurl":"https:\/\/www.learncpp.com\/blog\/wp-admin\/admin-ajax.php","nonce":"2e4be3f771"};
+/* ]]> */
+</script>
+<script type="text/javascript" src="./1.1 — Structure of a program _ Learn C++_files/updateclicks.js.download"></script>
+<script type="text/javascript">
+/* <![CDATA[ */
+var CrayonSyntaxSettings = {"version":"2.7.1","is_admin":"0","ajaxurl":"https:\/\/www.learncpp.com\/blog\/wp-admin\/admin-ajax.php","prefix":"crayon-","setting":"crayon-setting","selected":"crayon-setting-selected","changed":"crayon-setting-changed","special":"crayon-setting-special","orig_value":"data-orig-value","debug":""};
+var CrayonSyntaxStrings = {"copy":"Press %s to Copy, %s to Paste","minimize":"Click To Expand Code"};
+/* ]]> */
+</script>
+<script type="text/javascript" src="./1.1 — Structure of a program _ Learn C++_files/crayon.min.js.download"></script>
+<script type="text/javascript">
+/* <![CDATA[ */
+var clientcfmonitor = {"client_ip":"2.30.51.138","clickcount":"8","bannedperiod":"1","preurl":"https:\/\/www.learncpp.com\/blog\/wp-content\/plugins\/adsense-click-fraud-monitoring\/clickupdate.php","firstclickdate":[[""],[""]],"updatedVisitCount":"0","isblockedcount":"0","customclass":"cf_monitor","firstclick":"false","disablead":"false","currentURL":"\/cpp-tutorial\/11-structure-of-a-program\/"};
+/* ]]> */
+</script>
+<script type="text/javascript" src="./1.1 — Structure of a program _ Learn C++_files/check_min.js.download"></script>
+<script type="text/javascript" src="./1.1 — Structure of a program _ Learn C++_files/gear-widget-host.js.download"></script>
+<script type="text/javascript" src="./1.1 — Structure of a program _ Learn C++_files/DD_roundies.js.download"></script>
+<link rel="https://api.w.org/" href="https://www.learncpp.com/wp-json/">
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://www.learncpp.com/blog/xmlrpc.php?rsd">
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="https://www.learncpp.com/blog/wp-includes/wlwmanifest.xml"> 
+<link rel="prev" title="0.6 — Compiling your first program" href="https://www.learncpp.com/cpp-tutorial/06-writing-your-first-program/">
+<link rel="next" title="Tiga 1.0.2 widget fix for WordPress 2.2" href="https://www.learncpp.com/wordpress/tiga-102-fix-for-wordpress-22/">
+<link rel="shortlink" href="https://www.learncpp.com/?p=19">
+<link rel="alternate" type="application/json+oembed" href="https://www.learncpp.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fwww.learncpp.com%2Fcpp-tutorial%2F11-structure-of-a-program%2F">
+<link rel="alternate" type="text/xml+oembed" href="https://www.learncpp.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fwww.learncpp.com%2Fcpp-tutorial%2F11-structure-of-a-program%2F&amp;format=xml">
+<script async="" src="./1.1 — Structure of a program _ Learn C++_files/f(7).txt"></script>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({
+          google_ad_client: "ca-pub-0588844875925051",
+          enable_page_level_ads: true
+     });
+</script>
+
+<!--
+<script type="text/javascript">
+    window._mNHandle = window._mNHandle || {};
+    window._mNHandle.queue = window._mNHandle.queue || [];
+    medianet_versionId = "121199"; 
+    (function() {
+        var sct = document.createElement("script"),
+        sctHl = document.getElementsByTagName("script")[0],
+        isSSL = 'https:' == document.location.protocol;
+        sct.type = "text/javascript";
+        sct.src = (isSSL ? 'https:' : 'http:') + '//contextual.media.net/dmedianet.js?cid=8CUIE2148' + (isSSL ? '&https=1' : '')+'';
+        sct.async = "async";
+        sctHl.parentNode.insertBefore(sct, sctHl);
+    })();
+</script>
+--><!-- wpSolution Code -->
+        <script type="text/javascript">
+            function wpSolutionToggle(solution, link, showtext, hidetext) {
+                if (solution.style.display != 'none') {
+                    solution.style.display = 'none';
+                    link.innerHTML = showtext;
+                    link.className = 'solution_link_show';
+                } else {
+                    solution.style.display = 'block';
+                    link.innerHTML = hidetext;
+                    link.className = 'solution_link_hide';
+                }
+            }
+          </script>
+<style type="text/css">img#wpstats{display:none}</style><style type="text/css">body{text-align:center;margin:0;padding:0;font-family:verdana,arial,sans-serif;font-size:13px;line-height:1.4;color:#000000;background:#bbb;padding-bottom:20px}a:link,a:visited,a:active{color:#365DA0;font-weight:bold;text-decoration:none;}a:hover{color:#365DA0;font-weight:bold;text-decoration:underline}ul,ol,dl,p,h1,h2,h3,h4,h5,h6{margin-top:10px;margin-bottom:10px;padding-top:0;padding-bottom:0;}ul ul,ul ol,ol ul,ol ol{margin-top:0;margin-bottom:0}code,pre{font-family:"Courier New",Courier,monospace;font-size:1em}pre{overflow:auto;word-wrap:normal;padding-bottom:1.5em;overflow-y:hidden;width:99%}abbr[title],acronym[title]{border-bottom:1px dotted}hr{display:block;height:2px;border:none;margin:0.5em auto;color:#cccccc;background-color:#cccccc}table{font-size:1em;}div.post,ul.commentlist li,ol.commentlist li{word-wrap:break-word;}pre,.wp_syntax{word-wrap:normal;}div#wrapper{text-align:center;margin-left:auto;margin-right:auto;display:block;width:100%}div#container{padding:20px;box-shadow:0 0 15px #333;-moz-box-shadow:0 0 15px #333;width:auto;margin-left:auto;margin-right:auto;text-align:left;display:block}table#layout{font-size:100%;width:100%;table-layout:fixed}.colone{width:200px}.colone-inner{width:10px}.coltwo{width:100% }.colthree-inner{width:10px}.colthree{width:200px}div#header.full-width{width:100%}div#header,td#header{width:auto;padding:0}table#logoarea,table#logoarea tr,table#logoarea td{margin:0;padding:0;background:none;border:0}table#logoarea{width:100%;border-spacing:0px}img.logo{display:block;margin:0 10px 0 0}td.logoarea-logo{width:1%}h1.blogtitle,h2.blogtitle{ display:block;margin:0;padding:0;letter-spacing:-1px;line-height:1.0em;font-size:200%;text-transform:uppercase;font-smooth:always}h1.blogtitle a:link,h1.blogtitle a:visited,h1.blogtitle a:active,h2.blogtitle a:link,h2.blogtitle a:visited,h2.blogtitle a:active{ text-decoration:none;color:#000000;font-weight:normal;font-smooth:always}h1.blogtitle a:hover,h2.blogtitle a:hover{ text-decoration:none;color:#AC161B;font-weight:normal}p.tagline{margin:0;padding:0;font-size:1.2em;font-weight:normal;color:#444}td.feed-icons{white-space:nowrap;}div.rss-box{height:1%;display:block;padding:10px 0 10px 10px;margin:0;width:280px}a.comments-icon{height:22px;line-height:22px;margin:0 5px 0 5px;padding-left:22px;display:block;text-decoration:none;float:right;white-space:nowrap}a.comments-icon:link,a.comments-icon:active,a.comments-icon:visited{background:transparent url(https://www.learncpp.com/blog/wp-content/themes/atahualpa/images/comment-gray.png) no-repeat scroll center left}a.comments-icon:hover{background:transparent url(https://www.learncpp.com/blog/wp-content/themes/atahualpa/images/comment.png) no-repeat scroll center left}a.posts-icon{height:22px;line-height:22px;margin:0 5px 0 0;padding-left:20px;display:block;text-decoration:none;float:right;white-space:nowrap}a.posts-icon:link,a.posts-icon:active,a.posts-icon:visited{background:transparent url(https://www.learncpp.com/blog/wp-content/themes/atahualpa/images/rss-gray.png) no-repeat scroll center left}a.posts-icon:hover{background:transparent url(https://www.learncpp.com/blog/wp-content/themes/atahualpa/images/rss.png) no-repeat scroll center left}a.email-icon{height:22px;line-height:22px;margin:0 5px 0 5px;padding-left:24px;display:block;text-decoration:none;float:right;white-space:nowrap}a.email-icon:link,a.email-icon:active,a.email-icon:visited{background:transparent url(https://www.learncpp.com/blog/wp-content/themes/atahualpa/images/email-gray.png) no-repeat scroll center left}a.email-icon:hover{background:transparent url(https://www.learncpp.com/blog/wp-content/themes/atahualpa/images/email.png) no-repeat scroll center left}td.search-box{height:1%}div.searchbox{height:35px;border-bottom:0;width:200px;margin:0;padding:0}div.searchbox-form{margin:5px 10px 5px 10px}div.horbar1,div.horbar2{font-size:1px;clear:both;display:block;position:relative;padding:0;margin:0}div.horbar1{height:0px;background:#ffffff;border-top:dashed 1px #cccccc}div.horbar2{height:0px;background:#ffffff;border-bottom:dashed 1px #cccccc}div.header-image-container-pre{position:relative;margin:0;padding:0;height:150px;}div.header-image-container{position:relative;margin:0;padding:0;height:150px;}div.codeoverlay{position:absolute;top:0;left:0;width:100%;height:100%}div.clickable{position:absolute;top:0;left:0;z-index:3;margin:0;padding:0;width:100%;height:150px;}a.divclick:link,a.divclick:visited,a.divclick:active,a.divclick:hover{width:100%;height:100%;display:block;text-decoration:none}td#left{vertical-align:top;padding-right:10px}td#left-inner{vertical-align:top;padding-right:10px}td#right{vertical-align:top;padding-left:10px}td#right-inner{vertical-align:top;padding-left:10px}td#middle{vertical-align:top;width:100%;background:#fff;padding-left:15px!important;padding-right:15px!important;border:solid 4px #eee}div#footer.full-width{width:100%}div#footer,td#footer{width:auto;background-color:#f7f7f7;border:solid 4px #eee;padding:10px;text-align:center;color:#888;font-size:11px;margin-left:220px;margin-right:220px;margin-top:20px;width:auto!important}div#footer a:link,div#footer a:visited,div#footer a:active,td#footer a:link,td#footer a:visited,td#footer a:active{text-decoration:none;color:#777777;font-weight:normal}div#footer a:hover,td#footer a:hover{text-decoration:none;color:#777777;font-weight:normal}div.widget{display:block;width:auto;font-size:12px;margin:0 0 10px 0;padding:10px;border:solid 4px #eee;background:#fff}div.widget-title{display:block;width:auto}div.widget-title h3,td#left h3.tw-widgettitle,td#right h3.tw-widgettitle,td#left ul.tw-nav-list,td#right ul.tw-nav-list{padding:0;margin:0;font-size:0.9em;text-align:center;font-weight:normal;text-transform:uppercase;letter-spacing:1px;color:#333;border-bottom:solid 1px #eee;padding-bottom:10px;margin-bottom:10px}div.widget ul,div.textwidget{display:block;width:auto;background:#fff}div.widget select{width:98%;margin-top:5px;}div.widget ul{list-style-type:none;margin:0;padding:0;width:auto}div.widget ul li{display:block;margin:2px 0 2px 0px;padding:0 0 0 0px;border-left:solid 0px #CCCCCC}div.widget ul li:hover,div.widget ul li.sfhover{display:block;width:auto;border-left:solid 0px #000000;}div.widget ul li ul li{margin:2px 0 2px 5px;padding:0 0 0 0px;border-left:solid 0px #CCCCCC;}div.widget ul li ul li:hover,div.widget ul li ul li.sfhover{border-left:solid 0px #000000;}div.widget ul li ul li ul li{margin:2px 0 2px 5px;padding:0 0 0 0px;border-left:solid 0px #CCCCCC;}div.widget ul li ul li ul li:hover,div.widget ul li ul li ul li.sfhover{border-left:solid 0px #000000;}div.widget a:link,div.widget a:visited,div.widget a:active,div.widget td a:link,div.widget td a:visited,div.widget td a:active,div.widget ul li a:link,div.widget ul li a:visited,div.widget ul li a:active{text-decoration:none;font-weight:normal;color:#365DA0;font-weight:normal;}div.widget ul li ul li a:link,div.widget ul li ul li a:visited,div.widget ul li ul li a:active{color:#365DA0;font-weight:normal;}div.widget ul li ul li ul li a:link,div.widget ul li ul li ul li a:visited,div.widget ul li ul li ul li a:active{color:#365DA0;font-weight:normal;}div.widget a:hover,div.widget ul li a:hover{color:#365DA0;}div.widget ul li ul li a:hover{color:#365DA0;}div.widget ul li ul li ul li a:hover{color:#365DA0;}div.widget ul li a:link,div.widget ul li a:visited,div.widget ul li a:active,div.widget ul li a:hover{display:inline}* html div.widget ul li a:link,* html div.widget ul li a:visited,* html div.widget ul li a:active,* html div.widget ul li a:hover{height:1%; } div.widget_nav_menu ul li,div.widget_pages ul li,div.widget_categories ul li{border-left:0 !important;padding:0 !important}div.widget_nav_menu ul li a:link,div.widget_nav_menu ul li a:visited,div.widget_nav_menu ul li a:active,div.widget_pages ul li a:link,div.widget_pages ul li a:visited,div.widget_pages ul li a:active,div.widget_categories ul li a:link,div.widget_categories ul li a:visited,div.widget_categories ul li a:active{padding:0 0 0 0px;border-left:solid 0px #CCCCCC}div.widget_nav_menu ul li a:hover,div.widget_pages ul li a:hover,div.widget_categories ul li a:hover{border-left:solid 0px #000000;}div.widget_nav_menu ul li ul li a:link,div.widget_nav_menu ul li ul li a:visited,div.widget_nav_menu ul li ul li a:active,div.widget_pages ul li ul li a:link,div.widget_pages ul li ul li a:visited,div.widget_pages ul li ul li a:active,div.widget_categories ul li ul li a:link,div.widget_categories ul li ul li a:visited,div.widget_categories ul li ul li a:active{padding:0 0 0 0px;border-left:solid 0px #CCCCCC}div.widget_nav_menu ul li ul li a:hover,div.widget_pages ul li ul li a:hover,div.widget_categories ul li ul li a:hover{border-left:solid 0px #000000;}div.widget_nav_menu ul li ul li ul li a:link,div.widget_nav_menu ul li ul li ul li a:visited,div.widget_nav_menu ul li ul li ul li a:active,div.widget_pages ul li ul li ul li a:link,div.widget_pages ul li ul li ul li a:visited,div.widget_pages ul li ul li ul li a:active,div.widget_categories ul li ul li ul li a:link,div.widget_categories ul li ul li ul li a:visited,div.widget_categories ul li ul li ul li a:active{padding:0 0 0 0px;border-left:solid 0px #CCCCCC}div.widget_nav_menu ul li ul li ul li a:hover,div.widget_pages ul li ul li ul li a:hover,div.widget_categories ul li ul li ul li a:hover{border-left:solid 0px #000000;}div.widget_nav_menu ul li a:link,div.widget_nav_menu ul li a:active,div.widget_nav_menu ul li a:visited,div.widget_nav_menu ul li a:hover,div.widget_pages ul li a:link,div.widget_pages ul li a:active,div.widget_pages ul li a:visited,div.widget_pages ul li a:hover{display:block !important}div.widget_categories ul li a:link,div.widget_categories ul li a:active,div.widget_categories ul li a:visited,div.widget_categories ul li a:hover{display:inline !important}table.subscribe{width:100%}table.subscribe td.email-text{padding:0 0 5px 0;vertical-align:top}table.subscribe td.email-field{padding:0;width:100%}table.subscribe td.email-button{padding:0 0 0 5px}table.subscribe td.post-text{padding:7px 0 0 0;vertical-align:top}table.subscribe td.comment-text{padding:7px 0 0 0;vertical-align:top}div.post,div.page{display:block;margin:0 0 30px 0;padding-top:20px}div.sticky{background:#eee url('<?php bloginfo('template_directory');?>/images/sticky.gif') 99% 5% no-repeat;border:dashed 1px #cccccc;padding:10px}div.post-kicker{margin:0 0 5px 0}div.post-kicker a:link,div.post-kicker a:visited,div.post-kicker a:active{color:#999;text-decoration:none;text-transform:uppercase;letter-spacing:1px}div.post-kicker a:hover{color:#cc0000}div.post-headline{}div.post-headline h1,div.post-headline h2{ margin:0; padding:0;padding:0;margin:0;font-size:1.7em}div.post-headline h2 a:link,div.post-headline h2 a:visited,div.post-headline h2 a:active,div.post-headline h1 a:link,div.post-headline h1 a:visited,div.post-headline h1 a:active{}div.post-headline h2 a:hover,div.post-headline h1 a:hover{}div.post-byline{margin:5px 0 10px 0;color:#999;text-transform:uppercase;letter-spacing:1px;font-size:11px}div.post-byline a:link,div.post-byline a:visited,div.post-byline a:active{}div.post-byline a:hover{}div.post-bodycopy{}div.post-bodycopy p{margin:1em 0;padding:0;display:block}div.post-pagination{}div.post-footer{clear:both;display:block;color:#999;text-transform:uppercase;letter-spacing:1px;font-size:11px}div.post-footer a:link,div.post-footer a:visited,div.post-footer a:active{color:#999;font-weight:normal;text-decoration:none}div.post-footer a:hover{color:#333;font-weight:normal;text-decoration:underline}div.post-kicker img,div.post-byline img,div.post-footer img{border:0;padding:0;margin:0 0 -1px 0;background:none}span.post-ratings{display:inline-block;width:auto;white-space:nowrap}div.navigation-top{border-top:solid 4px #eee;padding:8px 0}div.navigation-middle{margin:10px 0 20px 0;padding:8px 0;border-top:solid 4px #eee;border-bottom:solid 4px #eee}div.navigation-bottom{margin:20px 0 0 0;padding:10px 0 0 0;border-top:solid 4px #eee}div.navigation-comments-above{margin:0 0 10px 0;padding:5px 0 5px 0}div.navigation-comments-below{margin:0 0 10px 0;padding:5px 0 5px 0}div.older{float:left;width:48%;text-align:left;margin:0;padding:0}div.newer{float:right;width:48%;text-align:right;margin:0;padding:0;}div.older-home{float:left;width:44%;text-align:left;margin:0;padding:0}div.newer-home{float:right;width:44%;text-align:right;margin:0;padding:0;}div.home{float:left;width:8%;text-align:center;margin:0;padding:0}form,.feedburner-email-form{margin:0;padding:0;}fieldset{border:1px solid #cccccc;width:auto;padding:0.35em 0.625em 0.75em;display:block;}legend{color:#000000;background:#f4f4f4;border:1px solid #cccccc;padding:2px 6px;margin-bottom:15px;}form p{margin:5px 0 0 0;padding:0;}div.xhtml-tags p{margin:0}label{margin-right:0.5em;font-family:arial;cursor:pointer;}input.text,input.textbox,input.password,input.file,input.TextField,textarea{padding:3px;color:#000000;border-top:solid 1px #333333;border-left:solid 1px #333333;border-right:solid 1px #999999;border-bottom:solid 1px #cccccc;background:url(https://www.learncpp.com/blog/wp-content/themes/atahualpa/images/inputbackgr.gif) top left no-repeat}textarea{width:96%;}input.inputblur{color:#777777;width:95%}input.inputfocus{color:#000000;width:95%}input.highlight,textarea.highlight{background:#e8eff7;border-color:#37699f}.button,.Button,input[type=submit]{padding:0 2px;height:24px;line-height:16px;background-color:#777777;color:#ffffff;border:solid 2px #555555;font-weight:bold}input.buttonhover{padding:0 2px;cursor:pointer;background-color:#6b9c6b;color:#ffffff;border:solid 2px #496d49}form#commentform input#submit{ padding:0 .25em; overflow:visible}form#commentform input#submit[class]{width:auto}form#commentform input#submit{padding:4px 10px 4px 10px;font-size:1.2em;line-height:1.5em;height:36px}table.searchform{width:100%}table.searchform td.searchfield{padding:0;width:100%}table.searchform td.searchbutton{padding:0 0 0 5px}table.searchform td.searchbutton input{padding:0 0 0 5px}blockquote{height:1%;display:block;clear:both;color:#555555;padding:1em 1em;background:#f4f4f4;border:solid 1px #e1e1e1}blockquote blockquote{height:1%;display:block;clear:both;color:#444444;padding:1em 1em;background:#e1e1e1;border:solid 1px #d3d3d3}div.post table{border-collapse:collapse;margin:10px 0}div.post table caption{width:auto;margin:0 auto;background:#eeeeee;border:#999999;padding:4px 8px;color:#666666}div.post table th{background:#888888;color:#ffffff;font-weight:bold;font-size:90%;padding:4px 8px;border:solid 1px #ffffff;text-align:left}div.post table td{padding:4px 8px;background-color:#ffffff;border-bottom:1px solid #dddddd;text-align:left}div.post table tfoot td{}div.post table tr.alt td{background:#f4f4f4}div.post table tr.over td{background:#e2e2e2}#calendar_wrap{padding:0;border:none}table#wp-calendar{width:100%;font-size:90%;border-collapse:collapse;background-color:#ffffff;margin:0 auto}table#wp-calendar caption{width:auto;background:#eeeeee;border:none;;padding:3px;margin:0 auto;font-size:1em}table#wp-calendar th{border:solid 1px #eeeeee;background-color:#999999;color:#ffffff;font-weight:bold;padding:2px;text-align:center}table#wp-calendar td{padding:0;line-height:18px;background-color:#ffffff;border:1px solid #dddddd;text-align:center}table#wp-calendar tfoot td{border:solid 1px #eeeeee;background-color:#eeeeee}table#wp-calendar td a{display:block;background-color:#eeeeee;width:100%;height:100%;padding:0}div#respond{margin:25px 0;padding:25px;background:#eee;-moz-border-radius:8px;-khtml-border-radius:8px;-webkit-border-radius:8px;border-radius:8px}p.thesetags{margin:10px 0}h3.reply,h3#reply-title{margin:0;padding:0 0 10px 0}ol.commentlist{margin:15px 0 25px 0;list-style-type:none;padding:0;display:block;border-top:dotted 1px #cccccc}ol.commentlist li{padding:15px 10px;display:block;height:1%;margin:0;background-color:#FFFFFF;border-bottom:dotted 1px #cccccc}ol.commentlist li.alt{display:block;height:1%;background-color:#EEEEEE;border-bottom:dotted 1px #cccccc}ol.commentlist li.authorcomment{display:block;height:1%;background-color:#D8D8FA}ol.commentlist span.authorname{font-weight:bold;font-size:110%}ol.commentlist span.commentdate{color:#666666;font-size:90%;margin-bottom:5px;display:block}ol.commentlist span.editcomment{display:block}ol.commentlist li p{margin:2px 0 5px 0}div.comment-number{float:right;font-size:2em;line-height:2em;font-family:georgia,serif;font-weight:bold;color:#ddd;margin:-10px 0 0 0;position:relative;height:1%}div.comment-number a:link,div.comment-number a:visited,div.comment-number a:active{color:#ccc}textarea#comment{width:98%;margin:10px 0;display:block}ul.commentlist{margin:15px 0 15px 0;list-style-type:none;padding:0;display:block;border-top:dotted 1px #cccccc}ul.commentlist ul{margin:0;border:none;list-style-type:none;padding:0}ul.commentlist li{padding:0; margin:0;display:block;clear:both;height:1%;}ul.commentlist ul.children li{ margin-left:30px}ul.commentlist div.comment-container{padding:10px;margin:0}ul.children div.comment-container{background-color:transparent;border:dotted 1px #ccc;padding:10px;margin:0 10px 8px 0; border-radius:5px}ul.children div.bypostauthor{}ul.commentlist li.thread-even{background-color:#FFFFFF;border-bottom:dotted 1px #cccccc}ul.commentlist li.thread-odd{background-color:#EEEEEE;border-bottom:dotted 1px #cccccc}ul.commentlist div.bypostauthor{background-color:#D8D8FA}ul.children div.bypostauthor{border:dotted 1px #BFBCFB}ul.commentlist span.authorname{font-size:110%}div.comment-meta a:link,div.comment-meta a:visited,div.comment-meta a:active,div.comment-meta a:hover{font-weight:normal}div#cancel-comment-reply{margin:-5px 0 10px 0}div.comment-number{float:right;font-size:2em;line-height:2em;font-family:georgia,serif;font-weight:bold;color:#ddd;margin:-10px 0 0 0;position:relative;height:1%}div.comment-number a:link,div.comment-number a:visited,div.comment-number a:active{color:#ccc}.page-numbers{padding:2px 6px;border:solid 1px #000000;border-radius:6px}span.current{background:#ddd}a.prev,a.next{border:none}a.page-numbers:link,a.page-numbers:visited,a.page-numbers:active{text-decoration:none;color:#365DA0;border-color:#365DA0}a.page-numbers:hover{text-decoration:none;color:#365DA0;border-color:#365DA0}div.xhtml-tags{display:none}abbr em{border:none !important;border-top:dashed 1px #aaa !important;display:inline-block !important;background:url(https://www.learncpp.com/blog/wp-content/themes/atahualpa/images/commentluv.gif) 0% 90% no-repeat;margin-top:8px;padding:5px 5px 2px 20px !important;font-style:normal}p.subscribe-to-comments{margin-bottom:10px}div#gsHeader{display:none;}div.g2_column{margin:0 !important;width:100% !important;font-size:1.2em}div#gsNavBar{border-top-width:0 !important}p.giDescription{font-size:1.2em;line-height:1 !important}p.giTitle{margin:0.3em 0 !important;font-size:1em;font-weight:normal;color:#666}div#wp-email img{border:0;padding:0}div#wp-email input,div#wp-email textarea{margin-top:5px;margin-bottom:2px}div#wp-email p{margin-bottom:10px}input#wp-email-submit{ padding:0; font-size:30px; height:50px; line-height:50px; overflow:visible;}img.WP-EmailIcon{ vertical-align:text-bottom !important}.tw-accordion .tw-widgettitle,.tw-accordion .tw-widgettitle:hover,.tw-accordion .tw-hovered,.tw-accordion .selected,.tw-accordion .selected:hover{ background:transparent !important; background-image:none !important}.tw-accordion .tw-widgettitle span{ padding-left:0 !important}.tw-accordion h3.tw-widgettitle{border-bottom:solid 1px #ccc}.tw-accordion h3.selected{border-bottom:none}td#left .without_title,td#right .without_title{ margin-top:0;margin-bottom:0}ul.tw-nav-list{border-bottom:solid 1px #999;display:block;margin-bottom:5px !important}td#left ul.tw-nav-list li,td#right ul.tw-nav-list li{padding:0 0 1px 0;margin:0 0 -1px 5px; border:solid 1px #ccc;border-bottom:none;border-radius:5px;border-bottom-right-radius:0;border-bottom-left-radius:0;background:#eee}td#left ul.tw-nav-list li.ui-tabs-selected,td#right ul.tw-nav-list li.ui-tabs-selected{ background:none;border:solid 1px #999;border-bottom:solid 1px #fff !important}ul.tw-nav-list li a:link,ul.tw-nav-list li a:visited,ul.tw-nav-list li a:active,ul.tw-nav-list li a:hover{padding:0 8px !important;background:none;border-left:none !important;outline:none}td#left ul.tw-nav-list li.ui-tabs-selected a,td#left li.ui-tabs-selected a:hover,td#right ul.tw-nav-list li.ui-tabs-selected a,td#right li.ui-tabs-selected a:hover{ color:#000000; text-decoration:none;font-weight:bold;background:none !important;outline:none}td#left .ui-tabs-panel,td#right .ui-tabs-panel{ margin:0; padding:0}img{border:0}#dbem-location-map img{ background:none !important}.post img{padding:5px;border:solid 1px #dddddd;background-color:#f3f3f3;-moz-border-radius:3px;-khtml-border-radius:3px;-webkit-border-radius:3px;border-radius:3px}.post img.size-full{max-width:96%;width:auto;margin:5px 0 5px 0}div.post img[class~=size-full]{height:auto;}.post img.alignleft{float:left;margin:10px 10px 5px 0;}.post img.alignright{float:right;margin:10px 0 5px 10px;}.post img.aligncenter{display:block;margin:10px auto}.aligncenter,div.aligncenter{ display:block; margin-left:auto; margin-right:auto}.alignleft,div.alignleft{float:left;margin:10px 10px 5px 0}.alignright,div.alignright{ float:right; margin:10px 0 5px 10px}div.archives-page img{border:0;padding:0;background:none;margin-bottom:0;vertical-align:-10%}.wp-caption{max-width:96%;width:auto 100%;height:auto;display:block;border:1px solid #dddddd;text-align:center;background-color:#f3f3f3;padding-top:4px;margin:10px 0 0 0;-moz-border-radius:3px;-khtml-border-radius:3px;-webkit-border-radius:3px;border-radius:3px}* html .wp-caption{height:100%;}.wp-caption img{ margin:0 !important; padding:0 !important; border:0 none !important}.wp-caption p.wp-caption-text{font-size:0.8em;line-height:13px;padding:2px 4px 5px;margin:0;color:#666666}img.wp-post-image{float:left;border:0;padding:0;background:none;margin:0 10px 5px 0}img.wp-smiley{ float:none;border:none !important;margin:0 1px -1px 1px;padding:0 !important;background:none !important}img.avatar{float:left;display:block;margin:0 8px 1px 0;padding:3px;border:solid 1px #ddd;background-color:#f3f3f3;-moz-border-radius:3px;-khtml-border-radius:3px;-webkit-border-radius:3px;border-radius:3px}#comment_quicktags{text-align:left;padding:10px 0 2px 0;display:block}#comment_quicktags input.ed_button{background:#f4f4f4;border:2px solid #cccccc;color:#444444;margin:2px 4px 2px 0;width:auto;padding:0 4px;height:24px;line-height:16px}#comment_quicktags input.ed_button_hover{background:#dddddd;border:2px solid #666666;color:#000000;margin:2px 4px 2px 0;width:auto;padding:0 4px;height:24px;line-height:16px;cursor:pointer}#comment_quicktags #ed_strong{font-weight:bold}#comment_quicktags #ed_em{font-style:italic}@media print{body{background:white;color:black;margin:0;font-size:10pt !important;font-family:arial,sans-serif;}div.post-footer{line-height:normal !important;color:#555 !important;font-size:9pt !important}a:link,a:visited,a:active,a:hover{text-decoration:underline !important;color:#000}h2{color:#000;font-size:14pt !important;font-weight:normal !important}h3{color:#000;font-size:12pt !important;}#header,#footer,.colone,.colone-inner,.colthree-inner,.colthree,.navigation,.navigation-top,.navigation-middle,.navigation-bottom,.wp-pagenavi-navigation,#comment,#respond,.remove-for-print{display:none}td#left,td#right,td#left-inner,td#right-inner{width:0;display:none}td#middle{width:100% !important;display:block}*:lang(en) td#left{ display:none}*:lang(en) td#right{ display:none}*:lang(en) td#left-inner{ display:none}*:lang(en) td#right-inner{ display:none}td#left:empty{ display:none}td#right:empty{ display:none}td#left-inner:empty{ display:none}td#right-inner:empty{ display:none}}ul.rMenu,ul.rMenu ul,ul.rMenu li,ul.rMenu a{display:block;margin:0;padding:0}ul.rMenu,ul.rMenu li,ul.rMenu ul{list-style:none}ul.rMenu ul{display:none}ul.rMenu li{position:relative;z-index:1}ul.rMenu li:hover{z-index:999}ul.rMenu li:hover > ul{display:block;position:absolute}ul.rMenu li:hover{background-position:0 0} ul.rMenu-hor li{float:left;width:auto}ul.rMenu-hRight li{float:right}ul.sub-menu li,ul.rMenu-ver li{float:none}.clearfix:after{ content:".";display:block;height:0;clear:both;visibility:hidden}.clearfix{min-width:0;display:inline-block;display:block}* html .clearfix{height:1%;}.clearboth{clear:both;height:1%;font-size:1%;line-height:1%;display:block;padding:0;margin:0}.page-id-8 .post-headline{display:none;} div.useCode{background:linear-gradient(#FFFF66,#CCCC00);border-radius:8px;padding-left:10px;padding-right:10px;padding-top:2px;padding-bottom:2px;font-size:10pt;text-align:left;display:inline-block;font-weight:550;}td#header{padding-bottom:15px;}td#middle{padding:0}div.searchbox-form{margin:5px 0 15px 5px}div#menu1 ul.rMenu{background:transparent;border:none}div#imagecontainer{border-top:solid 0px #333;border-bottom:solid 5px #333;}div.widget ul li{padding:1px 5px 1px 12px !important;background:url('<?php bloginfo('template_directory');?>/images/bullets/round-gray.gif') no-repeat 0 7px}ul.rMenu-hor ul,ul.rMenu-hRight ul{margin-top:0px;}ul.rMenu-hor li{margin-bottom:0px;margin-top:0px;margin-left:0px;}ul.rMenu-hor{padding-left:0px;}ul.rMenu-ver li{margin-top:0xp;}div#menu1 ul.rMenu li a,div#menu2 ul.rMenu li a{padding:6px 10px}div#menu1 ul.rMenu li{margin-right:5px}div#menu1 ul.rMenu li li{margin-right:0}div#menu1 ul.rMenu li,div#menu1 ul.rMenu li a{-webkit-border-top-left-radius:5px;-webkit-border-top-right-radius:5px;-moz-border-radius-topleft:5px;-moz-border-radius-topright:5px;border-top-left-radius:5px;border-top-right-radius:5px}div#menu1 ul.rMenu li li,div#menu1 ul.rMenu li li a{-webkit-border-top-left-radius:0;-webkit-border-top-right-radius:0;-moz-border-radius-topleft:0;-moz-border-radius-topright:0;border-top-left-radius:0;border-top-right-radius:0}div#menu2{ border:dashed 1px #ffffff}ul{list-style-position:inside}@media only screen and (max-width:960px) and (device-width:1920px),only screen and (max-width:840px) and (device-width:1680px),only screen and (max-width:800px) and (device-width:1600px),only screen and (max-width:720px) and (device-width:1440px),only screen and (max-width:683px) and (device-width:1366px),only screen and (max-width:680px) and (device-width:1360px),only screen and (max-width:640px) and (device-width:1280px),only screen and (max-width:512px) and (device-width:1024px),only screen and (max-device-width:1080px){.colthree,td#right{ display:none}}</style>
+<script type="text/javascript">
+//<![CDATA[
+
+
+
+/* JQUERY */
+jQuery(document).ready(function(){ 
+    
+   
+  
+
+	/* jQuery('ul#rmenu').superfish(); */
+	/* jQuery('ul#rmenu').superfish().find('ul').bgIframe({opacity:false}); */
+ 
+	/* For IE6 */
+	if (jQuery.browser.msie && /MSIE 6\.0/i.test(window.navigator.userAgent) && !/MSIE 7\.0/i.test(window.navigator.userAgent) && !/MSIE 8\.0/i.test(window.navigator.userAgent)) {
+
+		/* Max-width for images in IE6 */		
+		var centerwidth = jQuery("td#middle").width(); 
+		
+		/* Images without caption */
+		jQuery(".post img").each(function() { 
+			var maxwidth = centerwidth - 10 + 'px';
+			var imgwidth = jQuery(this).width(); 
+			var imgheight = jQuery(this).height(); 
+			var newimgheight = (centerwidth / imgwidth * imgheight) + 'px';	
+			if (imgwidth > centerwidth) { 
+				jQuery(this).css({width: maxwidth}); 
+				jQuery(this).css({height: newimgheight}); 
+			}
+		});
+		
+		/* Images with caption */
+		jQuery("div.wp-caption").each(function() { 
+			var captionwidth = jQuery(this).width(); 
+			var maxcaptionwidth = centerwidth + 'px';
+			var captionheight = jQuery(this).height();
+			var captionimgwidth =  jQuery("div.wp-caption img").width();
+			var captionimgheight =  jQuery("div.wp-caption img").height();
+			if (captionwidth > centerwidth) { 
+				jQuery(this).css({width: maxcaptionwidth}); 
+				var newcaptionheight = (centerwidth / captionwidth * captionheight) + 'px';
+				var newcaptionimgheight = (centerwidth / captionimgwidth * captionimgheight) + 'px';
+				jQuery(this).css({height: newcaptionheight}); 
+				jQuery("div.wp-caption img").css({height: newcaptionimgheight}); 
+				}
+		});
+		
+		/* sfhover for LI:HOVER support in IE6: */
+		jQuery("ul li").
+			hover( function() {
+					jQuery(this).addClass("sfhover")
+				}, 
+				function() {
+					jQuery(this).removeClass("sfhover")
+				} 
+			); 
+
+	/* End IE6 */
+	}
+	
+	
+	
+	/* Since 3.7.8: Auto resize videos (embed and iframe elements) 
+	TODO: Parse parent's dimensions only once per layout column, not per video
+	*/
+	function bfa_resize_video() {
+		jQuery('embed, iframe').each( function() {
+			var video = jQuery(this),
+			videoWidth = video.attr('width'); // use the attr here, not width() or css()
+			videoParent = video.parent(),
+			videoParentWidth = parseFloat( videoParent.css( 'width' ) ),
+			videoParentBorder = parseFloat( videoParent.css( 'border-left-width' ) ) 
+										+  parseFloat( videoParent.css( 'border-right-width' ) ),
+			videoParentPadding = parseFloat( videoParent.css( 'padding-left' ) ) 
+										+  parseFloat( videoParent.css( 'padding-right' ) ),
+			maxWidth = videoParentWidth - videoParentBorder - videoParentPadding;
+
+			if( videoWidth > maxWidth ) {
+				var videoHeight = video.attr('height'),
+				videoMaxHeight = ( maxWidth / videoWidth * videoHeight );
+				video.attr({ width: maxWidth, height: videoMaxHeight });
+			} 
+
+		});	
+	}
+	bfa_resize_video();
+	jQuery(window).resize( bfa_resize_video );
+
+		
+	jQuery(".post table tr").
+		mouseover(function() {
+			jQuery(this).addClass("over");
+		}).
+		mouseout(function() {
+			jQuery(this).removeClass("over");
+		});
+
+	
+	jQuery(".post table tr:even").
+		addClass("alt");
+
+	
+	jQuery("input.text, input.TextField, input.file, input.password, textarea").
+		focus(function () {  
+			jQuery(this).addClass("highlight"); 
+		}).
+		blur(function () { 
+			jQuery(this).removeClass("highlight"); 
+		})
+	
+	jQuery("input.inputblur").
+		focus(function () {  
+			jQuery(this).addClass("inputfocus"); 
+		}).
+		blur(function () { 
+			jQuery(this).removeClass("inputfocus"); 
+		})
+
+		
+
+	
+	jQuery("input.button, input.Button, input#submit").
+		mouseover(function() {
+			jQuery(this).addClass("buttonhover");
+		}).
+		mouseout(function() {
+			jQuery(this).removeClass("buttonhover");
+		});
+
+	/* toggle "you can use these xhtml tags" */
+	jQuery("a.xhtmltags").
+		click(function(){ 
+			jQuery("div.xhtml-tags").slideToggle(300); 
+		});
+
+	/* For the Tabbed Widgets plugin: */
+	jQuery("ul.tw-nav-list").
+		addClass("clearfix");
+
+		
+	
+});
+
+//]]>
+</script>
+
+<!--[if IE 6]>
+<script type="text/javascript">DD_roundies.addRule("a.posts-icon, a.comments-icon, a.email-icon, img.logo");</script>
+<![endif]-->
+
+<!-- Jetpack Open Graph Tags -->
+<meta property="og:type" content="article">
+<meta property="og:title" content="1.1 — Structure of a program">
+<meta property="og:url" content="https://www.learncpp.com/cpp-tutorial/11-structure-of-a-program/">
+<meta property="og:description" content="A computer program is a sequence of instructions that tell the computer what to do. Programs are typically composed of 3 basic elements: expressions, statements, and functions. Statements The most …">
+<meta property="article:published_time" content="2007-05-30T15:10:39+00:00">
+<meta property="article:modified_time" content="2018-08-24T00:23:31+00:00">
+<meta property="og:site_name" content="Learn C++">
+<meta property="og:image" content="https://s0.wp.com/i/blank.jpg">
+<meta property="og:locale" content="en_US">
+<meta name="twitter:card" content="summary">
+<link rel="preload" href="./1.1 — Structure of a program _ Learn C++_files/f(8).txt" as="script"><script type="text/javascript" src="./1.1 — Structure of a program _ Learn C++_files/f(8).txt"></script><link rel="preload" href="./1.1 — Structure of a program _ Learn C++_files/f(9).txt" as="script"><script type="text/javascript" src="./1.1 — Structure of a program _ Learn C++_files/f(9).txt"></script></head>
+<body class="post-template-default single single-post postid-19 single-format-standard category-cpp-tutorial">
+
+		<!-- Full Width Header -->
+		<div id="header" class="full-width">
+		<div id="imagecontainer-pre" class="header-image-container-pre">    <div id="imagecontainer" class="header-image-container" style="background: url(&#39;https://www.learncpp.com/blog/wp-content/ata-images/header/LearnCpp_1920.jpg&#39;) top center no-repeat;"></div><div class="clickable"><a class="divclick" title="Learn C++" href="https://www.learncpp.com/">&nbsp;</a></div><div class="codeoverlay"></div></div>		</div>
+		<!-- / Full Width Header -->
+<div id="wrapper">
+<div id="container">
+<table id="layout" border="0" cellspacing="0" cellpadding="0">
+<colgroup>
+<col class="colone"><col class="coltwo">
+<col class="colthree"></colgroup> 
+
+	<!-- Main Body -->	
+	<tbody><tr id="bodyrow">
+
+				<!-- Left Sidebar -->
+		<td id="left">
+
+			<div id="text-2" class="widget widget_text">			<div class="textwidget"><ul>
+<li><a href="https://www.learncpp.com/"><big><big>Main Page</big></big></a></li>
+<li><a href="https://www.learncpp.com/learn-c-site-index/">Site Index</a></li>
+</ul>
+<hr>
+<ul>
+<li><a href="https://www.learncpp.com/site-news/find-something-wrong/">Report an Issue</a></li>
+<li><a href="https://www.learncpp.com/about/">About / Contact</a></li>
+<li><a href="https://www.learncpp.com/about/#Support">Support LearnCpp</a></li>
+</ul>
+</div>
+		</div><div id="text-3" class="widget widget_text"><div class="widget-title"><h3>Search</h3></div>			<div class="textwidget"><!-- SiteSearch Google -->
+<form method="get" action="https://www.google.com/custom" target="google_window">
+<table border="0" bgcolor="#ffffff">
+<tbody><tr><td nowrap="nowrap" valign="top" align="center">
+
+<!--<br/>-->
+<input type="hidden" name="domains" value="LearnCpp.com">
+<label for="sbi" style="display: none">Enter your search terms</label>
+<input type="text" name="q" size="16" maxlength="255" value="" id="sbi">
+</td></tr>
+<tr>
+<td nowrap="nowrap">
+<table>
+<tbody><tr>
+<td>
+<input type="hidden" name="sitesearch" value="www.LearnCpp.com" checked="" id="ss1">
+<label for="ss1" title="Search LearnCpp.com"></label></td>
+</tr>
+</tbody></table>
+<label for="sbb" style="display: none">Submit search form</label>
+<input type="submit" name="sa" value="Google Search" id="sbb">
+<input type="hidden" name="client" value="pub-0588844875925051">
+<input type="hidden" name="forid" value="1">
+<input type="hidden" name="channel" value="7774154974">
+<input type="hidden" name="ie" value="ISO-8859-1">
+<input type="hidden" name="oe" value="ISO-8859-1">
+<input type="hidden" name="safe" value="active">
+<input type="hidden" name="flav" value="0000">
+<input type="hidden" name="sig" value="q6fLrjobHHgL00cW">
+</td></tr></tbody></table>
+</form>
+<!-- SiteSearch Google --></div>
+		</div><div id="text-9" class="widget widget_text">			<div class="textwidget"><div class="cf_monitor">
+<!-- Post - Left Sidebar - Wide Skyscraper -->
+<script async="" src="./1.1 — Structure of a program _ Learn C++_files/f(7).txt"></script>
+<ins class="adsbygoogle" style="display:inline-block;width:160px;height:600px" data-ad-client="ca-pub-0588844875925051" data-ad-slot="2780990843" data-adsbygoogle-status="done"><ins id="aswift_1_expand" style="display:inline-table;border:none;height:600px;margin:0;padding:0;position:relative;visibility:visible;width:160px;background-color:transparent;"><ins id="aswift_1_anchor" style="display:block;border:none;height:600px;margin:0;padding:0;position:relative;visibility:visible;width:160px;background-color:transparent;"><iframe width="160" height="600" frameborder="0" marginwidth="0" marginheight="0" vspace="0" hspace="0" allowtransparency="true" scrolling="no" allowfullscreen="true" onload="var i=this.id,s=window.google_iframe_oncopy,H=s&amp;&amp;s.handlers,h=H&amp;&amp;H[i],w=this.contentWindow,d;try{d=w.document}catch(e){}if(h&amp;&amp;d&amp;&amp;(!d.body||!d.body.firstChild)){if(h.call){setTimeout(h,0)}else if(h.match){try{h=s.upd(h,i)}catch(e){}w.location.replace(h)}}" id="aswift_1" name="aswift_1" style="left:0;position:absolute;top:0;width:160px;height:600px;" src="./1.1 — Structure of a program _ Learn C++_files/saved_resource(2).html"></iframe></ins></ins></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+</div></div>
+		</div>
+		</td>
+		<!-- / Left Sidebar -->
+		
+				
+
+		<!-- Main Column -->
+		<td id="middle">
+
+    
+		
+	<div class="code-block code-block-1 ai-desktop-tablet" style="float:left;margin:8px 8px 8px 0px;"><div class="cf_monitor">
+<script async="" src="./1.1 — Structure of a program _ Learn C++_files/f(7).txt"></script>
+<!-- Post - Top - Large Rectangle -->
+<ins class="adsbygoogle" style="display:inline-block;width:336px;height:280px" data-ad-client="ca-pub-0588844875925051" data-ad-slot="7945645163" data-adsbygoogle-status="done"><ins id="aswift_2_expand" style="display:inline-table;border:none;height:280px;margin:0;padding:0;position:relative;visibility:visible;width:336px;background-color:transparent;"><ins id="aswift_2_anchor" style="display:block;border:none;height:280px;margin:0;padding:0;position:relative;visibility:visible;width:336px;background-color:transparent;"><iframe width="336" height="280" frameborder="0" marginwidth="0" marginheight="0" vspace="0" hspace="0" allowtransparency="true" scrolling="no" allowfullscreen="true" onload="var i=this.id,s=window.google_iframe_oncopy,H=s&amp;&amp;s.handlers,h=H&amp;&amp;H[i],w=this.contentWindow,d;try{d=w.document}catch(e){}if(h&amp;&amp;d&amp;&amp;(!d.body||!d.body.firstChild)){if(h.call){setTimeout(h,0)}else if(h.match){try{h=s.upd(h,i)}catch(e){}w.location.replace(h)}}" id="aswift_2" name="aswift_2" style="left:0;position:absolute;top:0;width:336px;height:280px;" src="./1.1 — Structure of a program _ Learn C++_files/saved_resource(3).html"></iframe></ins></ins></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+</div>
+</div>	
+								<div class="post-19 post type-post status-publish format-standard hentry category-cpp-tutorial odd" id="post-19">
+						<div class="post-headline">		<h1>1.1 — Structure of a program</h1>
+		</div>		<div class="post-byline">By Alex on May 30th, 2007 | last modified by Alex on August 23rd, 2018</div>		<div class="post-bodycopy clearfix"><p>A computer program is a sequence of instructions that tell the computer what to do.  Programs are typically composed of 3 basic elements: expressions, statements, and functions. </p>
+<p><strong>Statements</strong></p>
+<p>The most common type of instruction in a program is the <strong>statement</strong>.  A statement in C++ is the smallest independent unit in the language.  In human language, it is analogous to a sentence, which we use to convey an idea.  In C++, we write statements in order to convey to the compiler that we want to perform a task.  Statements in C++ are often (but not always) terminated by a semicolon.</p>
+<p>There are many different kinds of statements in C++.  Here are a few example statements that you might find in a program:</p>
+<p></p><!-- Crayon Syntax Highlighter v2.7.1 -->
+
+		<div id="crayon-5b7f501c0f49b447319042" class="crayon-syntax crayon-theme-familiar-learncppcom crayon-font-monaco crayon-os-pc print-yes notranslate crayon-wrapped" data-settings=" no-popup minimize scroll-mouseover wrap" style="margin-top: 12px; margin-bottom: 12px; font-size: 12px !important; line-height: 16px !important; height: auto;">
+		
+			<div class="crayon-plain-wrap"></div>
+			<div class="crayon-main" style="position: relative; z-index: 1; overflow: hidden;">
+				<table class="crayon-table" style="">
+					<tbody><tr class="crayon-row alt">
+				<td class="crayon-nums " data-settings="show">
+					<div class="crayon-nums-content" style="font-size: 12px !important; line-height: 16px !important;"><div class="crayon-num" data-line="crayon-5b7f501c0f49b447319042-1" style="height: 16px;">1</div><div class="crayon-num crayon-striped-num" data-line="crayon-5b7f501c0f49b447319042-2" style="height: 16px;">2</div><div class="crayon-num" data-line="crayon-5b7f501c0f49b447319042-3" style="height: 16px;">3</div></div>
+				</td>
+						<td class="crayon-code"><div class="crayon-pre" style="font-size: 12px !important; line-height: 16px !important; -moz-tab-size:4; -o-tab-size:4; -webkit-tab-size:4; tab-size:4;"><div class="crayon-line" id="crayon-5b7f501c0f49b447319042-1"><span class="crayon-t">int</span><span class="crayon-h"> </span><span class="crayon-v">x</span><span class="crayon-sy">;</span></div><div class="crayon-line crayon-striped-line" id="crayon-5b7f501c0f49b447319042-2"><span class="crayon-v">x</span><span class="crayon-h"> </span><span class="crayon-o">=</span><span class="crayon-h"> </span><span class="crayon-cn">5</span><span class="crayon-sy">;</span></div><div class="crayon-line" id="crayon-5b7f501c0f49b447319042-3"><span class="crayon-v">std</span><span class="crayon-o">::</span><span class="crayon-r">cout</span><span class="crayon-h"> </span><span class="crayon-o">&lt;&lt;</span><span class="crayon-h"> </span><span class="crayon-v">x</span><span class="crayon-sy">;</span></div></div></td>
+					</tr>
+				</tbody></table>
+			</div>
+		</div>
+<!-- [Format Time: 0.0009 seconds] -->
+<p></p>
+<p><code>int x;</code> is a <strong>declaration statement</strong>.  This particular declaration statement tells the compiler that x is a variable that holds an integer (int) value.  In programming, a variable provides a name for a region of memory that can hold a value.  All variables in a program must be declared before they are used.  We will talk more about variables shortly.</p>
+<p><code>x = 5;</code> is a statement that assigns a value (5) to a variable (x) so we can use that value later (which we do, on the next line).</p>
+<p><code>std::cout &lt;&lt; x;</code> is a statement that outputs the value of variable x (which we set to 5 in the previous statement) to the screen.</p>
+<p><strong>Expressions</strong></p>
+<p>The compiler is also capable of resolving expressions.  Expressions specify a computation to be performed.  For example, as children we all learn that 2 + 3 equals 5.  In programming, we say that 2 + 3 is an expression that evaluates to the value 5.</p>
+<p>Here are some examples of different types of expressions:</p>
+<p></p><!-- Crayon Syntax Highlighter v2.7.1 -->
+
+		<div id="crayon-5b7f501c0f4ae526030959" class="crayon-syntax crayon-theme-familiar-learncppcom crayon-font-monaco crayon-os-pc print-yes notranslate crayon-wrapped" data-settings=" no-popup minimize scroll-mouseover wrap" style="margin-top: 12px; margin-bottom: 12px; font-size: 12px !important; line-height: 16px !important; height: auto;">
+		
+			<div class="crayon-plain-wrap"></div>
+			<div class="crayon-main" style="position: relative; z-index: 1; overflow: hidden;">
+				<table class="crayon-table" style="">
+					<tbody><tr class="crayon-row">
+				<td class="crayon-nums " data-settings="show">
+					<div class="crayon-nums-content" style="font-size: 12px !important; line-height: 16px !important;"><div class="crayon-num" data-line="crayon-5b7f501c0f4ae526030959-1" style="height: 16px;">1</div><div class="crayon-num crayon-striped-num" data-line="crayon-5b7f501c0f4ae526030959-2" style="height: 16px;">2</div><div class="crayon-num" data-line="crayon-5b7f501c0f4ae526030959-3" style="height: 16px;">3</div><div class="crayon-num crayon-striped-num" data-line="crayon-5b7f501c0f4ae526030959-4" style="height: 16px;">4</div><div class="crayon-num" data-line="crayon-5b7f501c0f4ae526030959-5" style="height: 16px;">5</div><div class="crayon-num crayon-striped-num" data-line="crayon-5b7f501c0f4ae526030959-6" style="height: 16px;">6</div><div class="crayon-num" data-line="crayon-5b7f501c0f4ae526030959-7" style="height: 16px;">7</div></div>
+				</td>
+						<td class="crayon-code"><div class="crayon-pre" style="font-size: 12px !important; line-height: 16px !important; -moz-tab-size:4; -o-tab-size:4; -webkit-tab-size:4; tab-size:4;"><div class="crayon-line" id="crayon-5b7f501c0f4ae526030959-1"><span class="crayon-cn">2</span></div><div class="crayon-line crayon-striped-line" id="crayon-5b7f501c0f4ae526030959-2"><span class="crayon-s">"Hello, world"</span></div><div class="crayon-line" id="crayon-5b7f501c0f4ae526030959-3"><span class="crayon-i">x</span></div><div class="crayon-line crayon-striped-line" id="crayon-5b7f501c0f4ae526030959-4"><span class="crayon-cn">2</span><span class="crayon-h"> </span><span class="crayon-o">+</span><span class="crayon-h"> </span><span class="crayon-cn">3</span></div><div class="crayon-line" id="crayon-5b7f501c0f4ae526030959-5"><span class="crayon-v">x</span><span class="crayon-h"> </span><span class="crayon-o">=</span><span class="crayon-h"> </span><span class="crayon-cn">5</span></div><div class="crayon-line crayon-striped-line" id="crayon-5b7f501c0f4ae526030959-6"><span class="crayon-sy">(</span><span class="crayon-cn">2</span><span class="crayon-o">+</span><span class="crayon-v">x</span><span class="crayon-sy">)</span><span class="crayon-o">*</span><span class="crayon-sy">(</span><span class="crayon-v">y</span><span class="crayon-o">-</span><span class="crayon-cn">3</span><span class="crayon-sy">)</span></div><div class="crayon-line" id="crayon-5b7f501c0f4ae526030959-7"><span class="crayon-v">std</span><span class="crayon-o">::</span><span class="crayon-r">cout</span><span class="crayon-h"> </span><span class="crayon-o">&lt;&lt;</span><span class="crayon-h"> </span><span class="crayon-v">x</span></div></div></td>
+					</tr>
+				</tbody></table>
+			</div>
+		</div>
+<!-- [Format Time: 0.0009 seconds] -->
+<p></p>
+<p>You’ll note that expressions can contain literal values (such as 2, which evaluates to 2, or “Hello, world” which represents text).  Expression can also contain variables (such as x, which evaluates to whatever value variable x is holding), mathematical operators (such as +, which does addition), and function calls (not shown above, but to be discussed shortly).</p>
+<p>For example, <code>x = 5</code> (no semicolon on the end) is a valid expression that assigns the value of 5 to variable x.</p>
+<p>Expressions can not be compiled by themselves, as they are meant to be used inside statements.  For example, if you were to try compiling the expression <code>x = 5</code>, your compiler would complain (probably about a missing semicolon).</p>
+<p>Fortunately, it’s extremely easy to convert an expression into an equivalent statement.  An <strong>expression statement</strong> is a statement that consists of an expression followed by a semicolon.  Thus, we can take an expression (such as <code>x = 5</code>), and turn it into an expression statement <code>x = 5;</code> that will compile.</p>
+<p>It’s interesting to note that some statements may contain multiple expressions.  We’ll see examples of these in future lessons.</p>
+<p><strong>Functions</strong></p>
+<p>In C++, statements are typically grouped into units called functions.  A <strong>function</strong> is a collection of statements that executes sequentially.  Every C++ program must contain a special function called <strong>main</strong>.  When the C++ program is run, execution starts with the first statement inside of function main.  Functions are typically written to do a very specific job.  For example, a function named “max” might contain statements that figures out which of two numbers is larger.  A function named “calculateGrade” might calculate a student’s grade.  We will talk more about functions later.</p>
+<p><em>Helpful hint: It’s a good idea to put your main() function in a .cpp file named either main.cpp, or with the same name as your project.  For example, if you are writing a Chess game, you could put your main() function in chess.cpp.</em></p>
+<p><strong>Libraries and the C++ Standard Library</strong></p>
+<p>A <strong>library</strong> is a collection of precompiled code (e.g. functions) that has been “packaged up” for reuse in many different programs.  Libraries provide a common way to extend what your programs can do.  For example, if you were writing a game, you’d probably want to include a sound library and a graphics library.</p>
+<p>The C++ core language is actually very small and minimalistic (and you’ll learn most of it in these tutorials).  However, C++ also comes with a library called the <strong>C++ standard library</strong> that provides additional functionality for your use.  The C++ standard library is divided into areas (sometimes also called libraries, even though they’re just parts of the standard library), each of which focus on providing a specific type of functionality.  One of the most commonly used parts of the C++ standard library is the iostream library, which contains functionality for writing to the screen and getting input from a console user.</p>
+<p><strong>Taking a look at a sample program</strong></p>
+<p>Now that you have a brief understanding of what statements, expressions, functions, and libraries are, let’s look at a simple “hello world” program.</p>
+<p></p><!-- Crayon Syntax Highlighter v2.7.1 -->
+
+		<div id="crayon-5b7f501c0f4d3445641449" class="crayon-syntax crayon-theme-familiar-learncppcom crayon-font-monaco crayon-os-pc print-yes notranslate crayon-wrapped" data-settings=" no-popup minimize scroll-mouseover wrap" style="margin-top: 12px; margin-bottom: 12px; font-size: 12px !important; line-height: 16px !important; height: auto;">
+		
+			<div class="crayon-plain-wrap"></div>
+			<div class="crayon-main" style="position: relative; z-index: 1; overflow: hidden;">
+				<table class="crayon-table" style="">
+					<tbody><tr class="crayon-row alt">
+				<td class="crayon-nums " data-settings="show">
+					<div class="crayon-nums-content" style="font-size: 12px !important; line-height: 16px !important;"><div class="crayon-num" data-line="crayon-5b7f501c0f4d3445641449-1" style="height: 16px;">1</div><div class="crayon-num crayon-striped-num" data-line="crayon-5b7f501c0f4d3445641449-2" style="height: 16px;">2</div><div class="crayon-num" data-line="crayon-5b7f501c0f4d3445641449-3" style="height: 16px;">3</div><div class="crayon-num crayon-striped-num" data-line="crayon-5b7f501c0f4d3445641449-4" style="height: 16px;">4</div><div class="crayon-num" data-line="crayon-5b7f501c0f4d3445641449-5" style="height: 16px;">5</div><div class="crayon-num crayon-striped-num" data-line="crayon-5b7f501c0f4d3445641449-6" style="height: 16px;">6</div><div class="crayon-num" data-line="crayon-5b7f501c0f4d3445641449-7" style="height: 16px;">7</div></div>
+				</td>
+						<td class="crayon-code"><div class="crayon-pre" style="font-size: 12px !important; line-height: 16px !important; -moz-tab-size:4; -o-tab-size:4; -webkit-tab-size:4; tab-size:4;"><div class="crayon-line" id="crayon-5b7f501c0f4d3445641449-1"><span class="crayon-p">#include &lt;iostream&gt;</span></div><div class="crayon-line crayon-striped-line" id="crayon-5b7f501c0f4d3445641449-2">&nbsp;</div><div class="crayon-line" id="crayon-5b7f501c0f4d3445641449-3"><span class="crayon-t">int</span><span class="crayon-h"> </span><span class="crayon-e">main</span><span class="crayon-sy">(</span><span class="crayon-sy">)</span></div><div class="crayon-line crayon-striped-line" id="crayon-5b7f501c0f4d3445641449-4"><span class="crayon-sy">{</span></div><div class="crayon-line" id="crayon-5b7f501c0f4d3445641449-5"><span class="crayon-h">&nbsp;&nbsp; </span><span class="crayon-v">std</span><span class="crayon-o">::</span><span class="crayon-r">cout</span><span class="crayon-h"> </span><span class="crayon-o">&lt;&lt;</span><span class="crayon-h"> </span><span class="crayon-s">"Hello world!"</span><span class="crayon-sy">;</span></div><div class="crayon-line crayon-striped-line" id="crayon-5b7f501c0f4d3445641449-6"><span class="crayon-h">&nbsp;&nbsp; </span><span class="crayon-st">return</span><span class="crayon-h"> </span><span class="crayon-cn">0</span><span class="crayon-sy">;</span></div><div class="crayon-line" id="crayon-5b7f501c0f4d3445641449-7"><span class="crayon-sy">}</span></div></div></td>
+					</tr>
+				</tbody></table>
+			</div>
+		</div>
+<!-- [Format Time: 0.0007 seconds] -->
+<p></p>
+<p>Line 1 is a special type of statement called a <strong>preprocessor directive</strong>.  Preprocessor directives tell the compiler to perform a special task.  In this case, we are telling the compiler that we would like to add the contents of the iostream header to our program.  The iostream header allows us to access functionality from the iostream library, which will allow us to write text to the screen.</p>
+<p>Line 2 is blank, and is ignored by the compiler.</p>
+<p>Line 3 declares the main() function, which as you learned above, is mandatory.  Every program must have a main() function.</p>
+<p>Lines 4 and 7 tell the compiler which lines are part of the main function.  Everything between the opening curly brace on line 4 and the closing curly brace on line 7 is considered part of the main() function.</p><div class="google-auto-placed ap_container" style="text-align: center; width: 100%; height: auto; clear: none;"><ins data-ad-format="auto" class="adsbygoogle adsbygoogle-noablate" data-ad-client="ca-pub-0588844875925051" data-adsbygoogle-status="done" style="display: block; margin: auto; background-color: transparent;"><ins id="aswift_6_expand" style="display:inline-table;border:none;height:200px;margin:0;padding:0;position:relative;visibility:visible;width:865px;background-color:transparent;"><ins id="aswift_6_anchor" style="display:block;border:none;height:200px;margin:0;padding:0;position:relative;visibility:visible;width:865px;background-color:transparent;"><iframe width="865" height="200" frameborder="0" marginwidth="0" marginheight="0" vspace="0" hspace="0" allowtransparency="true" scrolling="no" allowfullscreen="true" onload="var i=this.id,s=window.google_iframe_oncopy,H=s&amp;&amp;s.handlers,h=H&amp;&amp;H[i],w=this.contentWindow,d;try{d=w.document}catch(e){}if(h&amp;&amp;d&amp;&amp;(!d.body||!d.body.firstChild)){if(h.call){setTimeout(h,0)}else if(h.match){try{h=s.upd(h,i)}catch(e){}w.location.replace(h)}}" id="aswift_6" name="aswift_6" style="left:0;position:absolute;top:0;width:865px;height:200px;" src="./1.1 — Structure of a program _ Learn C++_files/saved_resource(4).html"></iframe></ins></ins></ins></div>
+<p>Line 5 is our first statement (you can tell it’s a statement because it ends with a semicolon), and it is an expression statement.  std::cout is a special object that represents the console/screen.  The &lt;&lt; symbol is an operator (much like + is an operator in mathematics) called the <strong>output operator</strong>.  std::cout understands that anything sent to it via the output operator should be printed on the screen.  In this case, we’re sending it the text “Hello world!”.</p>
+<p>Line 6 is a new type of statement, called a <strong>return statement</strong>.  When an executable program finishes running, the main() function sends a value back to the operating system that indicates whether it was run successfully or not.</p>
+<p>This particular return statement returns the value of 0 to the operating system, which means “everything went okay!”.  Non-zero numbers are typically used to indicate that something went wrong, and the program had to abort.  We will discuss return statements in more detail when we discuss functions.</p>
+<p>All of the programs we write will follow this template, or a variation on it.</p>
+<p>We will discuss each of the lines above in more detail in the upcoming sections.</p>
+<p>(Note: If you want to compile this program yourself, you can.  Reminder to Visual Studio users, you will need to ensure precompiled headers are turned off, or else add #include “stdafx.h” (or #include “pch.h” if using the latest versions of Visual Studio 2017) to the first line of any  C++ code file written in Visual Studio)</p>
+<p><strong>Syntax and syntax errors</strong></p>
+<p>In English, sentences are constructed according to specific grammatical rules that you probably learned in English class in school.  For example, normal sentences end in a period.  The rules that govern how sentences are constructed in a language is called <strong>syntax</strong>.  If you forget the period and run two sentences together, this is a violation of the English language syntax.</p>
+<p>C++ has a syntax too: rules about how your programs must be constructed in order to be considered valid.  When you compile your program, the compiler is responsible for making sure your program follows the basic syntax of the C++ language.  If you violate a rule, the compiler will complain when you try to compile your program, and issue you a <strong>syntax error</strong>.</p>
+<p>For example, you learned above that many types of statements must end in a semicolon.</p>
+<p>Let’s see what happens if we omit the semicolon in the following program:</p>
+<p></p><!-- Crayon Syntax Highlighter v2.7.1 -->
+
+		<div id="crayon-5b7f501c0f4df189705861" class="crayon-syntax crayon-theme-familiar-learncppcom crayon-font-monaco crayon-os-pc print-yes notranslate crayon-wrapped" data-settings=" no-popup minimize scroll-mouseover wrap" style="margin-top: 12px; margin-bottom: 12px; font-size: 12px !important; line-height: 16px !important; height: auto;">
+		
+			<div class="crayon-plain-wrap"></div>
+			<div class="crayon-main" style="position: relative; z-index: 1; overflow: hidden;">
+				<table class="crayon-table" style="">
+					<tbody><tr class="crayon-row">
+				<td class="crayon-nums " data-settings="show">
+					<div class="crayon-nums-content" style="font-size: 12px !important; line-height: 16px !important;"><div class="crayon-num" data-line="crayon-5b7f501c0f4df189705861-1" style="height: 16px;">1</div><div class="crayon-num crayon-striped-num" data-line="crayon-5b7f501c0f4df189705861-2" style="height: 16px;">2</div><div class="crayon-num" data-line="crayon-5b7f501c0f4df189705861-3" style="height: 16px;">3</div><div class="crayon-num crayon-striped-num" data-line="crayon-5b7f501c0f4df189705861-4" style="height: 16px;">4</div><div class="crayon-num" data-line="crayon-5b7f501c0f4df189705861-5" style="height: 16px;">5</div><div class="crayon-num crayon-striped-num" data-line="crayon-5b7f501c0f4df189705861-6" style="height: 16px;">6</div><div class="crayon-num" data-line="crayon-5b7f501c0f4df189705861-7" style="height: 16px;">7</div></div>
+				</td>
+						<td class="crayon-code"><div class="crayon-pre" style="font-size: 12px !important; line-height: 16px !important; -moz-tab-size:4; -o-tab-size:4; -webkit-tab-size:4; tab-size:4;"><div class="crayon-line" id="crayon-5b7f501c0f4df189705861-1"><span class="crayon-p">#include &lt;iostream&gt;</span></div><div class="crayon-line crayon-striped-line" id="crayon-5b7f501c0f4df189705861-2">&nbsp;</div><div class="crayon-line" id="crayon-5b7f501c0f4df189705861-3"><span class="crayon-t">int</span><span class="crayon-h"> </span><span class="crayon-e">main</span><span class="crayon-sy">(</span><span class="crayon-sy">)</span></div><div class="crayon-line crayon-striped-line" id="crayon-5b7f501c0f4df189705861-4"><span class="crayon-sy">{</span></div><div class="crayon-line" id="crayon-5b7f501c0f4df189705861-5"><span class="crayon-h">&nbsp;&nbsp; </span><span class="crayon-v">std</span><span class="crayon-o">::</span><span class="crayon-r">cout</span><span class="crayon-h"> </span><span class="crayon-o">&lt;&lt;</span><span class="crayon-h"> </span><span class="crayon-s">"Hello world!"</span></div><div class="crayon-line crayon-striped-line" id="crayon-5b7f501c0f4df189705861-6"><span class="crayon-h">&nbsp;&nbsp; </span><span class="crayon-st">return</span><span class="crayon-h"> </span><span class="crayon-cn">0</span><span class="crayon-sy">;</span></div><div class="crayon-line" id="crayon-5b7f501c0f4df189705861-7"><span class="crayon-sy">}</span></div></div></td>
+					</tr>
+				</tbody></table>
+			</div>
+		</div>
+<!-- [Format Time: 0.0007 seconds] -->
+<p></p>
+<p>Visual studio produces the following error:</p>
+<pre>c:\users\apomeranz\documents\visual studio 2013\projects\test1\test1\test1.cpp(6): error C2143: syntax error : missing ';' before 'return'</pre>
+<p>This is telling you that you have a syntax error on line 6: You’ve forgotten a semicolon before the return.  In this case, the error is actually at the end of line 5.  Often, the compiler will pinpoint the exact line where the syntax error occurs for you.  However, sometimes it doesn’t notice until the next line.</p>
+<p>Syntax errors are common when writing a program.  Fortunately, they’re often easily fixable.  The program can only be fully compiled (and executed) once all syntax errors are resolved.</p>
+<p><strong>Quiz</strong></p>
+<p>The following quiz is meant to reinforce your understanding of the material presented above.</p>
+<p>1) What is the difference between a statement and an expression?<br>
+2) What is the difference between a function and a library?<br>
+3) What symbol are statements in C++ often ended with?<br>
+4) What is a syntax error?</p>
+<p><strong>Quiz Answers</strong></p>
+<p>To see these answers, select the area below with your mouse.</p>
+<p>1) <a class="solution_link_show" href="javascript:void(0)" onclick="wpSolutionToggle(document.getElementById(&#39;id790059861&#39;), this, &#39;Show Solution&#39;, &#39;Hide Solution&#39;)">Show Solution</a></p>
+<div class="solution_div" id="id790059861" style="display:none">A statement is a “complete sentence” that tells the compiler to perform a particular task.  An expression is a mathematical entity that evaluates to a value.  Expressions are often used inside of statements.</div>
+<p>2) <a class="solution_link_show" href="javascript:void(0)" onclick="wpSolutionToggle(document.getElementById(&#39;id1162058467&#39;), this, &#39;Show Solution&#39;, &#39;Hide Solution&#39;)">Show Solution</a></p>
+<div class="solution_div" id="id1162058467" style="display:none">A function is a collection of statements that executes sequentially, typically designed to perform a specific job.  A library is a collection of functions packaged for use in multiple programs.</div>
+<p>3) <a class="solution_link_show" href="javascript:void(0)" onclick="wpSolutionToggle(document.getElementById(&#39;id504814584&#39;), this, &#39;Show Solution&#39;, &#39;Hide Solution&#39;)">Show Solution</a></p>
+<div class="solution_div" id="id504814584" style="display:none">The semicolon (;)</div>
+<p>4) <a class="solution_link_show" href="javascript:void(0)" onclick="wpSolutionToggle(document.getElementById(&#39;id164140806&#39;), this, &#39;Show Solution&#39;, &#39;Hide Solution&#39;)">Show Solution</a></p>
+<div class="solution_div" id="id164140806" style="display:none">A syntax error is a compiler error that occurs at compile-time when your program violates the grammar rules of the C++ language.</div>
+<table border="0" cellpadding="3">
+<tbody><tr class="alt"><td>
+	<a href="https://www.learncpp.com/cpp-tutorial/12-comments/" style="text-decoration:none"><img src="./1.1 — Structure of a program _ Learn C++_files/next.png" align="middle"> 1.2 -- Comments</a>
+</td></tr>
+<tr><td>
+        <a href="https://www.learncpp.com/" style="text-decoration:none"><img src="./1.1 — Structure of a program _ Learn C++_files/up.png" align="middle"> Index</a>
+</td></tr>
+<tr class="alt"><td>
+	<a href="https://www.learncpp.com/cpp-tutorial/07-a-few-common-cpp-problems/" style="text-decoration:none"><img src="./1.1 — Structure of a program _ Learn C++_files/prev.png" align="middle"> 0.7 -- A few common C++ problems</a>
+</td></tr>
+</tbody></table>
+
+<div class="sharedaddy sd-sharing-enabled"><div class="robots-nocontent sd-block sd-social sd-social-icon-text sd-sharing"><h3 class="sd-title">Share this:</h3><div class="sd-content"><ul><li class="share-facebook"><a rel="nofollow" data-shared="sharing-facebook-19" class="share-facebook sd-button share-icon" href="https://www.learncpp.com/cpp-tutorial/11-structure-of-a-program/?share=facebook&amp;nb=1" target="_blank" title="Click to share on Facebook"><span>Facebook</span></a></li><li class="share-twitter"><a rel="nofollow" data-shared="sharing-twitter-19" class="share-twitter sd-button share-icon" href="https://www.learncpp.com/cpp-tutorial/11-structure-of-a-program/?share=twitter&amp;nb=1" target="_blank" title="Click to share on Twitter"><span>Twitter</span></a></li><li class="share-google-plus-1"><a rel="nofollow" data-shared="sharing-google-19" class="share-google-plus-1 sd-button share-icon" href="https://www.learncpp.com/cpp-tutorial/11-structure-of-a-program/?share=google-plus-1&amp;nb=1" target="_blank" title="Click to share on Google+"><span>Google</span></a></li><li class="share-pinterest"><a rel="nofollow" data-shared="sharing-pinterest-19" class="share-pinterest sd-button share-icon" href="https://www.learncpp.com/cpp-tutorial/11-structure-of-a-program/?share=pinterest&amp;nb=1" target="_blank" title="Click to share on Pinterest"><span>Pinterest</span></a></li><li class="share-end"></li></ul></div></div></div><div class="code-block code-block-2" style="float:left;margin:8px 8px 8px 0px;"><div class="cf_monitor">
+<script async="" src="./1.1 — Structure of a program _ Learn C++_files/f(7).txt"></script>
+<!-- Post - Below Content - Large Rectangle -->
+<ins class="adsbygoogle" style="display:inline-block;width:336px;height:280px" data-ad-client="ca-pub-0588844875925051" data-ad-slot="8689484849" data-adsbygoogle-status="done"><ins id="aswift_3_expand" style="display:inline-table;border:none;height:280px;margin:0;padding:0;position:relative;visibility:visible;width:336px;background-color:transparent;"><ins id="aswift_3_anchor" style="display:block;border:none;height:280px;margin:0;padding:0;position:relative;visibility:visible;width:336px;background-color:transparent;"><iframe width="336" height="280" frameborder="0" marginwidth="0" marginheight="0" vspace="0" hspace="0" allowtransparency="true" scrolling="no" allowfullscreen="true" onload="var i=this.id,s=window.google_iframe_oncopy,H=s&amp;&amp;s.handlers,h=H&amp;&amp;H[i],w=this.contentWindow,d;try{d=w.document}catch(e){}if(h&amp;&amp;d&amp;&amp;(!d.body||!d.body.firstChild)){if(h.call){setTimeout(h,0)}else if(h.match){try{h=s.upd(h,i)}catch(e){}w.location.replace(h)}}" id="aswift_3" name="aswift_3" style="left:0;position:absolute;top:0;width:336px;height:280px;" src="./1.1 — Structure of a program _ Learn C++_files/saved_resource(5).html"></iframe></ins></ins></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+</div>
+
+
+
+</div></div>						<div class="post-footer"><img src="./1.1 — Structure of a program _ Learn C++_files/folder-gray.gif" alt=""> <a class="cpp-tutorial" href="https://www.learncpp.com/category/cpp-tutorial/" title="View all posts in C++ Tutorial">C++ Tutorial</a>   | <a href="https://www.learncpp.com/cpp-tutorial/11-structure-of-a-program/print/" title="Print This Post" rel="nofollow"><img class="WP-PrintIcon" src="./1.1 — Structure of a program _ Learn C++_files/printer_famfamfam.gif" alt="Print This Post" title="Print This Post" style="border: 0px;"></a>&nbsp;<a href="https://www.learncpp.com/cpp-tutorial/11-structure-of-a-program/print/" title="Print This Post" rel="nofollow">Print This Post</a></div>		</div><!-- / Post -->	
+						
+	
+			
+
+	<a name="comments"></a><!-- named anchor for skip links -->
+	<h3 id="comments">261 comments to 1.1 — Structure of a program</h3>
+
+	<div class="clearfix navigation-comments-above"><a class="prev page-numbers" href="https://www.learncpp.com/cpp-tutorial/11-structure-of-a-program/comment-page-4/#comments">« Older Comments</a>
+<a class="page-numbers" href="https://www.learncpp.com/cpp-tutorial/11-structure-of-a-program/comment-page-1/#comments">1</a>
+<span class="page-numbers dots">…</span>
+<a class="page-numbers" href="https://www.learncpp.com/cpp-tutorial/11-structure-of-a-program/comment-page-3/#comments">3</a>
+<a class="page-numbers" href="https://www.learncpp.com/cpp-tutorial/11-structure-of-a-program/comment-page-4/#comments">4</a>
+<span class="page-numbers current">5</span></div>
+	<!-- Comment List -->
+	<ul class="commentlist">
+		
+			<li class="comment even thread-even depth-1 clearfix" id="comment-344554">
+		<div id="div-comment-344554" class="clearfix comment-container">
+		<div class="comment-author vcard">
+		<img alt="" src="./1.1 — Structure of a program _ Learn C++_files/d99e469bacc0781c2290e2d2043414a8x96.png" srcset="//www.learncpp.com/blog/wp-content/uploads/fv-gravatar-cache/d99e469bacc0781c2290e2d2043414a8x192.png 2x" class="avatar avatar-65 photo" height="65" width="65">		<span class="authorname"><a href="http://aminasaadian.gigfa.com/" rel="external nofollow" class="url">Amin</a></span>
+		</div>
+				<div class="comment-meta commentmetadata">
+		<a href="https://www.learncpp.com/cpp-tutorial/11-structure-of-a-program/comment-page-5/#comment-344554">
+		August 12, 2018 at 10:06 am</a>
+        <span class="comment-reply-link"><a rel="nofollow" class="comment-reply-link" href="https://www.learncpp.com/cpp-tutorial/11-structure-of-a-program/#comment-344554" onclick="return addComment.moveForm( &quot;comment-344554&quot;, &quot;344554&quot;, &quot;respond&quot;, &quot;19&quot; )" aria-label="Reply to Amin"> · Reply</a></span>		 
+		</div>
+		<p>Big Thanks for all tutorials man.</p>
+		</div>
+</li><!-- #comment-## -->
+		<li class="comment odd alt thread-odd thread-alt depth-1 clearfix" id="comment-342742">
+		<div id="div-comment-342742" class="clearfix comment-container">
+		<div class="comment-author vcard">
+		<img alt="" src="./1.1 — Structure of a program _ Learn C++_files/default96.png" srcset="//www.learncpp.com/blog/wp-content/uploads/fv-gravatar-cache/mystery192.png 2x" class="avatar avatar-65 photo" height="65" width="65">		<span class="authorname">kishore</span>
+		</div>
+				<div class="comment-meta commentmetadata">
+		<a href="https://www.learncpp.com/cpp-tutorial/11-structure-of-a-program/comment-page-5/#comment-342742">
+		August 7, 2018 at 10:24 pm</a>
+        <span class="comment-reply-link"><a rel="nofollow" class="comment-reply-link" href="https://www.learncpp.com/cpp-tutorial/11-structure-of-a-program/#comment-342742" onclick="return addComment.moveForm( &quot;comment-342742&quot;, &quot;342742&quot;, &quot;respond&quot;, &quot;19&quot; )" aria-label="Reply to kishore"> · Reply</a></span>		 
+		</div>
+		<p>This is one of the best tutorial I have ever seen.. My hunt is over</p>
+		</div>
+</li><!-- #comment-## -->
+		<li class="comment even thread-even depth-1 clearfix" id="comment-337177">
+		<div id="div-comment-337177" class="clearfix comment-container">
+		<div class="comment-author vcard">
+		<img alt="" src="./1.1 — Structure of a program _ Learn C++_files/default96.png" srcset="//www.learncpp.com/blog/wp-content/uploads/fv-gravatar-cache/mystery192.png 2x" class="avatar avatar-65 photo" height="65" width="65">		<span class="authorname">Rahil</span>
+		</div>
+				<div class="comment-meta commentmetadata">
+		<a href="https://www.learncpp.com/cpp-tutorial/11-structure-of-a-program/comment-page-5/#comment-337177">
+		July 28, 2018 at 12:19 am</a>
+        <span class="comment-reply-link"><a rel="nofollow" class="comment-reply-link" href="https://www.learncpp.com/cpp-tutorial/11-structure-of-a-program/#comment-337177" onclick="return addComment.moveForm( &quot;comment-337177&quot;, &quot;337177&quot;, &quot;respond&quot;, &quot;19&quot; )" aria-label="Reply to Rahil"> · Reply</a></span>		 
+		</div>
+		<p>Can I make an operating system<br>
+with c++</p>
+		</div>
+<ul class="children">
+		<li class="comment byuser comment-author-tarindel bypostauthor odd alt depth-2 clearfix" id="comment-337907">
+		<div id="div-comment-337907" class="clearfix comment-container bypostauthor">
+		<div class="comment-author vcard">
+		<img alt="" src="./1.1 — Structure of a program _ Learn C++_files/a4e62d28c29f6c864923207d4c17993bx96.png" srcset="//www.learncpp.com/blog/wp-content/uploads/fv-gravatar-cache/a4e62d28c29f6c864923207d4c17993bx192.png 2x" class="avatar avatar-65 photo" height="65" width="65">		<span class="authorname">Alex</span>
+		</div>
+				<div class="comment-meta commentmetadata">
+		<a href="https://www.learncpp.com/cpp-tutorial/11-structure-of-a-program/comment-page-5/#comment-337907">
+		July 30, 2018 at 2:17 pm</a>
+        <span class="comment-reply-link"><a rel="nofollow" class="comment-reply-link" href="https://www.learncpp.com/cpp-tutorial/11-structure-of-a-program/#comment-337907" onclick="return addComment.moveForm( &quot;comment-337907&quot;, &quot;337907&quot;, &quot;respond&quot;, &quot;19&quot; )" aria-label="Reply to Alex"> · Reply</a></span>		 
+		</div>
+		<p>Yes, and if you type "C++ operating system" into Google, you'll find open source versions of such operating systems that you can examine/modify/contribute to.</p>
+		</div>
+</li><!-- #comment-## -->
+</ul><!-- .children -->
+</li><!-- #comment-## -->
+		<li class="comment even thread-odd thread-alt depth-1 clearfix" id="comment-331511">
+		<div id="div-comment-331511" class="clearfix comment-container">
+		<div class="comment-author vcard">
+		<img alt="" src="./1.1 — Structure of a program _ Learn C++_files/default96.png" srcset="//www.learncpp.com/blog/wp-content/uploads/fv-gravatar-cache/mystery192.png 2x" class="avatar avatar-65 photo" height="65" width="65">		<span class="authorname">Namenotneeded</span>
+		</div>
+				<div class="comment-meta commentmetadata">
+		<a href="https://www.learncpp.com/cpp-tutorial/11-structure-of-a-program/comment-page-5/#comment-331511">
+		July 3, 2018 at 3:08 am</a>
+        <span class="comment-reply-link"><a rel="nofollow" class="comment-reply-link" href="https://www.learncpp.com/cpp-tutorial/11-structure-of-a-program/#comment-331511" onclick="return addComment.moveForm( &quot;comment-331511&quot;, &quot;331511&quot;, &quot;respond&quot;, &quot;19&quot; )" aria-label="Reply to Namenotneeded"> · Reply</a></span>		 
+		</div>
+		<p>what is conio.h and std:: for thanks in advance.</p>
+		</div>
+<ul class="children">
+		<li class="comment odd alt depth-2 clearfix" id="comment-331863">
+		<div id="div-comment-331863" class="clearfix comment-container">
+		<div class="comment-author vcard">
+		<img alt="" src="./1.1 — Structure of a program _ Learn C++_files/11b09338d6108681887f55d784841888x96.png" srcset="//www.learncpp.com/blog/wp-content/uploads/fv-gravatar-cache/11b09338d6108681887f55d784841888x192.png 2x" class="avatar avatar-65 photo" height="65" width="65">		<span class="authorname">nascardriver</span>
+		</div>
+				<div class="comment-meta commentmetadata">
+		<a href="https://www.learncpp.com/cpp-tutorial/11-structure-of-a-program/comment-page-5/#comment-331863">
+		July 4, 2018 at 7:21 am</a>
+        <span class="comment-reply-link"><a rel="nofollow" class="comment-reply-link" href="https://www.learncpp.com/cpp-tutorial/11-structure-of-a-program/#comment-331863" onclick="return addComment.moveForm( &quot;comment-331863&quot;, &quot;331863&quot;, &quot;respond&quot;, &quot;19&quot; )" aria-label="Reply to nascardriver"> · Reply</a></span>		 
+		</div>
+		<p>Hi!</p>
+<p>conio.h provides CONsole Input and Output functions in C, use &lt;iostream&gt; in C++.<br>
+std::x means that you want to access x in the std namespace. A namespace is used to separate functions and variables from each other, "std" is short for "standard".</p>
+		</div>
+</li><!-- #comment-## -->
+</ul><!-- .children -->
+</li><!-- #comment-## -->
+		<li class="comment even thread-even depth-1 clearfix" id="comment-331510">
+		<div id="div-comment-331510" class="clearfix comment-container">
+		<div class="comment-author vcard">
+		<img alt="" src="./1.1 — Structure of a program _ Learn C++_files/default96.png" srcset="//www.learncpp.com/blog/wp-content/uploads/fv-gravatar-cache/mystery192.png 2x" class="avatar avatar-65 photo" height="65" width="65">		<span class="authorname">Namenotneeded</span>
+		</div>
+				<div class="comment-meta commentmetadata">
+		<a href="https://www.learncpp.com/cpp-tutorial/11-structure-of-a-program/comment-page-5/#comment-331510">
+		July 3, 2018 at 3:06 am</a>
+        <span class="comment-reply-link"><a rel="nofollow" class="comment-reply-link" href="https://www.learncpp.com/cpp-tutorial/11-structure-of-a-program/#comment-331510" onclick="return addComment.moveForm( &quot;comment-331510&quot;, &quot;331510&quot;, &quot;respond&quot;, &quot;19&quot; )" aria-label="Reply to Namenotneeded"> · Reply</a></span>		 
+		</div>
+		<p>Ive seen people using &lt;iostream.h&gt; and &lt;conio.h&gt;.why have you not used the .h thing</p>
+		</div>
+</li><!-- #comment-## -->
+		<li class="comment odd alt thread-odd thread-alt depth-1 clearfix" id="comment-329164">
+		<div id="div-comment-329164" class="clearfix comment-container">
+		<div class="comment-author vcard">
+		<img alt="" src="./1.1 — Structure of a program _ Learn C++_files/default96.png" srcset="//www.learncpp.com/blog/wp-content/uploads/fv-gravatar-cache/mystery192.png 2x" class="avatar avatar-65 photo" height="65" width="65">		<span class="authorname">Josh</span>
+		</div>
+				<div class="comment-meta commentmetadata">
+		<a href="https://www.learncpp.com/cpp-tutorial/11-structure-of-a-program/comment-page-5/#comment-329164">
+		June 15, 2018 at 12:27 pm</a>
+        <span class="comment-reply-link"><a rel="nofollow" class="comment-reply-link" href="https://www.learncpp.com/cpp-tutorial/11-structure-of-a-program/#comment-329164" onclick="return addComment.moveForm( &quot;comment-329164&quot;, &quot;329164&quot;, &quot;respond&quot;, &quot;19&quot; )" aria-label="Reply to Josh"> · Reply</a></span>		 
+		</div>
+		<p>I'm watching a Lynda course and the tutor uses "int main( int argc, char ** argv )" any reason why, not seen it in any other tutorials?</p>
+		</div>
+<ul class="children">
+		<li class="comment even depth-2 clearfix" id="comment-329204">
+		<div id="div-comment-329204" class="clearfix comment-container">
+		<div class="comment-author vcard">
+		<img alt="" src="./1.1 — Structure of a program _ Learn C++_files/11b09338d6108681887f55d784841888x96.png" srcset="//www.learncpp.com/blog/wp-content/uploads/fv-gravatar-cache/11b09338d6108681887f55d784841888x192.png 2x" class="avatar avatar-65 photo" height="65" width="65">		<span class="authorname">nascardriver</span>
+		</div>
+				<div class="comment-meta commentmetadata">
+		<a href="https://www.learncpp.com/cpp-tutorial/11-structure-of-a-program/comment-page-5/#comment-329204">
+		June 16, 2018 at 2:36 am</a>
+        <span class="comment-reply-link"><a rel="nofollow" class="comment-reply-link" href="https://www.learncpp.com/cpp-tutorial/11-structure-of-a-program/#comment-329204" onclick="return addComment.moveForm( &quot;comment-329204&quot;, &quot;329204&quot;, &quot;respond&quot;, &quot;19&quot; )" aria-label="Reply to nascardriver"> · Reply</a></span>		 
+		</div>
+		<p>Hi Josh!</p>
+<p>This is covered in lesson 7.3, either way is fine.</p>
+<p>References<br>
+* Lesson 7.13 - Command line arguments</p>
+		</div>
+<ul class="children">
+		<li class="comment odd alt depth-3 clearfix" id="comment-329215">
+		<div id="div-comment-329215" class="clearfix comment-container">
+		<div class="comment-author vcard">
+		<img alt="" src="./1.1 — Structure of a program _ Learn C++_files/default96.png" srcset="//www.learncpp.com/blog/wp-content/uploads/fv-gravatar-cache/mystery192.png 2x" class="avatar avatar-65 photo" height="65" width="65">		<span class="authorname">Josh 2</span>
+		</div>
+				<div class="comment-meta commentmetadata">
+		<a href="https://www.learncpp.com/cpp-tutorial/11-structure-of-a-program/comment-page-5/#comment-329215">
+		June 16, 2018 at 7:30 am</a>
+        <span class="comment-reply-link"><a rel="nofollow" class="comment-reply-link" href="https://www.learncpp.com/cpp-tutorial/11-structure-of-a-program/#comment-329215" onclick="return addComment.moveForm( &quot;comment-329215&quot;, &quot;329215&quot;, &quot;respond&quot;, &quot;19&quot; )" aria-label="Reply to Josh 2"> · Reply</a></span>		 
+		</div>
+		<p>thanks for the prompt response</p>
+		</div>
+</li><!-- #comment-## -->
+</ul><!-- .children -->
+</li><!-- #comment-## -->
+</ul><!-- .children -->
+</li><!-- #comment-## -->
+		<li class="comment even thread-even depth-1 clearfix" id="comment-326283">
+		<div id="div-comment-326283" class="clearfix comment-container">
+		<div class="comment-author vcard">
+		<img alt="" src="./1.1 — Structure of a program _ Learn C++_files/default96.png" srcset="//www.learncpp.com/blog/wp-content/uploads/fv-gravatar-cache/mystery192.png 2x" class="avatar avatar-65 photo" height="65" width="65">		<span class="authorname">Josh</span>
+		</div>
+				<div class="comment-meta commentmetadata">
+		<a href="https://www.learncpp.com/cpp-tutorial/11-structure-of-a-program/comment-page-5/#comment-326283">
+		May 21, 2018 at 11:01 pm</a>
+        <span class="comment-reply-link"><a rel="nofollow" class="comment-reply-link" href="https://www.learncpp.com/cpp-tutorial/11-structure-of-a-program/#comment-326283" onclick="return addComment.moveForm( &quot;comment-326283&quot;, &quot;326283&quot;, &quot;respond&quot;, &quot;19&quot; )" aria-label="Reply to Josh"> · Reply</a></span>		 
+		</div>
+		<p>I think that "statements must end in a semicolon" conflicts with "Statements in C++ are often (but not always) terminated by a semicolon." 🙂</p>
+		</div>
+<ul class="children">
+		<li class="comment byuser comment-author-tarindel bypostauthor odd alt depth-2 clearfix" id="comment-326397">
+		<div id="div-comment-326397" class="clearfix comment-container bypostauthor">
+		<div class="comment-author vcard">
+		<img alt="" src="./1.1 — Structure of a program _ Learn C++_files/a4e62d28c29f6c864923207d4c17993bx96.png" srcset="//www.learncpp.com/blog/wp-content/uploads/fv-gravatar-cache/a4e62d28c29f6c864923207d4c17993bx192.png 2x" class="avatar avatar-65 photo" height="65" width="65">		<span class="authorname">Alex</span>
+		</div>
+				<div class="comment-meta commentmetadata">
+		<a href="https://www.learncpp.com/cpp-tutorial/11-structure-of-a-program/comment-page-5/#comment-326397">
+		May 22, 2018 at 8:10 pm</a>
+        <span class="comment-reply-link"><a rel="nofollow" class="comment-reply-link" href="https://www.learncpp.com/cpp-tutorial/11-structure-of-a-program/#comment-326397" onclick="return addComment.moveForm( &quot;comment-326397&quot;, &quot;326397&quot;, &quot;respond&quot;, &quot;19&quot; )" aria-label="Reply to Alex"> · Reply</a></span>		 
+		</div>
+		<p>Fixed.  Thanks for pointing out the inconsistency.</p>
+		</div>
+</li><!-- #comment-## -->
+</ul><!-- .children -->
+</li><!-- #comment-## -->
+		<li class="comment even thread-odd thread-alt depth-1 clearfix" id="comment-326262">
+		<div id="div-comment-326262" class="clearfix comment-container">
+		<div class="comment-author vcard">
+		<img alt="" src="./1.1 — Structure of a program _ Learn C++_files/default96.png" srcset="//www.learncpp.com/blog/wp-content/uploads/fv-gravatar-cache/mystery192.png 2x" class="avatar avatar-65 photo" height="65" width="65">		<span class="authorname">Josh</span>
+		</div>
+				<div class="comment-meta commentmetadata">
+		<a href="https://www.learncpp.com/cpp-tutorial/11-structure-of-a-program/comment-page-5/#comment-326262">
+		May 21, 2018 at 6:04 pm</a>
+        <span class="comment-reply-link"><a rel="nofollow" class="comment-reply-link" href="https://www.learncpp.com/cpp-tutorial/11-structure-of-a-program/#comment-326262" onclick="return addComment.moveForm( &quot;comment-326262&quot;, &quot;326262&quot;, &quot;respond&quot;, &quot;19&quot; )" aria-label="Reply to Josh"> · Reply</a></span>		 
+		</div>
+		<p>Is it possible to put the reference link "http://stackoverflow.com/questions/11043340/what-kind-of-statements-dont-require-semicolon-termination-in-c" for "Statements in C++ are often (but not always) terminated by a semicolon." I think that may be easier for other people to find the answer and don't have to check out the comment. 🙂</p>
+		</div>
+<ul class="children">
+		<li class="comment byuser comment-author-tarindel bypostauthor odd alt depth-2 clearfix" id="comment-326396">
+		<div id="div-comment-326396" class="clearfix comment-container bypostauthor">
+		<div class="comment-author vcard">
+		<img alt="" src="./1.1 — Structure of a program _ Learn C++_files/a4e62d28c29f6c864923207d4c17993bx96.png" srcset="//www.learncpp.com/blog/wp-content/uploads/fv-gravatar-cache/a4e62d28c29f6c864923207d4c17993bx192.png 2x" class="avatar avatar-65 photo" height="65" width="65">		<span class="authorname">Alex</span>
+		</div>
+				<div class="comment-meta commentmetadata">
+		<a href="https://www.learncpp.com/cpp-tutorial/11-structure-of-a-program/comment-page-5/#comment-326396">
+		May 22, 2018 at 8:09 pm</a>
+        <span class="comment-reply-link"><a rel="nofollow" class="comment-reply-link" href="https://www.learncpp.com/cpp-tutorial/11-structure-of-a-program/#comment-326396" onclick="return addComment.moveForm( &quot;comment-326396&quot;, &quot;326396&quot;, &quot;respond&quot;, &quot;19&quot; )" aria-label="Reply to Alex"> · Reply</a></span>		 
+		</div>
+		<p>I'm torn on this one.  One one hand, it's interesting for those who like a lot of detail.  On the other hand, we haven't defined any of these types of statements yet, so at this point in the tutorial this seem more like trivia than anything of value...</p>
+		</div>
+</li><!-- #comment-## -->
+</ul><!-- .children -->
+</li><!-- #comment-## -->
+		<li class="comment even thread-even depth-1 clearfix" id="comment-325985">
+		<div id="div-comment-325985" class="clearfix comment-container">
+		<div class="comment-author vcard">
+		<img alt="" src="./1.1 — Structure of a program _ Learn C++_files/default96.png" srcset="//www.learncpp.com/blog/wp-content/uploads/fv-gravatar-cache/mystery192.png 2x" class="avatar avatar-65 photo" height="65" width="65">		<span class="authorname">Bob Bob</span>
+		</div>
+				<div class="comment-meta commentmetadata">
+		<a href="https://www.learncpp.com/cpp-tutorial/11-structure-of-a-program/comment-page-5/#comment-325985">
+		May 18, 2018 at 9:31 am</a>
+        <span class="comment-reply-link"><a rel="nofollow" class="comment-reply-link" href="https://www.learncpp.com/cpp-tutorial/11-structure-of-a-program/#comment-325985" onclick="return addComment.moveForm( &quot;comment-325985&quot;, &quot;325985&quot;, &quot;respond&quot;, &quot;19&quot; )" aria-label="Reply to Bob Bob"> · Reply</a></span>		 
+		</div>
+		<p>HI, I am just looking through the sample program provided at the top of the page and have been wondering the following questions </p>
+<p>(1) Why is there a space between the pre-processor&nbsp;&nbsp;directives and the int main function. Is there some sort of advantage gained from this practice(from a technical standpoint)<br>
+Or a specific reason why it is less left blank ?<br>
+Included in the sample program(1.1)</p><div class="google-auto-placed ap_container" style="text-align: center; width: 100%; height: auto; clear: none;"><ins data-ad-format="auto" class="adsbygoogle adsbygoogle-noablate" data-ad-client="ca-pub-0588844875925051" data-adsbygoogle-status="done" style="display: block; margin: auto; background-color: transparent;"><ins id="aswift_7_expand" style="display:inline-table;border:none;height:200px;margin:0;padding:0;position:relative;visibility:visible;width:845px;background-color:transparent;"><ins id="aswift_7_anchor" style="display:block;border:none;height:200px;margin:0;padding:0;position:relative;visibility:visible;width:845px;background-color:transparent;"><iframe width="845" height="200" frameborder="0" marginwidth="0" marginheight="0" vspace="0" hspace="0" allowtransparency="true" scrolling="no" allowfullscreen="true" onload="var i=this.id,s=window.google_iframe_oncopy,H=s&amp;&amp;s.handlers,h=H&amp;&amp;H[i],w=this.contentWindow,d;try{d=w.document}catch(e){}if(h&amp;&amp;d&amp;&amp;(!d.body||!d.body.firstChild)){if(h.call){setTimeout(h,0)}else if(h.match){try{h=s.upd(h,i)}catch(e){}w.location.replace(h)}}" id="aswift_7" name="aswift_7" style="left:0;position:absolute;top:0;width:845px;height:200px;" src="./1.1 — Structure of a program _ Learn C++_files/saved_resource(6).html"></iframe></ins></ins></ins></div>
+<p>(2) Does the language of C++ change direction ( for example some languages do read right of the page to the left side of the page. Would this occur in Line 5 ( of the sample program), thereby syntax order&nbsp;&nbsp;changing<br>
+Hence<br>
+Hello World would first be read and then sent to the std::cout variable</p>
+<p>A follow up question from this&nbsp;&nbsp;would be : Is there some of processing order that a compiler(this may be incorrect) follows (once a person writes a program&nbsp;&nbsp;that fits the rules of the language)&nbsp;&nbsp;</p>
+<p>Sample Code :<br>
+#include "stdafx.h" // Line 1<br>
+#include &lt;iostream&gt; // Line 2<br>
+-- Blank----&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;// Line 3<br>
+int main()&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;// Line 4<br>
+{<br>
+std::cout &lt;&lt; "Hello world !"; // Line 5<br>
+&nbsp;&nbsp; return 0;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;// Line 6<br>
+}&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; // Line 7</p>
+		</div>
+<ul class="children">
+		<li class="comment odd alt depth-2 clearfix" id="comment-325992">
+		<div id="div-comment-325992" class="clearfix comment-container">
+		<div class="comment-author vcard">
+		<img alt="" src="./1.1 — Structure of a program _ Learn C++_files/11b09338d6108681887f55d784841888x96.png" srcset="//www.learncpp.com/blog/wp-content/uploads/fv-gravatar-cache/11b09338d6108681887f55d784841888x192.png 2x" class="avatar avatar-65 photo" height="65" width="65">		<span class="authorname">nascardriver</span>
+		</div>
+				<div class="comment-meta commentmetadata">
+		<a href="https://www.learncpp.com/cpp-tutorial/11-structure-of-a-program/comment-page-5/#comment-325992">
+		May 18, 2018 at 10:16 am</a>
+        <span class="comment-reply-link"><a rel="nofollow" class="comment-reply-link" href="https://www.learncpp.com/cpp-tutorial/11-structure-of-a-program/#comment-325992" onclick="return addComment.moveForm( &quot;comment-325992&quot;, &quot;325992&quot;, &quot;respond&quot;, &quot;19&quot; )" aria-label="Reply to nascardriver"> · Reply</a></span>		 
+		</div>
+		<p>Hi Bob!</p>
+<p>1. Readability. C++ doesn't care about whitespace.<br>
+2. This is too much for a reply, you're best off reading through the tutorials and learn execution order step by step. C++ is usually read left-to-right.<br>
+There is a standard for C++ which compiler developers have to follow. The compilation process itself is entirely up to them though.</p>
+		</div>
+</li><!-- #comment-## -->
+</ul><!-- .children -->
+</li><!-- #comment-## -->
+		<li class="comment even thread-odd thread-alt depth-1 clearfix" id="comment-324756">
+		<div id="div-comment-324756" class="clearfix comment-container">
+		<div class="comment-author vcard">
+		<img alt="" src="./1.1 — Structure of a program _ Learn C++_files/default96.png" srcset="//www.learncpp.com/blog/wp-content/uploads/fv-gravatar-cache/mystery192.png 2x" class="avatar avatar-65 photo" height="65" width="65">		<span class="authorname">kamal</span>
+		</div>
+				<div class="comment-meta commentmetadata">
+		<a href="https://www.learncpp.com/cpp-tutorial/11-structure-of-a-program/comment-page-5/#comment-324756">
+		May 2, 2018 at 6:46 am</a>
+        <span class="comment-reply-link"><a rel="nofollow" class="comment-reply-link" href="https://www.learncpp.com/cpp-tutorial/11-structure-of-a-program/#comment-324756" onclick="return addComment.moveForm( &quot;comment-324756&quot;, &quot;324756&quot;, &quot;respond&quot;, &quot;19&quot; )" aria-label="Reply to kamal"> · Reply</a></span>		 
+		</div>
+		<p>Hi, I am using Eclipse IDE to run C++ code, however I observe that even a simple piece of code takes 6-7 seconds to compile and run. Feels like a long time ... Please help me to reduce run time since code will only increase in complexity... Cant find anything on google, some website said that Eclipse does not support pre-compiled headers (not sure if accurate)</p>
+<p>Sample code:<br>
+#include &lt;iostream&gt;<br>
+int main()<br>
+{<br>
+&nbsp;&nbsp;&nbsp;&nbsp;using namespace std;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;int x=12334;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;int y;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;cout &lt;&lt; x &lt;&lt; "\n";<br>
+&nbsp;&nbsp;&nbsp;&nbsp;cout &lt;&lt; (y=30);<br>
+&nbsp;&nbsp;&nbsp;&nbsp;return 0;<br>
+}</p>
+		</div>
+</li><!-- #comment-## -->
+		<li class="comment odd alt thread-even depth-1 clearfix" id="comment-319686">
+		<div id="div-comment-319686" class="clearfix comment-container">
+		<div class="comment-author vcard">
+		<img alt="" src="./1.1 — Structure of a program _ Learn C++_files/default96.png" srcset="//www.learncpp.com/blog/wp-content/uploads/fv-gravatar-cache/mystery192.png 2x" class="avatar avatar-65 photo" height="65" width="65">		<span class="authorname">Neil</span>
+		</div>
+				<div class="comment-meta commentmetadata">
+		<a href="https://www.learncpp.com/cpp-tutorial/11-structure-of-a-program/comment-page-5/#comment-319686">
+		March 2, 2018 at 4:54 am</a>
+        <span class="comment-reply-link"><a rel="nofollow" class="comment-reply-link" href="https://www.learncpp.com/cpp-tutorial/11-structure-of-a-program/#comment-319686" onclick="return addComment.moveForm( &quot;comment-319686&quot;, &quot;319686&quot;, &quot;respond&quot;, &quot;19&quot; )" aria-label="Reply to Neil"> · Reply</a></span>		 
+		</div>
+		<p>Hi Alex</p>
+<p>I thought I was doing well and keeping up with the subject matter, then this happened:</p>
+<p>"Helpful hint: It’s a good idea to put your main() function in a .cpp file named either main.cpp, or with the same name as your project. For example, if you are writing a Chess game, you could put your main() function in chess.cpp."</p><div class="google-auto-placed ap_container" style="text-align: center; width: 100%; height: auto; clear: none;"><ins data-ad-format="auto" class="adsbygoogle adsbygoogle-noablate" data-ad-client="ca-pub-0588844875925051" data-adsbygoogle-status="done" style="display: block; margin: auto; background-color: transparent;"><ins id="aswift_8_expand" style="display:inline-table;border:none;height:200px;margin:0;padding:0;position:relative;visibility:visible;width:845px;background-color:transparent;"><ins id="aswift_8_anchor" style="display:block;border:none;height:200px;margin:0;padding:0;position:relative;visibility:visible;width:845px;background-color:transparent;"><iframe width="845" height="200" frameborder="0" marginwidth="0" marginheight="0" vspace="0" hspace="0" allowtransparency="true" scrolling="no" allowfullscreen="true" onload="var i=this.id,s=window.google_iframe_oncopy,H=s&amp;&amp;s.handlers,h=H&amp;&amp;H[i],w=this.contentWindow,d;try{d=w.document}catch(e){}if(h&amp;&amp;d&amp;&amp;(!d.body||!d.body.firstChild)){if(h.call){setTimeout(h,0)}else if(h.match){try{h=s.upd(h,i)}catch(e){}w.location.replace(h)}}" id="aswift_8" name="aswift_8" style="left:0;position:absolute;top:0;width:845px;height:200px;" src="./1.1 — Structure of a program _ Learn C++_files/saved_resource(7).html"></iframe></ins></ins></ins></div>
+<p>Sorry that one went totally over my head. I have a sneaky suspicion that I am missing something so obvious here and making it unnecessarily complicated.</p>
+<p>Are you saying that you simply rename the main() for whatever your project is called? Thus, HelloWorld()?</p>
+		</div>
+<ul class="children">
+		<li class="comment even depth-2 clearfix" id="comment-319687">
+		<div id="div-comment-319687" class="clearfix comment-container">
+		<div class="comment-author vcard">
+		<img alt="" src="./1.1 — Structure of a program _ Learn C++_files/11b09338d6108681887f55d784841888x96.png" srcset="//www.learncpp.com/blog/wp-content/uploads/fv-gravatar-cache/11b09338d6108681887f55d784841888x192.png 2x" class="avatar avatar-65 photo" height="65" width="65">		<span class="authorname">nascardriver</span>
+		</div>
+				<div class="comment-meta commentmetadata">
+		<a href="https://www.learncpp.com/cpp-tutorial/11-structure-of-a-program/comment-page-5/#comment-319687">
+		March 2, 2018 at 5:02 am</a>
+        <span class="comment-reply-link"><a rel="nofollow" class="comment-reply-link" href="https://www.learncpp.com/cpp-tutorial/11-structure-of-a-program/#comment-319687" onclick="return addComment.moveForm( &quot;comment-319687&quot;, &quot;319687&quot;, &quot;respond&quot;, &quot;19&quot; )" aria-label="Reply to nascardriver"> · Reply</a></span>		 
+		</div>
+		<p>Hi Neil!</p>
+<p>No, the main function must be called main and look like one of the following</p><!-- Crayon Syntax Highlighter v2.7.1 -->
+
+		<div id="crayon-5b7f501c17efa848636331" class="crayon-syntax crayon-theme-familiar-learncppcom crayon-font-monaco crayon-os-pc print-yes notranslate crayon-wrapped" data-settings=" no-popup minimize scroll-mouseover wrap" style="margin-top: 12px; margin-bottom: 12px; font-size: 12px !important; line-height: 16px !important; height: auto;">
+		
+			<div class="crayon-plain-wrap"></div>
+			<div class="crayon-main" style="position: relative; z-index: 1; overflow: hidden;">
+				<table class="crayon-table" style="">
+					<tbody><tr class="crayon-row">
+				<td class="crayon-nums " data-settings="show">
+					<div class="crayon-nums-content" style="font-size: 12px !important; line-height: 16px !important;"><div class="crayon-num" data-line="crayon-5b7f501c17efa848636331-1" style="height: 16px;">1</div><div class="crayon-num crayon-striped-num" data-line="crayon-5b7f501c17efa848636331-2" style="height: 16px;">2</div><div class="crayon-num" data-line="crayon-5b7f501c17efa848636331-3" style="height: 16px;">3</div></div>
+				</td>
+						<td class="crayon-code"><div class="crayon-pre" style="font-size: 12px !important; line-height: 16px !important; -moz-tab-size:4; -o-tab-size:4; -webkit-tab-size:4; tab-size:4;"><div class="crayon-line" id="crayon-5b7f501c17efa848636331-1"><span class="crayon-t">int</span><span class="crayon-h"> </span><span class="crayon-e">main</span><span class="crayon-sy">(</span><span class="crayon-sy">)</span><span class="crayon-h"> </span><span class="crayon-c">// Ok</span></div><div class="crayon-line crayon-striped-line" id="crayon-5b7f501c17efa848636331-2"><span class="crayon-t">int</span><span class="crayon-h"> </span><span class="crayon-e">main</span><span class="crayon-sy">(</span><span class="crayon-t">void</span><span class="crayon-sy">)</span><span class="crayon-h"> </span><span class="crayon-c">// Ok</span></div><div class="crayon-line" id="crayon-5b7f501c17efa848636331-3"><span class="crayon-t">int</span><span class="crayon-h"> </span><span class="crayon-e">main</span><span class="crayon-sy">(</span><span class="crayon-t">int</span><span class="crayon-h"> </span><span class="crayon-v">argc</span><span class="crayon-sy">,</span><span class="crayon-h"> </span><span class="crayon-t">char</span><span class="crayon-h"> </span><span class="crayon-o">*</span><span class="crayon-v">argv</span><span class="crayon-sy">[</span><span class="crayon-sy">]</span><span class="crayon-sy">)</span><span class="crayon-h"> </span><span class="crayon-c">// Ok</span></div></div></td>
+					</tr>
+				</tbody></table>
+			</div>
+		</div>
+<!-- [Format Time: 0.0010 seconds] -->
+<p>Everything else is invalid.</p>
+		</div>
+<ul class="children">
+		<li class="comment odd alt depth-3 clearfix" id="comment-319690">
+		<div id="div-comment-319690" class="clearfix comment-container">
+		<div class="comment-author vcard">
+		<img alt="" src="./1.1 — Structure of a program _ Learn C++_files/default96.png" srcset="//www.learncpp.com/blog/wp-content/uploads/fv-gravatar-cache/mystery192.png 2x" class="avatar avatar-65 photo" height="65" width="65">		<span class="authorname">Neil</span>
+		</div>
+				<div class="comment-meta commentmetadata">
+		<a href="https://www.learncpp.com/cpp-tutorial/11-structure-of-a-program/comment-page-5/#comment-319690">
+		March 2, 2018 at 5:39 am</a>
+        <span class="comment-reply-link"><a rel="nofollow" class="comment-reply-link" href="https://www.learncpp.com/cpp-tutorial/11-structure-of-a-program/#comment-319690" onclick="return addComment.moveForm( &quot;comment-319690&quot;, &quot;319690&quot;, &quot;respond&quot;, &quot;19&quot; )" aria-label="Reply to Neil"> · Reply</a></span>		 
+		</div>
+		<p>Thank you for your reply. I thought as much, but was confused as to what he was saying as my program was already called HelloWorld.cpp, anyway.</p>
+		</div>
+<ul class="children">
+		<li class="comment even depth-4 clearfix" id="comment-319691">
+		<div id="div-comment-319691" class="clearfix comment-container">
+		<div class="comment-author vcard">
+		<img alt="" src="./1.1 — Structure of a program _ Learn C++_files/11b09338d6108681887f55d784841888x96.png" srcset="//www.learncpp.com/blog/wp-content/uploads/fv-gravatar-cache/11b09338d6108681887f55d784841888x192.png 2x" class="avatar avatar-65 photo" height="65" width="65">		<span class="authorname">nascardriver</span>
+		</div>
+				<div class="comment-meta commentmetadata">
+		<a href="https://www.learncpp.com/cpp-tutorial/11-structure-of-a-program/comment-page-5/#comment-319691">
+		March 2, 2018 at 5:41 am</a>
+        <span class="comment-reply-link"><a rel="nofollow" class="comment-reply-link" href="https://www.learncpp.com/cpp-tutorial/11-structure-of-a-program/#comment-319691" onclick="return addComment.moveForm( &quot;comment-319691&quot;, &quot;319691&quot;, &quot;respond&quot;, &quot;19&quot; )" aria-label="Reply to nascardriver"> · Reply</a></span>		 
+		</div>
+		<p>You can name your files however you want, but it's convention to name the file which contains the main function either main.cpp or YourProjectName.cpp. So, if your project is called HelloWorld everything is fine.</p>
+		</div>
+</li><!-- #comment-## -->
+		<li class="comment byuser comment-author-tarindel bypostauthor odd alt depth-4 clearfix" id="comment-319856">
+		<div id="div-comment-319856" class="clearfix comment-container bypostauthor">
+		<div class="comment-author vcard">
+		<img alt="" src="./1.1 — Structure of a program _ Learn C++_files/a4e62d28c29f6c864923207d4c17993bx96.png" srcset="//www.learncpp.com/blog/wp-content/uploads/fv-gravatar-cache/a4e62d28c29f6c864923207d4c17993bx192.png 2x" class="avatar avatar-65 photo" height="65" width="65">		<span class="authorname">Alex</span>
+		</div>
+				<div class="comment-meta commentmetadata">
+		<a href="https://www.learncpp.com/cpp-tutorial/11-structure-of-a-program/comment-page-5/#comment-319856">
+		March 3, 2018 at 8:31 pm</a>
+        <span class="comment-reply-link"><a rel="nofollow" class="comment-reply-link" href="https://www.learncpp.com/cpp-tutorial/11-structure-of-a-program/#comment-319856" onclick="return addComment.moveForm( &quot;comment-319856&quot;, &quot;319856&quot;, &quot;respond&quot;, &quot;19&quot; )" aria-label="Reply to Alex"> · Reply</a></span>		 
+		</div>
+		<p>Is there something I could have said that would have made this more clear on first read?</p>
+		</div>
+</li><!-- #comment-## -->
+</ul><!-- .children -->
+</li><!-- #comment-## -->
+</ul><!-- .children -->
+</li><!-- #comment-## -->
+</ul><!-- .children -->
+</li><!-- #comment-## -->
+		<li class="comment even thread-odd thread-alt depth-1 clearfix" id="comment-318146">
+		<div id="div-comment-318146" class="clearfix comment-container">
+		<div class="comment-author vcard">
+		<img alt="" src="./1.1 — Structure of a program _ Learn C++_files/default96.png" srcset="//www.learncpp.com/blog/wp-content/uploads/fv-gravatar-cache/mystery192.png 2x" class="avatar avatar-65 photo" height="65" width="65">		<span class="authorname">Pork and Beans</span>
+		</div>
+				<div class="comment-meta commentmetadata">
+		<a href="https://www.learncpp.com/cpp-tutorial/11-structure-of-a-program/comment-page-5/#comment-318146">
+		February 16, 2018 at 1:53 am</a>
+        <span class="comment-reply-link"><a rel="nofollow" class="comment-reply-link" href="https://www.learncpp.com/cpp-tutorial/11-structure-of-a-program/#comment-318146" onclick="return addComment.moveForm( &quot;comment-318146&quot;, &quot;318146&quot;, &quot;respond&quot;, &quot;19&quot; )" aria-label="Reply to Pork and Beans"> · Reply</a></span>		 
+		</div>
+		<p>Hello.</p>
+<p>I hesitate to ask questions here.&nbsp;&nbsp;I do not want to clutter up this section.</p>
+<p>I have been creating simple C++ programs using the tools that have been presented to us up to chapter 1.4.&nbsp;&nbsp;I am using Visual Studio 2017.&nbsp;&nbsp;Each time I create a new program, I find myself opening a new project.&nbsp;&nbsp;I would like to know a better way to organize my scripts so that I can have one project for each chapter and be able to store my separate scripts within projects that correspond with each chapter.&nbsp;&nbsp;I know that there must be a way to store multiple scripts within each project but I notice that when I try to do so, I get compile errors.&nbsp;&nbsp;I can take the same script that gets compile errors, open a new project, copy the script into a new project and it will compile successfully.&nbsp;&nbsp;What am I missing here?</p>
+<p>Thanks for your time.</p>
+		</div>
+<ul class="children">
+		<li class="comment odd alt depth-2 clearfix" id="comment-318165">
+		<div id="div-comment-318165" class="clearfix comment-container">
+		<div class="comment-author vcard">
+		<img alt="" src="./1.1 — Structure of a program _ Learn C++_files/11b09338d6108681887f55d784841888x96.png" srcset="//www.learncpp.com/blog/wp-content/uploads/fv-gravatar-cache/11b09338d6108681887f55d784841888x192.png 2x" class="avatar avatar-65 photo" height="65" width="65">		<span class="authorname">nascardriver</span>
+		</div>
+				<div class="comment-meta commentmetadata">
+		<a href="https://www.learncpp.com/cpp-tutorial/11-structure-of-a-program/comment-page-5/#comment-318165">
+		February 16, 2018 at 3:58 am</a>
+        <span class="comment-reply-link"><a rel="nofollow" class="comment-reply-link" href="https://www.learncpp.com/cpp-tutorial/11-structure-of-a-program/#comment-318165" onclick="return addComment.moveForm( &quot;comment-318165&quot;, &quot;318165&quot;, &quot;respond&quot;, &quot;19&quot; )" aria-label="Reply to nascardriver"> · Reply</a></span>		 
+		</div>
+		<p>Hi Pork and Beans!</p>
+<p>&gt; scripts<br>
+C++ isn't a script language, there is source code, header files and source files but no scripts.</p>
+<p>&gt; What am I missing here?<br>
+Each project may have only 1 main function, that's why your compiler is complaining.</p>
+<p>Once multiple files, header guards and namespaces have been covered you can create a folder (Or filter in VS) in your project for each lesson and call the relevant functions from main.<br>
+Until then you can write a custom main for each lesson and call those from main, this will clutter up your main.cpp though.</p>
+<p></p><!-- Crayon Syntax Highlighter v2.7.1 -->
+
+		<div id="crayon-5b7f501c18114642373776" class="crayon-syntax crayon-theme-familiar-learncppcom crayon-font-monaco crayon-os-pc print-yes notranslate crayon-wrapped" data-settings=" no-popup minimize scroll-mouseover wrap" style="margin-top: 12px; margin-bottom: 12px; font-size: 12px !important; line-height: 16px !important; height: auto;">
+		
+			<div class="crayon-plain-wrap"></div>
+			<div class="crayon-main" style="position: relative; z-index: 1; overflow: hidden;">
+				<table class="crayon-table" style="">
+					<tbody><tr class="crayon-row">
+				<td class="crayon-nums " data-settings="show">
+					<div class="crayon-nums-content" style="font-size: 12px !important; line-height: 16px !important;"><div class="crayon-num" data-line="crayon-5b7f501c18114642373776-1" style="height: 16px;">1</div><div class="crayon-num crayon-striped-num" data-line="crayon-5b7f501c18114642373776-2" style="height: 16px;">2</div><div class="crayon-num" data-line="crayon-5b7f501c18114642373776-3" style="height: 16px;">3</div><div class="crayon-num crayon-striped-num" data-line="crayon-5b7f501c18114642373776-4" style="height: 16px;">4</div><div class="crayon-num" data-line="crayon-5b7f501c18114642373776-5" style="height: 16px;">5</div><div class="crayon-num crayon-striped-num" data-line="crayon-5b7f501c18114642373776-6" style="height: 16px;">6</div><div class="crayon-num" data-line="crayon-5b7f501c18114642373776-7" style="height: 16px;">7</div><div class="crayon-num crayon-striped-num" data-line="crayon-5b7f501c18114642373776-8" style="height: 16px;">8</div><div class="crayon-num" data-line="crayon-5b7f501c18114642373776-9" style="height: 16px;">9</div><div class="crayon-num crayon-striped-num" data-line="crayon-5b7f501c18114642373776-10" style="height: 16px;">10</div><div class="crayon-num" data-line="crayon-5b7f501c18114642373776-11" style="height: 16px;">11</div><div class="crayon-num crayon-striped-num" data-line="crayon-5b7f501c18114642373776-12" style="height: 16px;">12</div><div class="crayon-num" data-line="crayon-5b7f501c18114642373776-13" style="height: 16px;">13</div><div class="crayon-num crayon-striped-num" data-line="crayon-5b7f501c18114642373776-14" style="height: 16px;">14</div><div class="crayon-num" data-line="crayon-5b7f501c18114642373776-15" style="height: 16px;">15</div><div class="crayon-num crayon-striped-num" data-line="crayon-5b7f501c18114642373776-16" style="height: 16px;">16</div><div class="crayon-num" data-line="crayon-5b7f501c18114642373776-17" style="height: 16px;">17</div><div class="crayon-num crayon-striped-num" data-line="crayon-5b7f501c18114642373776-18" style="height: 16px;">18</div><div class="crayon-num" data-line="crayon-5b7f501c18114642373776-19" style="height: 16px;">19</div><div class="crayon-num crayon-striped-num" data-line="crayon-5b7f501c18114642373776-20" style="height: 16px;">20</div><div class="crayon-num" data-line="crayon-5b7f501c18114642373776-21" style="height: 16px;">21</div><div class="crayon-num crayon-striped-num" data-line="crayon-5b7f501c18114642373776-22" style="height: 16px;">22</div></div>
+				</td>
+						<td class="crayon-code"><div class="crayon-pre" style="font-size: 12px !important; line-height: 16px !important; -moz-tab-size:4; -o-tab-size:4; -webkit-tab-size:4; tab-size:4;"><div class="crayon-line" id="crayon-5b7f501c18114642373776-1"><span class="crayon-p">#include &lt;iostream&gt;</span></div><div class="crayon-line crayon-striped-line" id="crayon-5b7f501c18114642373776-2">&nbsp;</div><div class="crayon-line" id="crayon-5b7f501c18114642373776-3"><span class="crayon-t">void</span><span class="crayon-h"> </span><span class="crayon-e">lesson1</span><span class="crayon-sy">(</span><span class="crayon-sy">)</span></div><div class="crayon-line crayon-striped-line" id="crayon-5b7f501c18114642373776-4"><span class="crayon-sy">{</span></div><div class="crayon-line" id="crayon-5b7f501c18114642373776-5">&nbsp;&nbsp;<span class="crayon-c">// Use this as the main function for lesson 1</span></div><div class="crayon-line crayon-striped-line" id="crayon-5b7f501c18114642373776-6"><span class="crayon-sy">}</span></div><div class="crayon-line" id="crayon-5b7f501c18114642373776-7">&nbsp;</div><div class="crayon-line crayon-striped-line" id="crayon-5b7f501c18114642373776-8"><span class="crayon-t">void</span><span class="crayon-h"> </span><span class="crayon-e">lesson2</span><span class="crayon-sy">(</span><span class="crayon-sy">)</span></div><div class="crayon-line" id="crayon-5b7f501c18114642373776-9"><span class="crayon-sy">{</span></div><div class="crayon-line crayon-striped-line" id="crayon-5b7f501c18114642373776-10">&nbsp;&nbsp;<span class="crayon-c">// Use this as the main function for lesson 2</span></div><div class="crayon-line" id="crayon-5b7f501c18114642373776-11"><span class="crayon-sy">}</span></div><div class="crayon-line crayon-striped-line" id="crayon-5b7f501c18114642373776-12">&nbsp;</div><div class="crayon-line" id="crayon-5b7f501c18114642373776-13"><span class="crayon-c">// ...</span></div><div class="crayon-line crayon-striped-line" id="crayon-5b7f501c18114642373776-14">&nbsp;</div><div class="crayon-line" id="crayon-5b7f501c18114642373776-15"><span class="crayon-t">int</span><span class="crayon-h"> </span><span class="crayon-e">main</span><span class="crayon-sy">(</span><span class="crayon-sy">)</span></div><div class="crayon-line crayon-striped-line" id="crayon-5b7f501c18114642373776-16"><span class="crayon-sy">{</span></div><div class="crayon-line" id="crayon-5b7f501c18114642373776-17">&nbsp;&nbsp;<span class="crayon-e">lesson1</span><span class="crayon-sy">(</span><span class="crayon-sy">)</span><span class="crayon-sy">;</span></div><div class="crayon-line crayon-striped-line" id="crayon-5b7f501c18114642373776-18">&nbsp;&nbsp;<span class="crayon-c">// lesson2();</span></div><div class="crayon-line" id="crayon-5b7f501c18114642373776-19">&nbsp;&nbsp;<span class="crayon-c">// ...</span></div><div class="crayon-line crayon-striped-line" id="crayon-5b7f501c18114642373776-20">&nbsp;</div><div class="crayon-line" id="crayon-5b7f501c18114642373776-21">&nbsp;&nbsp;<span class="crayon-st">return</span><span class="crayon-h"> </span><span class="crayon-cn">0</span><span class="crayon-sy">;</span></div><div class="crayon-line crayon-striped-line" id="crayon-5b7f501c18114642373776-22"><span class="crayon-sy">}</span></div></div></td>
+					</tr>
+				</tbody></table>
+			</div>
+		</div>
+<!-- [Format Time: 0.0012 seconds] -->
+<p></p>
+		</div>
+</li><!-- #comment-## -->
+		<li class="comment byuser comment-author-tarindel bypostauthor even depth-2 clearfix" id="comment-318195">
+		<div id="div-comment-318195" class="clearfix comment-container bypostauthor">
+		<div class="comment-author vcard">
+		<img alt="" src="./1.1 — Structure of a program _ Learn C++_files/a4e62d28c29f6c864923207d4c17993bx96.png" srcset="//www.learncpp.com/blog/wp-content/uploads/fv-gravatar-cache/a4e62d28c29f6c864923207d4c17993bx192.png 2x" class="avatar avatar-65 photo" height="65" width="65">		<span class="authorname">Alex</span>
+		</div>
+				<div class="comment-meta commentmetadata">
+		<a href="https://www.learncpp.com/cpp-tutorial/11-structure-of-a-program/comment-page-5/#comment-318195">
+		February 16, 2018 at 1:42 pm</a>
+        <span class="comment-reply-link"><a rel="nofollow" class="comment-reply-link" href="https://www.learncpp.com/cpp-tutorial/11-structure-of-a-program/#comment-318195" onclick="return addComment.moveForm( &quot;comment-318195&quot;, &quot;318195&quot;, &quot;respond&quot;, &quot;19&quot; )" aria-label="Reply to Alex"> · Reply</a></span>		 
+		</div>
+		<p>A project can only have a single program.  However, in visual studio, you can put multiple projects inside a solution.  This is still a lot of overhead, as you still have to create a new project for each program you want to save.</p>
+<p>Nascardriver's suggestion is a reasonable compromise when learning.</p>
+		</div>
+<ul class="children">
+		<li class="comment odd alt depth-3 clearfix" id="comment-318911">
+		<div id="div-comment-318911" class="clearfix comment-container">
+		<div class="comment-author vcard">
+		<img alt="" src="./1.1 — Structure of a program _ Learn C++_files/default96.png" srcset="//www.learncpp.com/blog/wp-content/uploads/fv-gravatar-cache/mystery192.png 2x" class="avatar avatar-65 photo" height="65" width="65">		<span class="authorname">Pork and Beans</span>
+		</div>
+				<div class="comment-meta commentmetadata">
+		<a href="https://www.learncpp.com/cpp-tutorial/11-structure-of-a-program/comment-page-5/#comment-318911">
+		February 22, 2018 at 9:45 pm</a>
+        <span class="comment-reply-link"><a rel="nofollow" class="comment-reply-link" href="https://www.learncpp.com/cpp-tutorial/11-structure-of-a-program/#comment-318911" onclick="return addComment.moveForm( &quot;comment-318911&quot;, &quot;318911&quot;, &quot;respond&quot;, &quot;19&quot; )" aria-label="Reply to Pork and Beans"> · Reply</a></span>		 
+		</div>
+		<p>Hello Alex (and NascarDriver),</p>
+<p>I hope this message finds you well.</p>
+<p>Thank you for your replies to my message.&nbsp;&nbsp;I will admit, I took a sojourn in utter confusion.&nbsp;&nbsp;Then, I had prepared a message full of further questions for you (or anyone willing to read it).&nbsp;&nbsp;Then I discarded that message - I will always try to solve the problem before asking you here, as I don't want to seem like I'm taking advantage of anyone here.</p>
+<p>That being said, I am very happy to know that I can still post questions here as a last resort.</p>
+<p>I am also pleased to share with you that (thank you, NascarDriver) NascarDriver's advice worked with terrific results.&nbsp;&nbsp;Upon successful implementation of this method, I was better able to understand how functions (and the "void" declaration) work.&nbsp;&nbsp;Now I am able to organize my code (I had to erase the word "script" here (what is the difference?  I'd sincerely like to know)) into great and explanatory projects as I advance through this material.</p>
+<p>I truly appreciate this source of knowledge as I once again take up the banner and forge onward.</p>
+<p>Please stay in contact and thank you again.&nbsp;&nbsp;Have a good evening.</p>
+		</div>
+<ul class="children">
+		<li class="comment even depth-4 clearfix" id="comment-318951">
+		<div id="div-comment-318951" class="clearfix comment-container">
+		<div class="comment-author vcard">
+		<img alt="" src="./1.1 — Structure of a program _ Learn C++_files/11b09338d6108681887f55d784841888x96.png" srcset="//www.learncpp.com/blog/wp-content/uploads/fv-gravatar-cache/11b09338d6108681887f55d784841888x192.png 2x" class="avatar avatar-65 photo" height="65" width="65">		<span class="authorname">nascardriver</span>
+		</div>
+				<div class="comment-meta commentmetadata">
+		<a href="https://www.learncpp.com/cpp-tutorial/11-structure-of-a-program/comment-page-5/#comment-318951">
+		February 23, 2018 at 4:18 am</a>
+        <span class="comment-reply-link"><a rel="nofollow" class="comment-reply-link" href="https://www.learncpp.com/cpp-tutorial/11-structure-of-a-program/#comment-318951" onclick="return addComment.moveForm( &quot;comment-318951&quot;, &quot;318951&quot;, &quot;respond&quot;, &quot;19&quot; )" aria-label="Reply to nascardriver"> · Reply</a></span>		 
+		</div>
+		<p>I'm glad to hear you found a fitting solution.</p>
+<p>&gt; what is the difference?<br>
+A script gets interpreted (Another program reads the script and executes it) whereas C++ gets compiled (You get a binary).</p>
+<p>Feel free to ask whatever questions you have. Chances are good that if you have a certain question, someone else does too.</p>
+		</div>
+</li><!-- #comment-## -->
+</ul><!-- .children -->
+</li><!-- #comment-## -->
+</ul><!-- .children -->
+</li><!-- #comment-## -->
+</ul><!-- .children -->
+</li><!-- #comment-## -->
+	
+	</ul>
+	<!-- / Comment List -->
+
+	<div class="clearfix navigation-comments-below"><a class="prev page-numbers" href="https://www.learncpp.com/cpp-tutorial/11-structure-of-a-program/comment-page-4/#comments">« Older Comments</a>
+<a class="page-numbers" href="https://www.learncpp.com/cpp-tutorial/11-structure-of-a-program/comment-page-1/#comments">1</a>
+<span class="page-numbers dots">…</span>
+<a class="page-numbers" href="https://www.learncpp.com/cpp-tutorial/11-structure-of-a-program/comment-page-3/#comments">3</a>
+<a class="page-numbers" href="https://www.learncpp.com/cpp-tutorial/11-structure-of-a-program/comment-page-4/#comments">4</a>
+<span class="page-numbers current">5</span></div>
+
+
+
+	<div id="respond" class="comment-respond">
+		<h3 id="reply-title" class="comment-reply-title">Leave a Comment <small><a rel="nofollow" id="cancel-comment-reply-link" href="https://www.learncpp.com/cpp-tutorial/11-structure-of-a-program/#respond" style="display:none;">Cancel reply</a></small></h3>			<form action="https://www.learncpp.com/blog/wp-comments-post.php" method="post" id="commentform" class="comment-form">
+				<p><textarea autocomplete="nope" id="comment" name="d4eb8ce9df" rows="10" cols="10" tabindex="4"></textarea><textarea id="487752e9d1b42f921634bf7e4b2a7f7f" aria-hidden="true" name="comment" autocomplete="nope" style="padding:0;clip:rect(1px, 1px, 1px, 1px);position:absolute !important;white-space:nowrap;height:1px;width:1px;overflow:hidden;" tabindex="-1"></textarea><script type="text/javascript">document.getElementById("comment").setAttribute( "id", "487752e9d1b42f921634bf7e4b2a7f7f" );document.getElementById("531ed2d774").setAttribute( "id", "comment" );</script></p><div class="useCode">Put all code inside code tags: [code]your code here[/code]</div><p><input class="text author" id="author" name="author" type="text" value="" size="30" tabindex="1">&nbsp;&nbsp;<label for="author"><strong>Name </strong> (required)</label></p>
+<p><input class="text email" id="email" name="email" type="text" value="" size="30" tabindex="2">&nbsp;&nbsp;<label for="email"><strong>Email</strong> (will not be published) (required)</label></p>
+<p><input class="text url" id="url" name="url" type="text" value="" size="30" tabindex="3">&nbsp;&nbsp;<label for="url">Website</label></p>
+<p class="form-submit"><input name="submit" type="submit" id="submit" class="submit" value="Post Comment"> <input type="hidden" name="comment_post_ID" value="19" id="comment_post_ID">
+<input type="hidden" name="comment_parent" id="comment_parent" value="0">
+</p>			</form>
+			</div><!-- #respond -->
+	<div class="code-block code-block-7" style="margin:8px 0px;"><div class="cf_monitor">
+<script async="" src="./1.1 — Structure of a program _ Learn C++_files/f(7).txt"></script>
+<!-- Post - Below Content - Responsive -->
+<ins class="adsbygoogle" style="display: block; height: 90px;" data-ad-client="ca-pub-0588844875925051" data-ad-slot="5999600639" data-ad-format="auto" data-adsbygoogle-status="done"><ins id="aswift_4_expand" style="display:inline-table;border:none;height:90px;margin:0;padding:0;position:relative;visibility:visible;width:865px;background-color:transparent;"><ins id="aswift_4_anchor" style="display:block;border:none;height:90px;margin:0;padding:0;position:relative;visibility:visible;width:865px;background-color:transparent;"><iframe width="865" height="90" frameborder="0" marginwidth="0" marginheight="0" vspace="0" hspace="0" allowtransparency="true" scrolling="no" allowfullscreen="true" onload="var i=this.id,s=window.google_iframe_oncopy,H=s&amp;&amp;s.handlers,h=H&amp;&amp;H[i],w=this.contentWindow,d;try{d=w.document}catch(e){}if(h&amp;&amp;d&amp;&amp;(!d.body||!d.body.firstChild)){if(h.call){setTimeout(h,0)}else if(h.match){try{h=s.upd(h,i)}catch(e){}w.location.replace(h)}}" id="aswift_4" name="aswift_4" style="left:0;position:absolute;top:0;width:865px;height:90px;" src="./1.1 — Structure of a program _ Learn C++_files/saved_resource(8).html"></iframe></ins></ins></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+</div>
+
+</div>		
+    
+
+</td>
+<!-- / Main Column -->
+
+<!-- Right Inner Sidebar -->
+
+<!-- Right Sidebar -->
+<td id="right">
+
+	<div id="text-7" class="widget widget_text">			<div class="textwidget"><div class="cf_monitor">
+<!-- Post - Right Sidebar - Wide Sky -->
+<script async="" src="./1.1 — Structure of a program _ Learn C++_files/f(7).txt"></script>
+<ins class="adsbygoogle" style="display:inline-block;width:160px;height:600px" data-ad-client="ca-pub-0588844875925051" data-ad-slot="0955932809" data-adsbygoogle-status="done"><ins id="aswift_5_expand" style="display:inline-table;border:none;height:600px;margin:0;padding:0;position:relative;visibility:visible;width:160px;background-color:transparent;"><ins id="aswift_5_anchor" style="display:block;border:none;height:600px;margin:0;padding:0;position:relative;visibility:visible;width:160px;background-color:transparent;"><iframe width="160" height="600" frameborder="0" marginwidth="0" marginheight="0" vspace="0" hspace="0" allowtransparency="true" scrolling="no" allowfullscreen="true" onload="var i=this.id,s=window.google_iframe_oncopy,H=s&amp;&amp;s.handlers,h=H&amp;&amp;H[i],w=this.contentWindow,d;try{d=w.document}catch(e){}if(h&amp;&amp;d&amp;&amp;(!d.body||!d.body.firstChild)){if(h.call){setTimeout(h,0)}else if(h.match){try{h=s.upd(h,i)}catch(e){}w.location.replace(h)}}" id="aswift_5" name="aswift_5" style="left:0;position:absolute;top:0;width:160px;height:600px;" src="./1.1 — Structure of a program _ Learn C++_files/saved_resource(9).html"></iframe></ins></ins></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+</div></div>
+		</div>    
+<!-- 
+	Plugin: Custom Meta Widget	Plugin URL: http://shinraholdings.com/plugins/custom-meta-widget/-->
+
+
+	<div id="custommetawidget-2" class="widget customMetaWidget">	<div class="widget-title"><h3>Admin</h3></div>	<ul>
+	
+	
+    <li><a href="https://www.learncpp.com/blog/wp-login.php">Log in</a></li>	
+	</ul>
+    
+	</div>
+</td>
+<!-- / Right Sidebar -->
+
+</tr>
+<!-- / Main Body -->
+
+
+</tbody></table><!-- / layout -->
+</div><!-- / container -->
+</div><ins class="adsbygoogle adsbygoogle-noablate" data-adsbygoogle-status="done" style="display: none;"><ins id="aswift_0_expand" style="display:inline-table;border:none;height:NaNpx;margin:0;padding:0;position:relative;visibility:visible;width:NaNpx;background-color:transparent;"><ins id="aswift_0_anchor" style="display:block;border:none;height:NaNpx;margin:0;padding:0;position:relative;visibility:visible;width:NaNpx;background-color:transparent;"><iframe frameborder="0" marginwidth="0" marginheight="0" vspace="0" hspace="0" allowtransparency="true" scrolling="no" allowfullscreen="true" onload="var i=this.id,s=window.google_iframe_oncopy,H=s&amp;&amp;s.handlers,h=H&amp;&amp;H[i],w=this.contentWindow,d;try{d=w.document}catch(e){}if(h&amp;&amp;d&amp;&amp;(!d.body||!d.body.firstChild)){if(h.call){setTimeout(h,0)}else if(h.match){try{h=s.upd(h,i)}catch(e){}w.location.replace(h)}}" id="aswift_0" name="aswift_0" style="left:0;position:absolute;top:0;width:NaNpx;height:NaNpx;" src="./1.1 — Structure of a program _ Learn C++_files/saved_resource(10).html"></iframe></ins></ins></ins><!-- / wrapper -->
+		<!-- Full Width Footer -->
+		<div id="footer" class="full-width">
+    LearnCpp.com -- Teaching you how to program in C++ since May 25, 2007.&nbsp;&nbsp;Copyright © 2018 <a href="https://www.learncpp.com/">Learn C++</a> - All Rights Reserved<br>Powered by <a href="http://wordpress.org/">WordPress</a> &amp; <a href="http://forum.bytesforall.com/">Atahualpa</a>    
+    
+    
+	<script type="text/javascript">
+		window.WPCOM_sharing_counts = {"https:\/\/www.learncpp.com\/cpp-tutorial\/11-structure-of-a-program\/":19};
+	</script>
+		<script type="text/javascript">
+			var windowOpen;
+		jQuery(document).on( 'ready post-load', function(){
+			jQuery( 'a.share-facebook' ).on( 'click', function() {
+				if ( 'undefined' !== typeof windowOpen ){ // If there's another sharing window open, close it.
+					windowOpen.close();
+				}
+				windowOpen = window.open( jQuery(this).attr( 'href' ), 'wpcomfacebook', 'menubar=1,resizable=1,width=600,height=400' );
+				return false;
+			});
+		});
+		</script>
+				<script type="text/javascript">
+			var windowOpen;
+		jQuery(document).on( 'ready post-load', function(){
+			jQuery( 'a.share-twitter' ).on( 'click', function() {
+				if ( 'undefined' !== typeof windowOpen ){ // If there's another sharing window open, close it.
+					windowOpen.close();
+				}
+				windowOpen = window.open( jQuery(this).attr( 'href' ), 'wpcomtwitter', 'menubar=1,resizable=1,width=600,height=350' );
+				return false;
+			});
+		});
+		</script>
+				<script type="text/javascript">
+			var windowOpen;
+		jQuery(document).on( 'ready post-load', function(){
+			jQuery( 'a.share-google-plus-1' ).on( 'click', function() {
+				if ( 'undefined' !== typeof windowOpen ){ // If there's another sharing window open, close it.
+					windowOpen.close();
+				}
+				windowOpen = window.open( jQuery(this).attr( 'href' ), 'wpcomgoogle-plus-1', 'menubar=1,resizable=1,width=480,height=550' );
+				return false;
+			});
+		});
+		</script>
+				<script type="text/javascript" src="./1.1 — Structure of a program _ Learn C++_files/comment-reply.min.js.download"></script>
+<script type="text/javascript" src="./1.1 — Structure of a program _ Learn C++_files/devicepx-jetpack.js.download"></script>
+<script type="text/javascript" src="./1.1 — Structure of a program _ Learn C++_files/wp-embed.min.js.download"></script>
+<script type="text/javascript">
+/* <![CDATA[ */
+var sharing_js_options = {"lang":"en","counts":"1"};
+/* ]]> */
+</script>
+<script type="text/javascript" src="./1.1 — Structure of a program _ Learn C++_files/sharing.js.download"></script>
+<script type="text/javascript" src="./1.1 — Structure of a program _ Learn C++_files/e-201834.js.download" async="" defer=""></script>
+<script type="text/javascript">
+	_stq = window._stq || [];
+	_stq.push([ 'view', {v:'ext',j:'1:4.1.1',blog:'3928254',post:'19',tz:'-8',srv:'www.learncpp.com'} ]);
+	_stq.push([ 'clickTrackerInit', '3928254', '19' ]);
+</script>
+		</div><iframe id="google_osd_static_frame_243957313251" name="google_osd_static_frame" style="display: none; width: 0px; height: 0px;" src="./1.1 — Structure of a program _ Learn C++_files/saved_resource(11).html"></iframe>
+		<!-- / Full Width Footer -->
+
+
+
+<!-- Dynamic page generated in 0.955 seconds. -->
+<!-- Cached page generated by WP-Super-Cache on 2018-08-23 16:23:56 -->
+
+<!-- Compression = gzip --><img src="./1.1 — Structure of a program _ Learn C++_files/g.gif" alt=":)" width="6" height="5" id="wpstats"></body></html>

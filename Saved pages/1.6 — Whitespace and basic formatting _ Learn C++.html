@@ -1,0 +1,1277 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!-- saved from url=(0073)https://www.learncpp.com/cpp-tutorial/16-whitespace-and-basic-formatting/ -->
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en-US"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><style></style>
+
+ <title>1.6 — Whitespace and basic formatting | Learn C++</title> <link rel="shortcut icon" href="https://www.learncpp.com/blog/wp-content/ata-images/learncpp.ico">
+<link rel="profile" href="http://gmpg.org/xfn/11">
+<link rel="pingback" href="https://www.learncpp.com/blog/xmlrpc.php">
+
+<!-- All in One SEO Pack 2.3.15.3 by Michael Torbert of Semper Fi Web Designob_start_detected [-1,-1] -->
+<link rel="canonical" href="https://www.learncpp.com/cpp-tutorial/16-whitespace-and-basic-formatting/">
+<!-- /all in one seo pack -->
+<link rel="dns-prefetch" href="https://gateway.gear.mycelium.com/">
+<link rel="dns-prefetch" href="https://s0.wp.com/">
+<link rel="dns-prefetch" href="https://s.w.org/">
+<link rel="alternate" type="application/rss+xml" title="Learn C++ » Feed" href="https://www.learncpp.com/feed/">
+<link rel="alternate" type="application/rss+xml" title="Learn C++ » Comments Feed" href="https://www.learncpp.com/comments/feed/">
+<link rel="alternate" type="application/rss+xml" title="Learn C++ » 1.6 — Whitespace and basic formatting Comments Feed" href="https://www.learncpp.com/cpp-tutorial/16-whitespace-and-basic-formatting/feed/">
+<link rel="stylesheet" id="mycelium-gear-widget-admin-css" href="./1.6 — Whitespace and basic formatting _ Learn C++_files/mycelium-gear-widget-admin.css" type="text/css" media="">
+<link rel="stylesheet" id="crayon-css" href="./1.6 — Whitespace and basic formatting _ Learn C++_files/crayon.min.css" type="text/css" media="all">
+<link rel="stylesheet" id="crayon-theme-familiar-learncppcom-css" href="./1.6 — Whitespace and basic formatting _ Learn C++_files/familiar-learncppcom.css" type="text/css" media="all">
+<link rel="stylesheet" id="crayon-font-monaco-css" href="./1.6 — Whitespace and basic formatting _ Learn C++_files/monaco.css" type="text/css" media="all">
+<link rel="stylesheet" id="ad-inserter-devices-css" href="./1.6 — Whitespace and basic formatting _ Learn C++_files/devices.css" type="text/css" media="all">
+<link rel="stylesheet" id="social-logos-css" href="./1.6 — Whitespace and basic formatting _ Learn C++_files/social-logos.min.css" type="text/css" media="all">
+<link rel="stylesheet" id="jetpack_css-css" href="./1.6 — Whitespace and basic formatting _ Learn C++_files/jetpack.css" type="text/css" media="all">
+<!-- This site uses the Google Analytics by MonsterInsights plugin v5.5 - Universal disabled - https://www.monsterinsights.com/ -->
+<script src="./1.6 — Whitespace and basic formatting _ Learn C++_files/f(5).txt"></script><script src="./1.6 — Whitespace and basic formatting _ Learn C++_files/ca-pub-0588844875925051.js.download"></script><script src="./1.6 — Whitespace and basic formatting _ Learn C++_files/f(6).txt"></script><script src="./1.6 — Whitespace and basic formatting _ Learn C++_files/ca-pub-0588844875925051.js.download"></script><script type="text/javascript" async="" src="./1.6 — Whitespace and basic formatting _ Learn C++_files/ga.js.download"></script><script type="text/javascript">
+
+	var _gaq = _gaq || [];
+	_gaq.push(['_setAccount', 'UA-2173612-1']);
+	_gaq.push(['_gat._forceSSL']);
+	_gaq.push(['_trackPageview']);
+
+	(function () {
+		var ga = document.createElement('script');
+		ga.type = 'text/javascript';
+		ga.async = true;
+		ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+		var s = document.getElementsByTagName('script')[0];
+		s.parentNode.insertBefore(ga, s);
+	})();
+
+</script>
+<!-- / Google Analytics by MonsterInsights -->
+<script type="text/javascript" src="./1.6 — Whitespace and basic formatting _ Learn C++_files/jquery.js.download"></script>
+<script type="text/javascript" src="./1.6 — Whitespace and basic formatting _ Learn C++_files/jquery-migrate.min.js.download"></script>
+<script type="text/javascript">
+/* <![CDATA[ */
+var AjaxCheckClicks = {"ajaxurl":"https:\/\/www.learncpp.com\/blog\/wp-admin\/admin-ajax.php","nonce":"b37f205618"};
+/* ]]> */
+</script>
+<script type="text/javascript" src="./1.6 — Whitespace and basic formatting _ Learn C++_files/checkclicks.js.download"></script>
+<script type="text/javascript">
+/* <![CDATA[ */
+var AjaxUpdateClicks = {"ajaxurl":"https:\/\/www.learncpp.com\/blog\/wp-admin\/admin-ajax.php","nonce":"8f62a39c1d"};
+/* ]]> */
+</script>
+<script type="text/javascript" src="./1.6 — Whitespace and basic formatting _ Learn C++_files/updateclicks.js.download"></script>
+<script type="text/javascript">
+/* <![CDATA[ */
+var CrayonSyntaxSettings = {"version":"2.7.1","is_admin":"0","ajaxurl":"https:\/\/www.learncpp.com\/blog\/wp-admin\/admin-ajax.php","prefix":"crayon-","setting":"crayon-setting","selected":"crayon-setting-selected","changed":"crayon-setting-changed","special":"crayon-setting-special","orig_value":"data-orig-value","debug":""};
+var CrayonSyntaxStrings = {"copy":"Press %s to Copy, %s to Paste","minimize":"Click To Expand Code"};
+/* ]]> */
+</script>
+<script type="text/javascript" src="./1.6 — Whitespace and basic formatting _ Learn C++_files/crayon.min.js.download"></script>
+<script type="text/javascript">
+/* <![CDATA[ */
+var clientcfmonitor = {"client_ip":"92.29.136.17","clickcount":"8","bannedperiod":"1","preurl":"https:\/\/www.learncpp.com\/blog\/wp-content\/plugins\/adsense-click-fraud-monitoring\/clickupdate.php","firstclickdate":[[""],[""]],"updatedVisitCount":"0","isblockedcount":"0","customclass":"cf_monitor","firstclick":"false","disablead":"false","currentURL":"\/cpp-tutorial\/16-whitespace-and-basic-formatting\/"};
+/* ]]> */
+</script>
+<script type="text/javascript" src="./1.6 — Whitespace and basic formatting _ Learn C++_files/check_min.js.download"></script>
+<script type="text/javascript" src="./1.6 — Whitespace and basic formatting _ Learn C++_files/gear-widget-host.js.download"></script>
+<script type="text/javascript" src="./1.6 — Whitespace and basic formatting _ Learn C++_files/DD_roundies.js.download"></script>
+<link rel="https://api.w.org/" href="https://www.learncpp.com/wp-json/">
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://www.learncpp.com/blog/xmlrpc.php?rsd">
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="https://www.learncpp.com/blog/wp-includes/wlwmanifest.xml"> 
+<link rel="prev" title="Hyperlinking your WordPress CSS header image" href="https://www.learncpp.com/wordpress/hyperlinking-your-wordpress-header-image/">
+<link rel="next" title="6 ways to write better code" href="https://www.learncpp.com/cpp-programming/6-ways-to-write-better-code/">
+<link rel="shortlink" href="https://www.learncpp.com/?p=24">
+<link rel="alternate" type="application/json+oembed" href="https://www.learncpp.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fwww.learncpp.com%2Fcpp-tutorial%2F16-whitespace-and-basic-formatting%2F">
+<link rel="alternate" type="text/xml+oembed" href="https://www.learncpp.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fwww.learncpp.com%2Fcpp-tutorial%2F16-whitespace-and-basic-formatting%2F&amp;format=xml">
+<script async="" src="./1.6 — Whitespace and basic formatting _ Learn C++_files/f(7).txt"></script>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({
+          google_ad_client: "ca-pub-0588844875925051",
+          enable_page_level_ads: true
+     });
+</script>
+
+<!--
+<script type="text/javascript">
+    window._mNHandle = window._mNHandle || {};
+    window._mNHandle.queue = window._mNHandle.queue || [];
+    medianet_versionId = "121199"; 
+    (function() {
+        var sct = document.createElement("script"),
+        sctHl = document.getElementsByTagName("script")[0],
+        isSSL = 'https:' == document.location.protocol;
+        sct.type = "text/javascript";
+        sct.src = (isSSL ? 'https:' : 'http:') + '//contextual.media.net/dmedianet.js?cid=8CUIE2148' + (isSSL ? '&https=1' : '')+'';
+        sct.async = "async";
+        sctHl.parentNode.insertBefore(sct, sctHl);
+    })();
+</script>
+--><!-- wpSolution Code -->
+        <script type="text/javascript">
+            function wpSolutionToggle(solution, link, showtext, hidetext) {
+                if (solution.style.display != 'none') {
+                    solution.style.display = 'none';
+                    link.innerHTML = showtext;
+                    link.className = 'solution_link_show';
+                } else {
+                    solution.style.display = 'block';
+                    link.innerHTML = hidetext;
+                    link.className = 'solution_link_hide';
+                }
+            }
+          </script>
+<style type="text/css">img#wpstats{display:none}</style><style type="text/css">body{text-align:center;margin:0;padding:0;font-family:verdana,arial,sans-serif;font-size:13px;line-height:1.4;color:#000000;background:#bbb;padding-bottom:20px}a:link,a:visited,a:active{color:#365DA0;font-weight:bold;text-decoration:none;}a:hover{color:#365DA0;font-weight:bold;text-decoration:underline}ul,ol,dl,p,h1,h2,h3,h4,h5,h6{margin-top:10px;margin-bottom:10px;padding-top:0;padding-bottom:0;}ul ul,ul ol,ol ul,ol ol{margin-top:0;margin-bottom:0}code,pre{font-family:"Courier New",Courier,monospace;font-size:1em}pre{overflow:auto;word-wrap:normal;padding-bottom:1.5em;overflow-y:hidden;width:99%}abbr[title],acronym[title]{border-bottom:1px dotted}hr{display:block;height:2px;border:none;margin:0.5em auto;color:#cccccc;background-color:#cccccc}table{font-size:1em;}div.post,ul.commentlist li,ol.commentlist li{word-wrap:break-word;}pre,.wp_syntax{word-wrap:normal;}div#wrapper{text-align:center;margin-left:auto;margin-right:auto;display:block;width:100%}div#container{padding:20px;box-shadow:0 0 15px #333;-moz-box-shadow:0 0 15px #333;width:auto;margin-left:auto;margin-right:auto;text-align:left;display:block}table#layout{font-size:100%;width:100%;table-layout:fixed}.colone{width:200px}.colone-inner{width:10px}.coltwo{width:100% }.colthree-inner{width:10px}.colthree{width:200px}div#header.full-width{width:100%}div#header,td#header{width:auto;padding:0}table#logoarea,table#logoarea tr,table#logoarea td{margin:0;padding:0;background:none;border:0}table#logoarea{width:100%;border-spacing:0px}img.logo{display:block;margin:0 10px 0 0}td.logoarea-logo{width:1%}h1.blogtitle,h2.blogtitle{ display:block;margin:0;padding:0;letter-spacing:-1px;line-height:1.0em;font-size:200%;text-transform:uppercase;font-smooth:always}h1.blogtitle a:link,h1.blogtitle a:visited,h1.blogtitle a:active,h2.blogtitle a:link,h2.blogtitle a:visited,h2.blogtitle a:active{ text-decoration:none;color:#000000;font-weight:normal;font-smooth:always}h1.blogtitle a:hover,h2.blogtitle a:hover{ text-decoration:none;color:#AC161B;font-weight:normal}p.tagline{margin:0;padding:0;font-size:1.2em;font-weight:normal;color:#444}td.feed-icons{white-space:nowrap;}div.rss-box{height:1%;display:block;padding:10px 0 10px 10px;margin:0;width:280px}a.comments-icon{height:22px;line-height:22px;margin:0 5px 0 5px;padding-left:22px;display:block;text-decoration:none;float:right;white-space:nowrap}a.comments-icon:link,a.comments-icon:active,a.comments-icon:visited{background:transparent url(https://www.learncpp.com/blog/wp-content/themes/atahualpa/images/comment-gray.png) no-repeat scroll center left}a.comments-icon:hover{background:transparent url(https://www.learncpp.com/blog/wp-content/themes/atahualpa/images/comment.png) no-repeat scroll center left}a.posts-icon{height:22px;line-height:22px;margin:0 5px 0 0;padding-left:20px;display:block;text-decoration:none;float:right;white-space:nowrap}a.posts-icon:link,a.posts-icon:active,a.posts-icon:visited{background:transparent url(https://www.learncpp.com/blog/wp-content/themes/atahualpa/images/rss-gray.png) no-repeat scroll center left}a.posts-icon:hover{background:transparent url(https://www.learncpp.com/blog/wp-content/themes/atahualpa/images/rss.png) no-repeat scroll center left}a.email-icon{height:22px;line-height:22px;margin:0 5px 0 5px;padding-left:24px;display:block;text-decoration:none;float:right;white-space:nowrap}a.email-icon:link,a.email-icon:active,a.email-icon:visited{background:transparent url(https://www.learncpp.com/blog/wp-content/themes/atahualpa/images/email-gray.png) no-repeat scroll center left}a.email-icon:hover{background:transparent url(https://www.learncpp.com/blog/wp-content/themes/atahualpa/images/email.png) no-repeat scroll center left}td.search-box{height:1%}div.searchbox{height:35px;border-bottom:0;width:200px;margin:0;padding:0}div.searchbox-form{margin:5px 10px 5px 10px}div.horbar1,div.horbar2{font-size:1px;clear:both;display:block;position:relative;padding:0;margin:0}div.horbar1{height:0px;background:#ffffff;border-top:dashed 1px #cccccc}div.horbar2{height:0px;background:#ffffff;border-bottom:dashed 1px #cccccc}div.header-image-container-pre{position:relative;margin:0;padding:0;height:150px;}div.header-image-container{position:relative;margin:0;padding:0;height:150px;}div.codeoverlay{position:absolute;top:0;left:0;width:100%;height:100%}div.clickable{position:absolute;top:0;left:0;z-index:3;margin:0;padding:0;width:100%;height:150px;}a.divclick:link,a.divclick:visited,a.divclick:active,a.divclick:hover{width:100%;height:100%;display:block;text-decoration:none}td#left{vertical-align:top;padding-right:10px}td#left-inner{vertical-align:top;padding-right:10px}td#right{vertical-align:top;padding-left:10px}td#right-inner{vertical-align:top;padding-left:10px}td#middle{vertical-align:top;width:100%;background:#fff;padding-left:15px!important;padding-right:15px!important;border:solid 4px #eee}div#footer.full-width{width:100%}div#footer,td#footer{width:auto;background-color:#f7f7f7;border:solid 4px #eee;padding:10px;text-align:center;color:#888;font-size:11px;margin-left:220px;margin-right:220px;margin-top:20px;width:auto!important}div#footer a:link,div#footer a:visited,div#footer a:active,td#footer a:link,td#footer a:visited,td#footer a:active{text-decoration:none;color:#777777;font-weight:normal}div#footer a:hover,td#footer a:hover{text-decoration:none;color:#777777;font-weight:normal}div.widget{display:block;width:auto;font-size:12px;margin:0 0 10px 0;padding:10px;border:solid 4px #eee;background:#fff}div.widget-title{display:block;width:auto}div.widget-title h3,td#left h3.tw-widgettitle,td#right h3.tw-widgettitle,td#left ul.tw-nav-list,td#right ul.tw-nav-list{padding:0;margin:0;font-size:0.9em;text-align:center;font-weight:normal;text-transform:uppercase;letter-spacing:1px;color:#333;border-bottom:solid 1px #eee;padding-bottom:10px;margin-bottom:10px}div.widget ul,div.textwidget{display:block;width:auto;background:#fff}div.widget select{width:98%;margin-top:5px;}div.widget ul{list-style-type:none;margin:0;padding:0;width:auto}div.widget ul li{display:block;margin:2px 0 2px 0px;padding:0 0 0 0px;border-left:solid 0px #CCCCCC}div.widget ul li:hover,div.widget ul li.sfhover{display:block;width:auto;border-left:solid 0px #000000;}div.widget ul li ul li{margin:2px 0 2px 5px;padding:0 0 0 0px;border-left:solid 0px #CCCCCC;}div.widget ul li ul li:hover,div.widget ul li ul li.sfhover{border-left:solid 0px #000000;}div.widget ul li ul li ul li{margin:2px 0 2px 5px;padding:0 0 0 0px;border-left:solid 0px #CCCCCC;}div.widget ul li ul li ul li:hover,div.widget ul li ul li ul li.sfhover{border-left:solid 0px #000000;}div.widget a:link,div.widget a:visited,div.widget a:active,div.widget td a:link,div.widget td a:visited,div.widget td a:active,div.widget ul li a:link,div.widget ul li a:visited,div.widget ul li a:active{text-decoration:none;font-weight:normal;color:#365DA0;font-weight:normal;}div.widget ul li ul li a:link,div.widget ul li ul li a:visited,div.widget ul li ul li a:active{color:#365DA0;font-weight:normal;}div.widget ul li ul li ul li a:link,div.widget ul li ul li ul li a:visited,div.widget ul li ul li ul li a:active{color:#365DA0;font-weight:normal;}div.widget a:hover,div.widget ul li a:hover{color:#365DA0;}div.widget ul li ul li a:hover{color:#365DA0;}div.widget ul li ul li ul li a:hover{color:#365DA0;}div.widget ul li a:link,div.widget ul li a:visited,div.widget ul li a:active,div.widget ul li a:hover{display:inline}* html div.widget ul li a:link,* html div.widget ul li a:visited,* html div.widget ul li a:active,* html div.widget ul li a:hover{height:1%; } div.widget_nav_menu ul li,div.widget_pages ul li,div.widget_categories ul li{border-left:0 !important;padding:0 !important}div.widget_nav_menu ul li a:link,div.widget_nav_menu ul li a:visited,div.widget_nav_menu ul li a:active,div.widget_pages ul li a:link,div.widget_pages ul li a:visited,div.widget_pages ul li a:active,div.widget_categories ul li a:link,div.widget_categories ul li a:visited,div.widget_categories ul li a:active{padding:0 0 0 0px;border-left:solid 0px #CCCCCC}div.widget_nav_menu ul li a:hover,div.widget_pages ul li a:hover,div.widget_categories ul li a:hover{border-left:solid 0px #000000;}div.widget_nav_menu ul li ul li a:link,div.widget_nav_menu ul li ul li a:visited,div.widget_nav_menu ul li ul li a:active,div.widget_pages ul li ul li a:link,div.widget_pages ul li ul li a:visited,div.widget_pages ul li ul li a:active,div.widget_categories ul li ul li a:link,div.widget_categories ul li ul li a:visited,div.widget_categories ul li ul li a:active{padding:0 0 0 0px;border-left:solid 0px #CCCCCC}div.widget_nav_menu ul li ul li a:hover,div.widget_pages ul li ul li a:hover,div.widget_categories ul li ul li a:hover{border-left:solid 0px #000000;}div.widget_nav_menu ul li ul li ul li a:link,div.widget_nav_menu ul li ul li ul li a:visited,div.widget_nav_menu ul li ul li ul li a:active,div.widget_pages ul li ul li ul li a:link,div.widget_pages ul li ul li ul li a:visited,div.widget_pages ul li ul li ul li a:active,div.widget_categories ul li ul li ul li a:link,div.widget_categories ul li ul li ul li a:visited,div.widget_categories ul li ul li ul li a:active{padding:0 0 0 0px;border-left:solid 0px #CCCCCC}div.widget_nav_menu ul li ul li ul li a:hover,div.widget_pages ul li ul li ul li a:hover,div.widget_categories ul li ul li ul li a:hover{border-left:solid 0px #000000;}div.widget_nav_menu ul li a:link,div.widget_nav_menu ul li a:active,div.widget_nav_menu ul li a:visited,div.widget_nav_menu ul li a:hover,div.widget_pages ul li a:link,div.widget_pages ul li a:active,div.widget_pages ul li a:visited,div.widget_pages ul li a:hover{display:block !important}div.widget_categories ul li a:link,div.widget_categories ul li a:active,div.widget_categories ul li a:visited,div.widget_categories ul li a:hover{display:inline !important}table.subscribe{width:100%}table.subscribe td.email-text{padding:0 0 5px 0;vertical-align:top}table.subscribe td.email-field{padding:0;width:100%}table.subscribe td.email-button{padding:0 0 0 5px}table.subscribe td.post-text{padding:7px 0 0 0;vertical-align:top}table.subscribe td.comment-text{padding:7px 0 0 0;vertical-align:top}div.post,div.page{display:block;margin:0 0 30px 0;padding-top:20px}div.sticky{background:#eee url('<?php bloginfo('template_directory');?>/images/sticky.gif') 99% 5% no-repeat;border:dashed 1px #cccccc;padding:10px}div.post-kicker{margin:0 0 5px 0}div.post-kicker a:link,div.post-kicker a:visited,div.post-kicker a:active{color:#999;text-decoration:none;text-transform:uppercase;letter-spacing:1px}div.post-kicker a:hover{color:#cc0000}div.post-headline{}div.post-headline h1,div.post-headline h2{ margin:0; padding:0;padding:0;margin:0;font-size:1.7em}div.post-headline h2 a:link,div.post-headline h2 a:visited,div.post-headline h2 a:active,div.post-headline h1 a:link,div.post-headline h1 a:visited,div.post-headline h1 a:active{}div.post-headline h2 a:hover,div.post-headline h1 a:hover{}div.post-byline{margin:5px 0 10px 0;color:#999;text-transform:uppercase;letter-spacing:1px;font-size:11px}div.post-byline a:link,div.post-byline a:visited,div.post-byline a:active{}div.post-byline a:hover{}div.post-bodycopy{}div.post-bodycopy p{margin:1em 0;padding:0;display:block}div.post-pagination{}div.post-footer{clear:both;display:block;color:#999;text-transform:uppercase;letter-spacing:1px;font-size:11px}div.post-footer a:link,div.post-footer a:visited,div.post-footer a:active{color:#999;font-weight:normal;text-decoration:none}div.post-footer a:hover{color:#333;font-weight:normal;text-decoration:underline}div.post-kicker img,div.post-byline img,div.post-footer img{border:0;padding:0;margin:0 0 -1px 0;background:none}span.post-ratings{display:inline-block;width:auto;white-space:nowrap}div.navigation-top{border-top:solid 4px #eee;padding:8px 0}div.navigation-middle{margin:10px 0 20px 0;padding:8px 0;border-top:solid 4px #eee;border-bottom:solid 4px #eee}div.navigation-bottom{margin:20px 0 0 0;padding:10px 0 0 0;border-top:solid 4px #eee}div.navigation-comments-above{margin:0 0 10px 0;padding:5px 0 5px 0}div.navigation-comments-below{margin:0 0 10px 0;padding:5px 0 5px 0}div.older{float:left;width:48%;text-align:left;margin:0;padding:0}div.newer{float:right;width:48%;text-align:right;margin:0;padding:0;}div.older-home{float:left;width:44%;text-align:left;margin:0;padding:0}div.newer-home{float:right;width:44%;text-align:right;margin:0;padding:0;}div.home{float:left;width:8%;text-align:center;margin:0;padding:0}form,.feedburner-email-form{margin:0;padding:0;}fieldset{border:1px solid #cccccc;width:auto;padding:0.35em 0.625em 0.75em;display:block;}legend{color:#000000;background:#f4f4f4;border:1px solid #cccccc;padding:2px 6px;margin-bottom:15px;}form p{margin:5px 0 0 0;padding:0;}div.xhtml-tags p{margin:0}label{margin-right:0.5em;font-family:arial;cursor:pointer;}input.text,input.textbox,input.password,input.file,input.TextField,textarea{padding:3px;color:#000000;border-top:solid 1px #333333;border-left:solid 1px #333333;border-right:solid 1px #999999;border-bottom:solid 1px #cccccc;background:url(https://www.learncpp.com/blog/wp-content/themes/atahualpa/images/inputbackgr.gif) top left no-repeat}textarea{width:96%;}input.inputblur{color:#777777;width:95%}input.inputfocus{color:#000000;width:95%}input.highlight,textarea.highlight{background:#e8eff7;border-color:#37699f}.button,.Button,input[type=submit]{padding:0 2px;height:24px;line-height:16px;background-color:#777777;color:#ffffff;border:solid 2px #555555;font-weight:bold}input.buttonhover{padding:0 2px;cursor:pointer;background-color:#6b9c6b;color:#ffffff;border:solid 2px #496d49}form#commentform input#submit{ padding:0 .25em; overflow:visible}form#commentform input#submit[class]{width:auto}form#commentform input#submit{padding:4px 10px 4px 10px;font-size:1.2em;line-height:1.5em;height:36px}table.searchform{width:100%}table.searchform td.searchfield{padding:0;width:100%}table.searchform td.searchbutton{padding:0 0 0 5px}table.searchform td.searchbutton input{padding:0 0 0 5px}blockquote{height:1%;display:block;clear:both;color:#555555;padding:1em 1em;background:#f4f4f4;border:solid 1px #e1e1e1}blockquote blockquote{height:1%;display:block;clear:both;color:#444444;padding:1em 1em;background:#e1e1e1;border:solid 1px #d3d3d3}div.post table{border-collapse:collapse;margin:10px 0}div.post table caption{width:auto;margin:0 auto;background:#eeeeee;border:#999999;padding:4px 8px;color:#666666}div.post table th{background:#888888;color:#ffffff;font-weight:bold;font-size:90%;padding:4px 8px;border:solid 1px #ffffff;text-align:left}div.post table td{padding:4px 8px;background-color:#ffffff;border-bottom:1px solid #dddddd;text-align:left}div.post table tfoot td{}div.post table tr.alt td{background:#f4f4f4}div.post table tr.over td{background:#e2e2e2}#calendar_wrap{padding:0;border:none}table#wp-calendar{width:100%;font-size:90%;border-collapse:collapse;background-color:#ffffff;margin:0 auto}table#wp-calendar caption{width:auto;background:#eeeeee;border:none;;padding:3px;margin:0 auto;font-size:1em}table#wp-calendar th{border:solid 1px #eeeeee;background-color:#999999;color:#ffffff;font-weight:bold;padding:2px;text-align:center}table#wp-calendar td{padding:0;line-height:18px;background-color:#ffffff;border:1px solid #dddddd;text-align:center}table#wp-calendar tfoot td{border:solid 1px #eeeeee;background-color:#eeeeee}table#wp-calendar td a{display:block;background-color:#eeeeee;width:100%;height:100%;padding:0}div#respond{margin:25px 0;padding:25px;background:#eee;-moz-border-radius:8px;-khtml-border-radius:8px;-webkit-border-radius:8px;border-radius:8px}p.thesetags{margin:10px 0}h3.reply,h3#reply-title{margin:0;padding:0 0 10px 0}ol.commentlist{margin:15px 0 25px 0;list-style-type:none;padding:0;display:block;border-top:dotted 1px #cccccc}ol.commentlist li{padding:15px 10px;display:block;height:1%;margin:0;background-color:#FFFFFF;border-bottom:dotted 1px #cccccc}ol.commentlist li.alt{display:block;height:1%;background-color:#EEEEEE;border-bottom:dotted 1px #cccccc}ol.commentlist li.authorcomment{display:block;height:1%;background-color:#D8D8FA}ol.commentlist span.authorname{font-weight:bold;font-size:110%}ol.commentlist span.commentdate{color:#666666;font-size:90%;margin-bottom:5px;display:block}ol.commentlist span.editcomment{display:block}ol.commentlist li p{margin:2px 0 5px 0}div.comment-number{float:right;font-size:2em;line-height:2em;font-family:georgia,serif;font-weight:bold;color:#ddd;margin:-10px 0 0 0;position:relative;height:1%}div.comment-number a:link,div.comment-number a:visited,div.comment-number a:active{color:#ccc}textarea#comment{width:98%;margin:10px 0;display:block}ul.commentlist{margin:15px 0 15px 0;list-style-type:none;padding:0;display:block;border-top:dotted 1px #cccccc}ul.commentlist ul{margin:0;border:none;list-style-type:none;padding:0}ul.commentlist li{padding:0; margin:0;display:block;clear:both;height:1%;}ul.commentlist ul.children li{ margin-left:30px}ul.commentlist div.comment-container{padding:10px;margin:0}ul.children div.comment-container{background-color:transparent;border:dotted 1px #ccc;padding:10px;margin:0 10px 8px 0; border-radius:5px}ul.children div.bypostauthor{}ul.commentlist li.thread-even{background-color:#FFFFFF;border-bottom:dotted 1px #cccccc}ul.commentlist li.thread-odd{background-color:#EEEEEE;border-bottom:dotted 1px #cccccc}ul.commentlist div.bypostauthor{background-color:#D8D8FA}ul.children div.bypostauthor{border:dotted 1px #BFBCFB}ul.commentlist span.authorname{font-size:110%}div.comment-meta a:link,div.comment-meta a:visited,div.comment-meta a:active,div.comment-meta a:hover{font-weight:normal}div#cancel-comment-reply{margin:-5px 0 10px 0}div.comment-number{float:right;font-size:2em;line-height:2em;font-family:georgia,serif;font-weight:bold;color:#ddd;margin:-10px 0 0 0;position:relative;height:1%}div.comment-number a:link,div.comment-number a:visited,div.comment-number a:active{color:#ccc}.page-numbers{padding:2px 6px;border:solid 1px #000000;border-radius:6px}span.current{background:#ddd}a.prev,a.next{border:none}a.page-numbers:link,a.page-numbers:visited,a.page-numbers:active{text-decoration:none;color:#365DA0;border-color:#365DA0}a.page-numbers:hover{text-decoration:none;color:#365DA0;border-color:#365DA0}div.xhtml-tags{display:none}abbr em{border:none !important;border-top:dashed 1px #aaa !important;display:inline-block !important;background:url(https://www.learncpp.com/blog/wp-content/themes/atahualpa/images/commentluv.gif) 0% 90% no-repeat;margin-top:8px;padding:5px 5px 2px 20px !important;font-style:normal}p.subscribe-to-comments{margin-bottom:10px}div#gsHeader{display:none;}div.g2_column{margin:0 !important;width:100% !important;font-size:1.2em}div#gsNavBar{border-top-width:0 !important}p.giDescription{font-size:1.2em;line-height:1 !important}p.giTitle{margin:0.3em 0 !important;font-size:1em;font-weight:normal;color:#666}div#wp-email img{border:0;padding:0}div#wp-email input,div#wp-email textarea{margin-top:5px;margin-bottom:2px}div#wp-email p{margin-bottom:10px}input#wp-email-submit{ padding:0; font-size:30px; height:50px; line-height:50px; overflow:visible;}img.WP-EmailIcon{ vertical-align:text-bottom !important}.tw-accordion .tw-widgettitle,.tw-accordion .tw-widgettitle:hover,.tw-accordion .tw-hovered,.tw-accordion .selected,.tw-accordion .selected:hover{ background:transparent !important; background-image:none !important}.tw-accordion .tw-widgettitle span{ padding-left:0 !important}.tw-accordion h3.tw-widgettitle{border-bottom:solid 1px #ccc}.tw-accordion h3.selected{border-bottom:none}td#left .without_title,td#right .without_title{ margin-top:0;margin-bottom:0}ul.tw-nav-list{border-bottom:solid 1px #999;display:block;margin-bottom:5px !important}td#left ul.tw-nav-list li,td#right ul.tw-nav-list li{padding:0 0 1px 0;margin:0 0 -1px 5px; border:solid 1px #ccc;border-bottom:none;border-radius:5px;border-bottom-right-radius:0;border-bottom-left-radius:0;background:#eee}td#left ul.tw-nav-list li.ui-tabs-selected,td#right ul.tw-nav-list li.ui-tabs-selected{ background:none;border:solid 1px #999;border-bottom:solid 1px #fff !important}ul.tw-nav-list li a:link,ul.tw-nav-list li a:visited,ul.tw-nav-list li a:active,ul.tw-nav-list li a:hover{padding:0 8px !important;background:none;border-left:none !important;outline:none}td#left ul.tw-nav-list li.ui-tabs-selected a,td#left li.ui-tabs-selected a:hover,td#right ul.tw-nav-list li.ui-tabs-selected a,td#right li.ui-tabs-selected a:hover{ color:#000000; text-decoration:none;font-weight:bold;background:none !important;outline:none}td#left .ui-tabs-panel,td#right .ui-tabs-panel{ margin:0; padding:0}img{border:0}#dbem-location-map img{ background:none !important}.post img{padding:5px;border:solid 1px #dddddd;background-color:#f3f3f3;-moz-border-radius:3px;-khtml-border-radius:3px;-webkit-border-radius:3px;border-radius:3px}.post img.size-full{max-width:96%;width:auto;margin:5px 0 5px 0}div.post img[class~=size-full]{height:auto;}.post img.alignleft{float:left;margin:10px 10px 5px 0;}.post img.alignright{float:right;margin:10px 0 5px 10px;}.post img.aligncenter{display:block;margin:10px auto}.aligncenter,div.aligncenter{ display:block; margin-left:auto; margin-right:auto}.alignleft,div.alignleft{float:left;margin:10px 10px 5px 0}.alignright,div.alignright{ float:right; margin:10px 0 5px 10px}div.archives-page img{border:0;padding:0;background:none;margin-bottom:0;vertical-align:-10%}.wp-caption{max-width:96%;width:auto 100%;height:auto;display:block;border:1px solid #dddddd;text-align:center;background-color:#f3f3f3;padding-top:4px;margin:10px 0 0 0;-moz-border-radius:3px;-khtml-border-radius:3px;-webkit-border-radius:3px;border-radius:3px}* html .wp-caption{height:100%;}.wp-caption img{ margin:0 !important; padding:0 !important; border:0 none !important}.wp-caption p.wp-caption-text{font-size:0.8em;line-height:13px;padding:2px 4px 5px;margin:0;color:#666666}img.wp-post-image{float:left;border:0;padding:0;background:none;margin:0 10px 5px 0}img.wp-smiley{ float:none;border:none !important;margin:0 1px -1px 1px;padding:0 !important;background:none !important}img.avatar{float:left;display:block;margin:0 8px 1px 0;padding:3px;border:solid 1px #ddd;background-color:#f3f3f3;-moz-border-radius:3px;-khtml-border-radius:3px;-webkit-border-radius:3px;border-radius:3px}#comment_quicktags{text-align:left;padding:10px 0 2px 0;display:block}#comment_quicktags input.ed_button{background:#f4f4f4;border:2px solid #cccccc;color:#444444;margin:2px 4px 2px 0;width:auto;padding:0 4px;height:24px;line-height:16px}#comment_quicktags input.ed_button_hover{background:#dddddd;border:2px solid #666666;color:#000000;margin:2px 4px 2px 0;width:auto;padding:0 4px;height:24px;line-height:16px;cursor:pointer}#comment_quicktags #ed_strong{font-weight:bold}#comment_quicktags #ed_em{font-style:italic}@media print{body{background:white;color:black;margin:0;font-size:10pt !important;font-family:arial,sans-serif;}div.post-footer{line-height:normal !important;color:#555 !important;font-size:9pt !important}a:link,a:visited,a:active,a:hover{text-decoration:underline !important;color:#000}h2{color:#000;font-size:14pt !important;font-weight:normal !important}h3{color:#000;font-size:12pt !important;}#header,#footer,.colone,.colone-inner,.colthree-inner,.colthree,.navigation,.navigation-top,.navigation-middle,.navigation-bottom,.wp-pagenavi-navigation,#comment,#respond,.remove-for-print{display:none}td#left,td#right,td#left-inner,td#right-inner{width:0;display:none}td#middle{width:100% !important;display:block}*:lang(en) td#left{ display:none}*:lang(en) td#right{ display:none}*:lang(en) td#left-inner{ display:none}*:lang(en) td#right-inner{ display:none}td#left:empty{ display:none}td#right:empty{ display:none}td#left-inner:empty{ display:none}td#right-inner:empty{ display:none}}ul.rMenu,ul.rMenu ul,ul.rMenu li,ul.rMenu a{display:block;margin:0;padding:0}ul.rMenu,ul.rMenu li,ul.rMenu ul{list-style:none}ul.rMenu ul{display:none}ul.rMenu li{position:relative;z-index:1}ul.rMenu li:hover{z-index:999}ul.rMenu li:hover > ul{display:block;position:absolute}ul.rMenu li:hover{background-position:0 0} ul.rMenu-hor li{float:left;width:auto}ul.rMenu-hRight li{float:right}ul.sub-menu li,ul.rMenu-ver li{float:none}.clearfix:after{ content:".";display:block;height:0;clear:both;visibility:hidden}.clearfix{min-width:0;display:inline-block;display:block}* html .clearfix{height:1%;}.clearboth{clear:both;height:1%;font-size:1%;line-height:1%;display:block;padding:0;margin:0}.page-id-8 .post-headline{display:none;} div.useCode{background:linear-gradient(#FFFF66,#CCCC00);border-radius:8px;padding-left:10px;padding-right:10px;padding-top:2px;padding-bottom:2px;font-size:10pt;text-align:left;display:inline-block;font-weight:550;}td#header{padding-bottom:15px;}td#middle{padding:0}div.searchbox-form{margin:5px 0 15px 5px}div#menu1 ul.rMenu{background:transparent;border:none}div#imagecontainer{border-top:solid 0px #333;border-bottom:solid 5px #333;}div.widget ul li{padding:1px 5px 1px 12px !important;background:url('<?php bloginfo('template_directory');?>/images/bullets/round-gray.gif') no-repeat 0 7px}ul.rMenu-hor ul,ul.rMenu-hRight ul{margin-top:0px;}ul.rMenu-hor li{margin-bottom:0px;margin-top:0px;margin-left:0px;}ul.rMenu-hor{padding-left:0px;}ul.rMenu-ver li{margin-top:0xp;}div#menu1 ul.rMenu li a,div#menu2 ul.rMenu li a{padding:6px 10px}div#menu1 ul.rMenu li{margin-right:5px}div#menu1 ul.rMenu li li{margin-right:0}div#menu1 ul.rMenu li,div#menu1 ul.rMenu li a{-webkit-border-top-left-radius:5px;-webkit-border-top-right-radius:5px;-moz-border-radius-topleft:5px;-moz-border-radius-topright:5px;border-top-left-radius:5px;border-top-right-radius:5px}div#menu1 ul.rMenu li li,div#menu1 ul.rMenu li li a{-webkit-border-top-left-radius:0;-webkit-border-top-right-radius:0;-moz-border-radius-topleft:0;-moz-border-radius-topright:0;border-top-left-radius:0;border-top-right-radius:0}div#menu2{ border:dashed 1px #ffffff}ul{list-style-position:inside}@media only screen and (max-width:960px) and (device-width:1920px),only screen and (max-width:840px) and (device-width:1680px),only screen and (max-width:800px) and (device-width:1600px),only screen and (max-width:720px) and (device-width:1440px),only screen and (max-width:683px) and (device-width:1366px),only screen and (max-width:680px) and (device-width:1360px),only screen and (max-width:640px) and (device-width:1280px),only screen and (max-width:512px) and (device-width:1024px),only screen and (max-device-width:1080px){.colthree,td#right{ display:none}}</style>
+<script type="text/javascript">
+//<![CDATA[
+
+
+
+/* JQUERY */
+jQuery(document).ready(function(){ 
+    
+   
+  
+
+	/* jQuery('ul#rmenu').superfish(); */
+	/* jQuery('ul#rmenu').superfish().find('ul').bgIframe({opacity:false}); */
+ 
+	/* For IE6 */
+	if (jQuery.browser.msie && /MSIE 6\.0/i.test(window.navigator.userAgent) && !/MSIE 7\.0/i.test(window.navigator.userAgent) && !/MSIE 8\.0/i.test(window.navigator.userAgent)) {
+
+		/* Max-width for images in IE6 */		
+		var centerwidth = jQuery("td#middle").width(); 
+		
+		/* Images without caption */
+		jQuery(".post img").each(function() { 
+			var maxwidth = centerwidth - 10 + 'px';
+			var imgwidth = jQuery(this).width(); 
+			var imgheight = jQuery(this).height(); 
+			var newimgheight = (centerwidth / imgwidth * imgheight) + 'px';	
+			if (imgwidth > centerwidth) { 
+				jQuery(this).css({width: maxwidth}); 
+				jQuery(this).css({height: newimgheight}); 
+			}
+		});
+		
+		/* Images with caption */
+		jQuery("div.wp-caption").each(function() { 
+			var captionwidth = jQuery(this).width(); 
+			var maxcaptionwidth = centerwidth + 'px';
+			var captionheight = jQuery(this).height();
+			var captionimgwidth =  jQuery("div.wp-caption img").width();
+			var captionimgheight =  jQuery("div.wp-caption img").height();
+			if (captionwidth > centerwidth) { 
+				jQuery(this).css({width: maxcaptionwidth}); 
+				var newcaptionheight = (centerwidth / captionwidth * captionheight) + 'px';
+				var newcaptionimgheight = (centerwidth / captionimgwidth * captionimgheight) + 'px';
+				jQuery(this).css({height: newcaptionheight}); 
+				jQuery("div.wp-caption img").css({height: newcaptionimgheight}); 
+				}
+		});
+		
+		/* sfhover for LI:HOVER support in IE6: */
+		jQuery("ul li").
+			hover( function() {
+					jQuery(this).addClass("sfhover")
+				}, 
+				function() {
+					jQuery(this).removeClass("sfhover")
+				} 
+			); 
+
+	/* End IE6 */
+	}
+	
+	
+	
+	/* Since 3.7.8: Auto resize videos (embed and iframe elements) 
+	TODO: Parse parent's dimensions only once per layout column, not per video
+	*/
+	function bfa_resize_video() {
+		jQuery('embed, iframe').each( function() {
+			var video = jQuery(this),
+			videoWidth = video.attr('width'); // use the attr here, not width() or css()
+			videoParent = video.parent(),
+			videoParentWidth = parseFloat( videoParent.css( 'width' ) ),
+			videoParentBorder = parseFloat( videoParent.css( 'border-left-width' ) ) 
+										+  parseFloat( videoParent.css( 'border-right-width' ) ),
+			videoParentPadding = parseFloat( videoParent.css( 'padding-left' ) ) 
+										+  parseFloat( videoParent.css( 'padding-right' ) ),
+			maxWidth = videoParentWidth - videoParentBorder - videoParentPadding;
+
+			if( videoWidth > maxWidth ) {
+				var videoHeight = video.attr('height'),
+				videoMaxHeight = ( maxWidth / videoWidth * videoHeight );
+				video.attr({ width: maxWidth, height: videoMaxHeight });
+			} 
+
+		});	
+	}
+	bfa_resize_video();
+	jQuery(window).resize( bfa_resize_video );
+
+		
+	jQuery(".post table tr").
+		mouseover(function() {
+			jQuery(this).addClass("over");
+		}).
+		mouseout(function() {
+			jQuery(this).removeClass("over");
+		});
+
+	
+	jQuery(".post table tr:even").
+		addClass("alt");
+
+	
+	jQuery("input.text, input.TextField, input.file, input.password, textarea").
+		focus(function () {  
+			jQuery(this).addClass("highlight"); 
+		}).
+		blur(function () { 
+			jQuery(this).removeClass("highlight"); 
+		})
+	
+	jQuery("input.inputblur").
+		focus(function () {  
+			jQuery(this).addClass("inputfocus"); 
+		}).
+		blur(function () { 
+			jQuery(this).removeClass("inputfocus"); 
+		})
+
+		
+
+	
+	jQuery("input.button, input.Button, input#submit").
+		mouseover(function() {
+			jQuery(this).addClass("buttonhover");
+		}).
+		mouseout(function() {
+			jQuery(this).removeClass("buttonhover");
+		});
+
+	/* toggle "you can use these xhtml tags" */
+	jQuery("a.xhtmltags").
+		click(function(){ 
+			jQuery("div.xhtml-tags").slideToggle(300); 
+		});
+
+	/* For the Tabbed Widgets plugin: */
+	jQuery("ul.tw-nav-list").
+		addClass("clearfix");
+
+		
+	
+});
+
+//]]>
+</script>
+
+<!--[if IE 6]>
+<script type="text/javascript">DD_roundies.addRule("a.posts-icon, a.comments-icon, a.email-icon, img.logo");</script>
+<![endif]-->
+
+<!-- Jetpack Open Graph Tags -->
+<meta property="og:type" content="article">
+<meta property="og:title" content="1.6 — Whitespace and basic formatting">
+<meta property="og:url" content="https://www.learncpp.com/cpp-tutorial/16-whitespace-and-basic-formatting/">
+<meta property="og:description" content="Whitespace is a term that refers to characters that are used for formatting purposes. In C++, this refers primarily to spaces, tabs, and (sometimes) newlines. The C++ compiler generally ignores whi…">
+<meta property="article:published_time" content="2007-06-02T01:22:44+00:00">
+<meta property="article:modified_time" content="2018-03-01T00:26:41+00:00">
+<meta property="og:site_name" content="Learn C++">
+<meta property="og:image" content="https://s0.wp.com/i/blank.jpg">
+<meta property="og:locale" content="en_US">
+<meta name="twitter:card" content="summary">
+<link rel="preload" href="./1.6 — Whitespace and basic formatting _ Learn C++_files/f(8).txt" as="script"><script type="text/javascript" src="./1.6 — Whitespace and basic formatting _ Learn C++_files/f(8).txt"></script><link rel="preload" href="./1.6 — Whitespace and basic formatting _ Learn C++_files/f(9).txt" as="script"><script type="text/javascript" src="./1.6 — Whitespace and basic formatting _ Learn C++_files/f(9).txt"></script></head>
+<body class="post-template-default single single-post postid-24 single-format-standard category-cpp-tutorial">
+
+		<!-- Full Width Header -->
+		<div id="header" class="full-width">
+		<div id="imagecontainer-pre" class="header-image-container-pre">    <div id="imagecontainer" class="header-image-container" style="background: url(&#39;https://www.learncpp.com/blog/wp-content/ata-images/header/LearnCpp_1920.jpg&#39;) top center no-repeat;"></div><div class="clickable"><a class="divclick" title="Learn C++" href="https://www.learncpp.com/">&nbsp;</a></div><div class="codeoverlay"></div></div>		</div>
+		<!-- / Full Width Header -->
+<div id="wrapper">
+<div id="container">
+<table id="layout" border="0" cellspacing="0" cellpadding="0">
+<colgroup>
+<col class="colone"><col class="coltwo">
+<col class="colthree"></colgroup> 
+
+	<!-- Main Body -->	
+	<tbody><tr id="bodyrow">
+
+				<!-- Left Sidebar -->
+		<td id="left">
+
+			<div id="text-2" class="widget widget_text">			<div class="textwidget"><ul>
+<li><a href="https://www.learncpp.com/"><big><big>Main Page</big></big></a></li>
+<li><a href="https://www.learncpp.com/learn-c-site-index/">Site Index</a></li>
+</ul>
+<hr>
+<ul>
+<li><a href="https://www.learncpp.com/site-news/find-something-wrong/">Report an Issue</a></li>
+<li><a href="https://www.learncpp.com/about/">About / Contact</a></li>
+<li><a href="https://www.learncpp.com/about/#Support">Support LearnCpp</a></li>
+</ul>
+</div>
+		</div><div id="text-3" class="widget widget_text"><div class="widget-title"><h3>Search</h3></div>			<div class="textwidget"><!-- SiteSearch Google -->
+<form method="get" action="https://www.google.com/custom" target="google_window">
+<table border="0" bgcolor="#ffffff">
+<tbody><tr><td nowrap="nowrap" valign="top" align="center">
+
+<!--<br/>-->
+<input type="hidden" name="domains" value="LearnCpp.com">
+<label for="sbi" style="display: none">Enter your search terms</label>
+<input type="text" name="q" size="16" maxlength="255" value="" id="sbi">
+</td></tr>
+<tr>
+<td nowrap="nowrap">
+<table>
+<tbody><tr>
+<td>
+<input type="hidden" name="sitesearch" value="www.LearnCpp.com" checked="" id="ss1">
+<label for="ss1" title="Search LearnCpp.com"></label></td>
+</tr>
+</tbody></table>
+<label for="sbb" style="display: none">Submit search form</label>
+<input type="submit" name="sa" value="Google Search" id="sbb">
+<input type="hidden" name="client" value="pub-0588844875925051">
+<input type="hidden" name="forid" value="1">
+<input type="hidden" name="channel" value="7774154974">
+<input type="hidden" name="ie" value="ISO-8859-1">
+<input type="hidden" name="oe" value="ISO-8859-1">
+<input type="hidden" name="safe" value="active">
+<input type="hidden" name="flav" value="0000">
+<input type="hidden" name="sig" value="q6fLrjobHHgL00cW">
+</td></tr></tbody></table>
+</form>
+<!-- SiteSearch Google --></div>
+		</div><div id="text-9" class="widget widget_text">			<div class="textwidget"><div class="cf_monitor">
+<script type="text/javascript">
+    google_ad_client = "ca-pub-0588844875925051";
+    google_ad_slot = "2780990843";
+    google_ad_width = 160;
+    google_ad_height = 600;
+</script>
+<!-- Post - Left Sidebar - Wide Skyscraper -->
+<script type="text/javascript" src="./1.6 — Whitespace and basic formatting _ Learn C++_files/f(10).txt">
+</script><ins id="aswift_0_expand" style="display:inline-table;border:none;height:600px;margin:0;padding:0;position:relative;visibility:visible;width:160px;background-color:transparent;"><ins id="aswift_0_anchor" style="display:block;border:none;height:600px;margin:0;padding:0;position:relative;visibility:visible;width:160px;background-color:transparent;"><iframe width="160" height="600" frameborder="0" marginwidth="0" marginheight="0" vspace="0" hspace="0" allowtransparency="true" scrolling="no" allowfullscreen="true" onload="var i=this.id,s=window.google_iframe_oncopy,H=s&amp;&amp;s.handlers,h=H&amp;&amp;H[i],w=this.contentWindow,d;try{d=w.document}catch(e){}if(h&amp;&amp;d&amp;&amp;(!d.body||!d.body.firstChild)){if(h.call){setTimeout(h,0)}else if(h.match){try{h=s.upd(h,i)}catch(e){}w.location.replace(h)}}" id="aswift_0" name="aswift_0" style="left:0;position:absolute;top:0;width:160px;height:600px;" src="./1.6 — Whitespace and basic formatting _ Learn C++_files/saved_resource(2).html"></iframe></ins></ins>
+</div></div>
+		</div>
+		</td>
+		<!-- / Left Sidebar -->
+		
+				
+
+		<!-- Main Column -->
+		<td id="middle">
+
+    
+		
+	<div class="code-block code-block-1 ai-desktop-tablet" style="float:left;margin:8px 8px 8px 0px;"><div class="cf_monitor">
+<script async="" src="./1.6 — Whitespace and basic formatting _ Learn C++_files/f(7).txt"></script>
+<!-- Post - Top - Large Rectangle -->
+<ins class="adsbygoogle" style="display:inline-block;width:336px;height:280px" data-ad-client="ca-pub-0588844875925051" data-ad-slot="7945645163" data-adsbygoogle-status="done"><ins id="aswift_2_expand" style="display:inline-table;border:none;height:280px;margin:0;padding:0;position:relative;visibility:visible;width:336px;background-color:transparent;"><ins id="aswift_2_anchor" style="display:block;border:none;height:280px;margin:0;padding:0;position:relative;visibility:visible;width:336px;background-color:transparent;"><iframe width="336" height="280" frameborder="0" marginwidth="0" marginheight="0" vspace="0" hspace="0" allowtransparency="true" scrolling="no" allowfullscreen="true" onload="var i=this.id,s=window.google_iframe_oncopy,H=s&amp;&amp;s.handlers,h=H&amp;&amp;H[i],w=this.contentWindow,d;try{d=w.document}catch(e){}if(h&amp;&amp;d&amp;&amp;(!d.body||!d.body.firstChild)){if(h.call){setTimeout(h,0)}else if(h.match){try{h=s.upd(h,i)}catch(e){}w.location.replace(h)}}" id="aswift_2" name="aswift_2" style="left:0;position:absolute;top:0;width:336px;height:280px;" src="./1.6 — Whitespace and basic formatting _ Learn C++_files/saved_resource(3).html"></iframe></ins></ins></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+</div>
+</div>	
+								<div class="post-24 post type-post status-publish format-standard hentry category-cpp-tutorial odd" id="post-24">
+						<div class="post-headline">		<h1>1.6 — Whitespace and basic formatting</h1>
+		</div>		<div class="post-byline">By Alex on June 1st, 2007 | last modified by Alex on February 28th, 2018</div>		<div class="post-bodycopy clearfix"><p><strong>Whitespace</strong> is a term that refers to characters that are used for formatting purposes.  In C++, this refers primarily to spaces, tabs, and (sometimes) newlines.  The C++ compiler generally ignores whitespace, with a few minor exceptions.</p>
+<p>Consequently, the following statements all do the exact same thing:</p><!-- Crayon Syntax Highlighter v2.7.1 -->
+
+		<div id="crayon-5b79d860c0690728469585" class="crayon-syntax crayon-theme-familiar-learncppcom crayon-font-monaco crayon-os-pc print-yes notranslate crayon-wrapped" data-settings=" no-popup minimize scroll-mouseover wrap" style="margin-top: 12px; margin-bottom: 12px; font-size: 12px !important; line-height: 16px !important; height: auto;">
+		
+			<div class="crayon-plain-wrap"></div>
+			<div class="crayon-main" style="position: relative; z-index: 1; overflow: hidden;">
+				<table class="crayon-table" style="">
+					<tbody><tr class="crayon-row alt">
+				<td class="crayon-nums " data-settings="show">
+					<div class="crayon-nums-content" style="font-size: 12px !important; line-height: 16px !important;"><div class="crayon-num" data-line="crayon-5b79d860c0690728469585-1" style="height: 16px;">1</div><div class="crayon-num crayon-striped-num" data-line="crayon-5b79d860c0690728469585-2" style="height: 16px;">2</div><div class="crayon-num" data-line="crayon-5b79d860c0690728469585-3" style="height: 16px;">3</div><div class="crayon-num crayon-striped-num" data-line="crayon-5b79d860c0690728469585-4" style="height: 16px;">4</div><div class="crayon-num" data-line="crayon-5b79d860c0690728469585-5" style="height: 16px;">5</div><div class="crayon-num crayon-striped-num" data-line="crayon-5b79d860c0690728469585-6" style="height: 16px;">6</div><div class="crayon-num" data-line="crayon-5b79d860c0690728469585-7" style="height: 16px;">7</div><div class="crayon-num crayon-striped-num" data-line="crayon-5b79d860c0690728469585-8" style="height: 16px;">8</div></div>
+				</td>
+						<td class="crayon-code"><div class="crayon-pre" style="font-size: 12px !important; line-height: 16px !important; -moz-tab-size:4; -o-tab-size:4; -webkit-tab-size:4; tab-size:4;"><div class="crayon-line" id="crayon-5b79d860c0690728469585-1"><span class="crayon-v">std</span><span class="crayon-o">::</span><span class="crayon-r">cout</span><span class="crayon-h"> </span><span class="crayon-o">&lt;&lt;</span><span class="crayon-h"> </span><span class="crayon-s">"Hello world!"</span><span class="crayon-sy">;</span></div><div class="crayon-line crayon-striped-line" id="crayon-5b79d860c0690728469585-2">&nbsp;</div><div class="crayon-line" id="crayon-5b79d860c0690728469585-3"><span class="crayon-v">std</span><span class="crayon-o">::</span><span class="crayon-r">cout</span><span class="crayon-h">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><span class="crayon-o">&lt;&lt;</span><span class="crayon-h">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="crayon-s">"Hello world!"</span><span class="crayon-sy">;</span></div><div class="crayon-line crayon-striped-line" id="crayon-5b79d860c0690728469585-4">&nbsp;</div><div class="crayon-line" id="crayon-5b79d860c0690728469585-5"><span class="crayon-h">		</span><span class="crayon-v">std</span><span class="crayon-o">::</span><span class="crayon-r">cout</span><span class="crayon-h"> </span><span class="crayon-o">&lt;&lt;</span><span class="crayon-h"> 		</span><span class="crayon-s">"Hello world!"</span><span class="crayon-sy">;</span></div><div class="crayon-line crayon-striped-line" id="crayon-5b79d860c0690728469585-6">&nbsp;</div><div class="crayon-line" id="crayon-5b79d860c0690728469585-7"><span class="crayon-v">std</span><span class="crayon-o">::</span><span class="crayon-r">cout</span></div><div class="crayon-line crayon-striped-line" id="crayon-5b79d860c0690728469585-8"><span class="crayon-h">	</span><span class="crayon-o">&lt;&lt;</span><span class="crayon-h"> </span><span class="crayon-s">"Hello world!"</span><span class="crayon-sy">;</span></div></div></td>
+					</tr>
+				</tbody></table>
+			</div>
+		</div>
+<!-- [Format Time: 0.0013 seconds] -->
+<p></p>
+<p>Even the last statement with the newline in it compiles just fine.</p>
+<p>The following functions all do the same thing:</p><!-- Crayon Syntax Highlighter v2.7.1 -->
+
+		<div id="crayon-5b79d860c06a2808981928" class="crayon-syntax crayon-theme-familiar-learncppcom crayon-font-monaco crayon-os-pc print-yes notranslate crayon-wrapped" data-settings=" no-popup minimize scroll-mouseover wrap" style="margin-top: 12px; margin-bottom: 12px; font-size: 12px !important; line-height: 16px !important; height: auto;">
+		
+			<div class="crayon-plain-wrap"></div>
+			<div class="crayon-main" style="position: relative; z-index: 1; overflow: hidden;">
+				<table class="crayon-table" style="">
+					<tbody><tr class="crayon-row">
+				<td class="crayon-nums " data-settings="show">
+					<div class="crayon-nums-content" style="font-size: 12px !important; line-height: 16px !important;"><div class="crayon-num" data-line="crayon-5b79d860c06a2808981928-1" style="height: 16px;">1</div><div class="crayon-num crayon-striped-num" data-line="crayon-5b79d860c06a2808981928-2" style="height: 16px;">2</div><div class="crayon-num" data-line="crayon-5b79d860c06a2808981928-3" style="height: 16px;">3</div><div class="crayon-num crayon-striped-num" data-line="crayon-5b79d860c06a2808981928-4" style="height: 16px;">4</div><div class="crayon-num" data-line="crayon-5b79d860c06a2808981928-5" style="height: 16px;">5</div><div class="crayon-num crayon-striped-num" data-line="crayon-5b79d860c06a2808981928-6" style="height: 16px;">6</div><div class="crayon-num" data-line="crayon-5b79d860c06a2808981928-7" style="height: 16px;">7</div><div class="crayon-num crayon-striped-num" data-line="crayon-5b79d860c06a2808981928-8" style="height: 16px;">8</div><div class="crayon-num" data-line="crayon-5b79d860c06a2808981928-9" style="height: 16px;">9</div><div class="crayon-num crayon-striped-num" data-line="crayon-5b79d860c06a2808981928-10" style="height: 16px;">10</div><div class="crayon-num" data-line="crayon-5b79d860c06a2808981928-11" style="height: 16px;">11</div><div class="crayon-num crayon-striped-num" data-line="crayon-5b79d860c06a2808981928-12" style="height: 16px;">12</div></div>
+				</td>
+						<td class="crayon-code"><div class="crayon-pre" style="font-size: 12px !important; line-height: 16px !important; -moz-tab-size:4; -o-tab-size:4; -webkit-tab-size:4; tab-size:4;"><div class="crayon-line" id="crayon-5b79d860c06a2808981928-1"><span class="crayon-t">int</span><span class="crayon-h"> </span><span class="crayon-e">add</span><span class="crayon-sy">(</span><span class="crayon-t">int</span><span class="crayon-h"> </span><span class="crayon-v">x</span><span class="crayon-sy">,</span><span class="crayon-h"> </span><span class="crayon-t">int</span><span class="crayon-h"> </span><span class="crayon-v">y</span><span class="crayon-sy">)</span><span class="crayon-h"> </span><span class="crayon-sy">{</span><span class="crayon-h"> </span><span class="crayon-st">return</span><span class="crayon-h"> </span><span class="crayon-v">x</span><span class="crayon-h"> </span><span class="crayon-o">+</span><span class="crayon-h"> </span><span class="crayon-v">y</span><span class="crayon-sy">;</span><span class="crayon-h"> </span><span class="crayon-sy">}</span></div><div class="crayon-line crayon-striped-line" id="crayon-5b79d860c06a2808981928-2">&nbsp;</div><div class="crayon-line" id="crayon-5b79d860c06a2808981928-3"><span class="crayon-t">int</span><span class="crayon-h"> </span><span class="crayon-e">add</span><span class="crayon-sy">(</span><span class="crayon-t">int</span><span class="crayon-h"> </span><span class="crayon-v">x</span><span class="crayon-sy">,</span><span class="crayon-h"> </span><span class="crayon-t">int</span><span class="crayon-h"> </span><span class="crayon-v">y</span><span class="crayon-sy">)</span><span class="crayon-h"> </span><span class="crayon-sy">{</span></div><div class="crayon-line crayon-striped-line" id="crayon-5b79d860c06a2808981928-4"><span class="crayon-h">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="crayon-st">return</span><span class="crayon-h"> </span><span class="crayon-v">x</span><span class="crayon-h"> </span><span class="crayon-o">+</span><span class="crayon-h"> </span><span class="crayon-v">y</span><span class="crayon-sy">;</span><span class="crayon-h"> </span><span class="crayon-sy">}</span></div><div class="crayon-line" id="crayon-5b79d860c06a2808981928-5">&nbsp;</div><div class="crayon-line crayon-striped-line" id="crayon-5b79d860c06a2808981928-6"><span class="crayon-t">int</span><span class="crayon-h"> </span><span class="crayon-e">add</span><span class="crayon-sy">(</span><span class="crayon-t">int</span><span class="crayon-h"> </span><span class="crayon-v">x</span><span class="crayon-sy">,</span><span class="crayon-h"> </span><span class="crayon-t">int</span><span class="crayon-h"> </span><span class="crayon-v">y</span><span class="crayon-sy">)</span></div><div class="crayon-line" id="crayon-5b79d860c06a2808981928-7"><span class="crayon-sy">{</span><span class="crayon-h">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="crayon-st">return</span><span class="crayon-h"> </span><span class="crayon-v">x</span><span class="crayon-h"> </span><span class="crayon-o">+</span><span class="crayon-h"> </span><span class="crayon-v">y</span><span class="crayon-sy">;</span><span class="crayon-h"> </span><span class="crayon-sy">}</span></div><div class="crayon-line crayon-striped-line" id="crayon-5b79d860c06a2808981928-8">&nbsp;</div><div class="crayon-line" id="crayon-5b79d860c06a2808981928-9"><span class="crayon-t">int</span><span class="crayon-h"> </span><span class="crayon-e">add</span><span class="crayon-sy">(</span><span class="crayon-t">int</span><span class="crayon-h"> </span><span class="crayon-v">x</span><span class="crayon-sy">,</span><span class="crayon-h"> </span><span class="crayon-t">int</span><span class="crayon-h"> </span><span class="crayon-v">y</span><span class="crayon-sy">)</span></div><div class="crayon-line crayon-striped-line" id="crayon-5b79d860c06a2808981928-10"><span class="crayon-sy">{</span></div><div class="crayon-line" id="crayon-5b79d860c06a2808981928-11"><span class="crayon-h">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="crayon-st">return</span><span class="crayon-h"> </span><span class="crayon-v">x</span><span class="crayon-h"> </span><span class="crayon-o">+</span><span class="crayon-h"> </span><span class="crayon-v">y</span><span class="crayon-sy">;</span></div><div class="crayon-line crayon-striped-line" id="crayon-5b79d860c06a2808981928-12"><span class="crayon-sy">}</span></div></div></td>
+					</tr>
+				</tbody></table>
+			</div>
+		</div>
+<!-- [Format Time: 0.0025 seconds] -->
+<p></p>
+<p>One exception where the C++ compiler <em>does</em> pay attention to whitespace is inside quoted text, such as <code>"Hello world!"</code>.</p>
+<pre>"Hello world!"</pre>
+<p>is different than</p>
+<pre>"Hello     world!"</pre>
+<p>and each prints out exactly as you’d expect.</p>
+<p>Newlines are not allowed in quoted text:</p><!-- Crayon Syntax Highlighter v2.7.1 -->
+
+		<div id="crayon-5b79d860c06aa640648355" class="crayon-syntax crayon-theme-familiar-learncppcom crayon-font-monaco crayon-os-pc print-yes notranslate crayon-wrapped" data-settings=" no-popup minimize scroll-mouseover wrap" style="margin-top: 12px; margin-bottom: 12px; font-size: 12px !important; line-height: 16px !important; height: auto;">
+		
+			<div class="crayon-plain-wrap"></div>
+			<div class="crayon-main" style="position: relative; z-index: 1; overflow: hidden;">
+				<table class="crayon-table" style="">
+					<tbody><tr class="crayon-row alt">
+				<td class="crayon-nums " data-settings="show">
+					<div class="crayon-nums-content" style="font-size: 12px !important; line-height: 16px !important;"><div class="crayon-num" data-line="crayon-5b79d860c06aa640648355-1" style="height: 16px;">1</div><div class="crayon-num crayon-striped-num" data-line="crayon-5b79d860c06aa640648355-2" style="height: 16px;">2</div></div>
+				</td>
+						<td class="crayon-code"><div class="crayon-pre" style="font-size: 12px !important; line-height: 16px !important; -moz-tab-size:4; -o-tab-size:4; -webkit-tab-size:4; tab-size:4;"><div class="crayon-line" id="crayon-5b79d860c06aa640648355-1"><span class="crayon-v">std</span><span class="crayon-o">::</span><span class="crayon-r">cout</span><span class="crayon-h"> </span><span class="crayon-o">&lt;&lt;</span><span class="crayon-h"> </span><span class="crayon-s">"Hello</span></div><div class="crayon-line crayon-striped-line" id="crayon-5b79d860c06aa640648355-2"><span class="crayon-s">&nbsp;&nbsp;&nbsp;&nbsp; world!"</span><span class="crayon-h"> </span><span class="crayon-o">&lt;&lt;</span><span class="crayon-h"> </span><span class="crayon-v">std</span><span class="crayon-o">::</span><span class="crayon-v">endl</span><span class="crayon-sy">;</span><span class="crayon-h"> </span><span class="crayon-c">// Not allowed!</span></div></div></td>
+					</tr>
+				</tbody></table>
+			</div>
+		</div>
+<!-- [Format Time: 0.0005 seconds] -->
+<p></p>
+<p>Another exception where the C++ compiler pays attention to whitespace is with // comments.  Single-line comments only last to the end of the line.  Thus doing something like this will get you in trouble:</p><!-- Crayon Syntax Highlighter v2.7.1 -->
+
+		<div id="crayon-5b79d860c06b0423516602" class="crayon-syntax crayon-theme-familiar-learncppcom crayon-font-monaco crayon-os-pc print-yes notranslate crayon-wrapped" data-settings=" no-popup minimize scroll-mouseover wrap" style="margin-top: 12px; margin-bottom: 12px; font-size: 12px !important; line-height: 16px !important; height: auto;">
+		
+			<div class="crayon-plain-wrap"></div>
+			<div class="crayon-main" style="position: relative; z-index: 1; overflow: hidden;">
+				<table class="crayon-table" style="">
+					<tbody><tr class="crayon-row">
+				<td class="crayon-nums " data-settings="show">
+					<div class="crayon-nums-content" style="font-size: 12px !important; line-height: 16px !important;"><div class="crayon-num" data-line="crayon-5b79d860c06b0423516602-1" style="height: 16px;">1</div><div class="crayon-num crayon-striped-num" data-line="crayon-5b79d860c06b0423516602-2" style="height: 16px;">2</div></div>
+				</td>
+						<td class="crayon-code"><div class="crayon-pre" style="font-size: 12px !important; line-height: 16px !important; -moz-tab-size:4; -o-tab-size:4; -webkit-tab-size:4; tab-size:4;"><div class="crayon-line" id="crayon-5b79d860c06b0423516602-1"><span class="crayon-v">std</span><span class="crayon-o">::</span><span class="crayon-r">cout</span><span class="crayon-h"> </span><span class="crayon-o">&lt;&lt;</span><span class="crayon-h"> </span><span class="crayon-s">"Hello world!"</span><span class="crayon-h"> </span><span class="crayon-o">&lt;&lt;</span><span class="crayon-h"> </span><span class="crayon-v">std</span><span class="crayon-o">::</span><span class="crayon-v">endl</span><span class="crayon-sy">;</span><span class="crayon-h"> </span><span class="crayon-c">// Here is a single-line comment</span></div><div class="crayon-line crayon-striped-line" id="crayon-5b79d860c06b0423516602-2"><span class="crayon-r">this</span><span class="crayon-h"> </span><span class="crayon-st">is</span><span class="crayon-h"> </span><span class="crayon-st">not</span><span class="crayon-h"> </span><span class="crayon-e">part </span><span class="crayon-e">of </span><span class="crayon-e">the </span><span class="crayon-v">comment</span></div></div></td>
+					</tr>
+				</tbody></table>
+			</div>
+		</div>
+<!-- [Format Time: 0.0038 seconds] -->
+<p></p>
+<p><strong>Basic formatting</strong></p>
+<p>Unlike some other languages, C++ does not enforce any kind of formatting restrictions on the programmer (remember, trust the programmer!).  Many different methods of formatting C++ programs have been developed throughout the years, and you will find disagreement on which ones are best.  Our basic rule of thumb is that the best styles are the ones that produce the most readable code, and provide the most consistency.</p>
+<p>Here are our recommendations for basic formatting:</p>
+<p>1) Your tabs should be set to 4 spaces (most IDEs have a setting where you can configure this).  Some IDEs default to 3 spaces, which is a little unconventional but okay.</p>
+<p>You can use tabs or spaces for indentation.  Most major companies and style guides recommend using spaces (either 2 or 4 at a time) because it produces more consistency across all editors.  Personally, I don’t find this reason compelling, and prefer tabs because they are easier to use.</p>
+<p>(The tabs vs spaces is a debate that has gone on for 50+ years now -- there’s no right answer.  Most important thing is to be consistent with the code around yours and the standards of your company, if applicable).</p>
+<p>2) The braces that tell where a function begins and ends should be aligned with the function name, and be on their own lines:</p><!-- Crayon Syntax Highlighter v2.7.1 -->
+
+		<div id="crayon-5b79d860c06b8120262079" class="crayon-syntax crayon-theme-familiar-learncppcom crayon-font-monaco crayon-os-pc print-yes notranslate crayon-wrapped" data-settings=" no-popup minimize scroll-mouseover wrap" style="margin-top: 12px; margin-bottom: 12px; font-size: 12px !important; line-height: 16px !important; height: auto;">
+		
+			<div class="crayon-plain-wrap"></div>
+			<div class="crayon-main" style="position: relative; z-index: 1; overflow: hidden;">
+				<table class="crayon-table" style="">
+					<tbody><tr class="crayon-row alt">
+				<td class="crayon-nums " data-settings="show">
+					<div class="crayon-nums-content" style="font-size: 12px !important; line-height: 16px !important;"><div class="crayon-num" data-line="crayon-5b79d860c06b8120262079-1" style="height: 16px;">1</div><div class="crayon-num crayon-striped-num" data-line="crayon-5b79d860c06b8120262079-2" style="height: 16px;">2</div><div class="crayon-num" data-line="crayon-5b79d860c06b8120262079-3" style="height: 16px;">3</div></div>
+				</td>
+						<td class="crayon-code"><div class="crayon-pre" style="font-size: 12px !important; line-height: 16px !important; -moz-tab-size:4; -o-tab-size:4; -webkit-tab-size:4; tab-size:4;"><div class="crayon-line" id="crayon-5b79d860c06b8120262079-1"><span class="crayon-t">int</span><span class="crayon-h"> </span><span class="crayon-e">main</span><span class="crayon-sy">(</span><span class="crayon-sy">)</span></div><div class="crayon-line crayon-striped-line" id="crayon-5b79d860c06b8120262079-2"><span class="crayon-sy">{</span></div><div class="crayon-line" id="crayon-5b79d860c06b8120262079-3"><span class="crayon-sy">}</span></div></div></td>
+					</tr>
+				</tbody></table>
+			</div>
+		</div>
+<!-- [Format Time: 0.0003 seconds] -->
+<p></p>
+<p>Although some coders prefer other styles, this one is the most readable and least error prone since your brace pairs should always be indented at the same level.  If you get a compiler error due to a brace mismatch, it’s very easy to see where.</p>
+<p>3) Each statement within braces should start one tab (or 4 spaces) in from the opening brace of the function it belongs to.  For example:</p><!-- Crayon Syntax Highlighter v2.7.1 -->
+
+		<div id="crayon-5b79d860c06bf133017352" class="crayon-syntax crayon-theme-familiar-learncppcom crayon-font-monaco crayon-os-pc print-yes notranslate crayon-wrapped" data-settings=" no-popup minimize scroll-mouseover wrap" style="margin-top: 12px; margin-bottom: 12px; font-size: 12px !important; line-height: 16px !important; height: auto;">
+		
+			<div class="crayon-plain-wrap"></div>
+			<div class="crayon-main" style="position: relative; z-index: 1; overflow: hidden;">
+				<table class="crayon-table" style="">
+					<tbody><tr class="crayon-row">
+				<td class="crayon-nums " data-settings="show">
+					<div class="crayon-nums-content" style="font-size: 12px !important; line-height: 16px !important;"><div class="crayon-num" data-line="crayon-5b79d860c06bf133017352-1" style="height: 16px;">1</div><div class="crayon-num crayon-striped-num" data-line="crayon-5b79d860c06bf133017352-2" style="height: 16px;">2</div><div class="crayon-num" data-line="crayon-5b79d860c06bf133017352-3" style="height: 16px;">3</div><div class="crayon-num crayon-striped-num" data-line="crayon-5b79d860c06bf133017352-4" style="height: 16px;">4</div><div class="crayon-num" data-line="crayon-5b79d860c06bf133017352-5" style="height: 16px;">5</div><div class="crayon-num crayon-striped-num" data-line="crayon-5b79d860c06bf133017352-6" style="height: 16px;">6</div></div>
+				</td>
+						<td class="crayon-code"><div class="crayon-pre" style="font-size: 12px !important; line-height: 16px !important; -moz-tab-size:4; -o-tab-size:4; -webkit-tab-size:4; tab-size:4;"><div class="crayon-line" id="crayon-5b79d860c06bf133017352-1"><span class="crayon-p">#include &lt;iostream&gt;</span></div><div class="crayon-line crayon-striped-line" id="crayon-5b79d860c06bf133017352-2"><span class="crayon-t">int</span><span class="crayon-h"> </span><span class="crayon-e">main</span><span class="crayon-sy">(</span><span class="crayon-sy">)</span></div><div class="crayon-line" id="crayon-5b79d860c06bf133017352-3"><span class="crayon-sy">{</span></div><div class="crayon-line crayon-striped-line" id="crayon-5b79d860c06bf133017352-4"><span class="crayon-h">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="crayon-v">std</span><span class="crayon-o">::</span><span class="crayon-r">cout</span><span class="crayon-h"> </span><span class="crayon-o">&lt;&lt;</span><span class="crayon-h"> </span><span class="crayon-s">"Hello world!"</span><span class="crayon-h"> </span><span class="crayon-o">&lt;&lt;</span><span class="crayon-h"> </span><span class="crayon-v">std</span><span class="crayon-o">::</span><span class="crayon-v">endl</span><span class="crayon-sy">;</span><span class="crayon-h"> </span><span class="crayon-c">// tabbed in one tab (4 spaces)</span></div><div class="crayon-line" id="crayon-5b79d860c06bf133017352-5"><span class="crayon-h">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="crayon-v">std</span><span class="crayon-o">::</span><span class="crayon-r">cout</span><span class="crayon-h"> </span><span class="crayon-o">&lt;&lt;</span><span class="crayon-h"> </span><span class="crayon-s">"Nice to meet you."</span><span class="crayon-h"> </span><span class="crayon-o">&lt;&lt;</span><span class="crayon-h"> </span><span class="crayon-v">std</span><span class="crayon-o">::</span><span class="crayon-v">endl</span><span class="crayon-sy">;</span><span class="crayon-h"> </span><span class="crayon-c">// tabbed in one tab (4 spaces)</span></div><div class="crayon-line crayon-striped-line" id="crayon-5b79d860c06bf133017352-6"><span class="crayon-sy">}</span></div></div></td>
+					</tr>
+				</tbody></table>
+			</div>
+		</div>
+<!-- [Format Time: 0.0011 seconds] -->
+<p></p>
+<p>4) Lines should not be too long.  Typically, 72, 78, or 80 characters is the maximum length a line should be.  If a line is going to be longer, it should be broken (at a reasonable spot) into multiple lines.  This can be done by indenting each subsequent line with an extra tab, or if the lines are similar, by aligning it with the line above (whichever is easier to read).</p><!-- Crayon Syntax Highlighter v2.7.1 -->
+
+		<div id="crayon-5b79d860c06c5325522405" class="crayon-syntax crayon-theme-familiar-learncppcom crayon-font-monaco crayon-os-pc print-yes notranslate crayon-wrapped" data-settings=" no-popup minimize scroll-mouseover wrap" style="margin-top: 12px; margin-bottom: 12px; font-size: 12px !important; line-height: 16px !important; height: auto;">
+		
+			<div class="crayon-plain-wrap"></div>
+			<div class="crayon-main" style="position: relative; z-index: 1; overflow: hidden;">
+				<table class="crayon-table" style="">
+					<tbody><tr class="crayon-row alt">
+				<td class="crayon-nums " data-settings="show">
+					<div class="crayon-nums-content" style="font-size: 12px !important; line-height: 16px !important;"><div class="crayon-num" data-line="crayon-5b79d860c06c5325522405-1" style="height: 16px;">1</div><div class="crayon-num crayon-striped-num" data-line="crayon-5b79d860c06c5325522405-2" style="height: 16px;">2</div><div class="crayon-num" data-line="crayon-5b79d860c06c5325522405-3" style="height: 16px;">3</div><div class="crayon-num crayon-striped-num" data-line="crayon-5b79d860c06c5325522405-4" style="height: 16px;">4</div><div class="crayon-num" data-line="crayon-5b79d860c06c5325522405-5" style="height: 16px;">5</div><div class="crayon-num crayon-striped-num" data-line="crayon-5b79d860c06c5325522405-6" style="height: 16px;">6</div><div class="crayon-num" data-line="crayon-5b79d860c06c5325522405-7" style="height: 16px;">7</div><div class="crayon-num crayon-striped-num" data-line="crayon-5b79d860c06c5325522405-8" style="height: 16px;">8</div><div class="crayon-num" data-line="crayon-5b79d860c06c5325522405-9" style="height: 16px;">9</div><div class="crayon-num crayon-striped-num" data-line="crayon-5b79d860c06c5325522405-10" style="height: 16px;">10</div><div class="crayon-num" data-line="crayon-5b79d860c06c5325522405-11" style="height: 16px;">11</div></div>
+				</td>
+						<td class="crayon-code"><div class="crayon-pre" style="font-size: 12px !important; line-height: 16px !important; -moz-tab-size:4; -o-tab-size:4; -webkit-tab-size:4; tab-size:4;"><div class="crayon-line" id="crayon-5b79d860c06c5325522405-1"><span class="crayon-p">#include &lt;iostream&gt;</span></div><div class="crayon-line crayon-striped-line" id="crayon-5b79d860c06c5325522405-2"><span class="crayon-t">int</span><span class="crayon-h"> </span><span class="crayon-e">main</span><span class="crayon-sy">(</span><span class="crayon-sy">)</span></div><div class="crayon-line" id="crayon-5b79d860c06c5325522405-3"><span class="crayon-sy">{</span></div><div class="crayon-line crayon-striped-line" id="crayon-5b79d860c06c5325522405-4"><span class="crayon-h">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="crayon-v">std</span><span class="crayon-o">::</span><span class="crayon-r">cout</span><span class="crayon-h"> </span><span class="crayon-o">&lt;&lt;</span><span class="crayon-h"> </span><span class="crayon-s">"This is a really, really, really, really, really, really, really, "</span><span class="crayon-h"> </span><span class="crayon-o">&lt;&lt;</span></div><div class="crayon-line" id="crayon-5b79d860c06c5325522405-5"><span class="crayon-h">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="crayon-s">"really long line"</span><span class="crayon-h"> </span><span class="crayon-o">&lt;&lt;</span><span class="crayon-h"> </span><span class="crayon-v">std</span><span class="crayon-o">::</span><span class="crayon-v">endl</span><span class="crayon-sy">;</span><span class="crayon-h"> </span><span class="crayon-c">// one extra indentation for continuation line</span></div><div class="crayon-line crayon-striped-line" id="crayon-5b79d860c06c5325522405-6">&nbsp;</div><div class="crayon-line" id="crayon-5b79d860c06c5325522405-7"><span class="crayon-h">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="crayon-v">std</span><span class="crayon-o">::</span><span class="crayon-r">cout</span><span class="crayon-h"> </span><span class="crayon-o">&lt;&lt;</span><span class="crayon-h"> </span><span class="crayon-s">"This is another really, really, really, really, really, really, really, "</span><span class="crayon-h"> </span><span class="crayon-o">&lt;&lt;</span></div><div class="crayon-line crayon-striped-line" id="crayon-5b79d860c06c5325522405-8"><span class="crayon-h">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><span class="crayon-s">"really long line"</span><span class="crayon-h"> </span><span class="crayon-o">&lt;&lt;</span><span class="crayon-h"> </span><span class="crayon-v">std</span><span class="crayon-o">::</span><span class="crayon-v">endl</span><span class="crayon-sy">;</span><span class="crayon-h"> </span><span class="crayon-c">// text aligned with the previous line for continuation line</span></div><div class="crayon-line" id="crayon-5b79d860c06c5325522405-9">&nbsp;</div><div class="crayon-line crayon-striped-line" id="crayon-5b79d860c06c5325522405-10"><span class="crayon-h">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="crayon-v">std</span><span class="crayon-o">::</span><span class="crayon-r">cout</span><span class="crayon-h"> </span><span class="crayon-o">&lt;&lt;</span><span class="crayon-h"> </span><span class="crayon-s">"This one is short"</span><span class="crayon-h"> </span><span class="crayon-o">&lt;&lt;</span><span class="crayon-h"> </span><span class="crayon-v">std</span><span class="crayon-o">::</span><span class="crayon-v">endl</span><span class="crayon-sy">;</span></div><div class="crayon-line" id="crayon-5b79d860c06c5325522405-11"><span class="crayon-sy">}</span></div></div></td>
+					</tr>
+				</tbody></table>
+			</div>
+		</div>
+<!-- [Format Time: 0.0048 seconds] -->
+<p></p>
+<p>5) If a long line that is broken into pieces is broken with an operator (eg. &lt;&lt; or +), the operator should be placed at the end of the line, not the start of the next line:</p><!-- Crayon Syntax Highlighter v2.7.1 -->
+
+		<div id="crayon-5b79d860c06cc158912966" class="crayon-syntax crayon-theme-familiar-learncppcom crayon-font-monaco crayon-os-pc print-yes notranslate crayon-wrapped" data-settings=" no-popup minimize scroll-mouseover wrap" style="margin-top: 12px; margin-bottom: 12px; font-size: 12px !important; line-height: 16px !important; height: auto;">
+		
+			<div class="crayon-plain-wrap"></div>
+			<div class="crayon-main" style="position: relative; z-index: 1; overflow: hidden;">
+				<table class="crayon-table" style="">
+					<tbody><tr class="crayon-row">
+				<td class="crayon-nums " data-settings="show">
+					<div class="crayon-nums-content" style="font-size: 12px !important; line-height: 16px !important;"><div class="crayon-num" data-line="crayon-5b79d860c06cc158912966-1" style="height: 16px;">1</div><div class="crayon-num crayon-striped-num" data-line="crayon-5b79d860c06cc158912966-2" style="height: 16px;">2</div></div>
+				</td>
+						<td class="crayon-code"><div class="crayon-pre" style="font-size: 12px !important; line-height: 16px !important; -moz-tab-size:4; -o-tab-size:4; -webkit-tab-size:4; tab-size:4;"><div class="crayon-line" id="crayon-5b79d860c06cc158912966-1"><span class="crayon-h">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="crayon-v">std</span><span class="crayon-o">::</span><span class="crayon-r">cout</span><span class="crayon-h"> </span><span class="crayon-o">&lt;&lt;</span><span class="crayon-h"> </span><span class="crayon-s">"This is a really, really, really, really, really, really, really, "</span><span class="crayon-h"> </span><span class="crayon-o">&lt;&lt;</span></div><div class="crayon-line crayon-striped-line" id="crayon-5b79d860c06cc158912966-2"><span class="crayon-h">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="crayon-s">"really long line"</span><span class="crayon-h"> </span><span class="crayon-o">&lt;&lt;</span><span class="crayon-h"> </span><span class="crayon-v">std</span><span class="crayon-o">::</span><span class="crayon-v">endl</span><span class="crayon-sy">;</span></div></div></td>
+					</tr>
+				</tbody></table>
+			</div>
+		</div>
+<!-- [Format Time: 0.0006 seconds] -->
+<p></p>
+<p>Not</p>
+<p></p><!-- Crayon Syntax Highlighter v2.7.1 -->
+
+		<div id="crayon-5b79d860c06d3813018004" class="crayon-syntax crayon-theme-familiar-learncppcom crayon-font-monaco crayon-os-pc print-yes notranslate crayon-wrapped" data-settings=" no-popup minimize scroll-mouseover wrap" style="margin-top: 12px; margin-bottom: 12px; font-size: 12px !important; line-height: 16px !important; height: auto;">
+		
+			<div class="crayon-plain-wrap"></div>
+			<div class="crayon-main" style="position: relative; z-index: 1; overflow: hidden;">
+				<table class="crayon-table" style="">
+					<tbody><tr class="crayon-row alt">
+				<td class="crayon-nums " data-settings="show">
+					<div class="crayon-nums-content" style="font-size: 12px !important; line-height: 16px !important;"><div class="crayon-num" data-line="crayon-5b79d860c06d3813018004-1" style="height: 16px;">1</div><div class="crayon-num crayon-striped-num" data-line="crayon-5b79d860c06d3813018004-2" style="height: 16px;">2</div></div>
+				</td>
+						<td class="crayon-code"><div class="crayon-pre" style="font-size: 12px !important; line-height: 16px !important; -moz-tab-size:4; -o-tab-size:4; -webkit-tab-size:4; tab-size:4;"><div class="crayon-line" id="crayon-5b79d860c06d3813018004-1"><span class="crayon-h">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="crayon-v">std</span><span class="crayon-o">::</span><span class="crayon-r">cout</span><span class="crayon-h"> </span><span class="crayon-o">&lt;&lt;</span><span class="crayon-h"> </span><span class="crayon-s">"This is a really, really, really, really, really, really, really, "</span></div><div class="crayon-line crayon-striped-line" id="crayon-5b79d860c06d3813018004-2"><span class="crayon-h">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="crayon-o">&lt;&lt;</span><span class="crayon-h"> </span><span class="crayon-s">"really long line"</span><span class="crayon-h"> </span><span class="crayon-o">&lt;&lt;</span><span class="crayon-h"> </span><span class="crayon-v">std</span><span class="crayon-o">::</span><span class="crayon-v">endl</span><span class="crayon-sy">;</span></div></div></td>
+					</tr>
+				</tbody></table>
+			</div>
+		</div>
+<!-- [Format Time: 0.0036 seconds] -->
+<p></p>
+<p>This makes it more obvious from looking at the first line that the next line is going to be a continuation.</p>
+<p>6) Use whitespace to make your code easier to read.</p>
+<p>Harder to read:</p><!-- Crayon Syntax Highlighter v2.7.1 -->
+
+		<div id="crayon-5b79d860c06d9286429850" class="crayon-syntax crayon-theme-familiar-learncppcom crayon-font-monaco crayon-os-pc print-yes notranslate crayon-wrapped" data-settings=" no-popup minimize scroll-mouseover wrap" style="margin-top: 12px; margin-bottom: 12px; font-size: 12px !important; line-height: 16px !important; height: auto;">
+		
+			<div class="crayon-plain-wrap"></div>
+			<div class="crayon-main" style="position: relative; z-index: 1; overflow: hidden;">
+				<table class="crayon-table" style="">
+					<tbody><tr class="crayon-row">
+				<td class="crayon-nums " data-settings="show">
+					<div class="crayon-nums-content" style="font-size: 12px !important; line-height: 16px !important;"><div class="crayon-num" data-line="crayon-5b79d860c06d9286429850-1" style="height: 16px;">1</div><div class="crayon-num crayon-striped-num" data-line="crayon-5b79d860c06d9286429850-2" style="height: 16px;">2</div><div class="crayon-num" data-line="crayon-5b79d860c06d9286429850-3" style="height: 16px;">3</div><div class="crayon-num crayon-striped-num" data-line="crayon-5b79d860c06d9286429850-4" style="height: 16px;">4</div></div>
+				</td>
+						<td class="crayon-code"><div class="crayon-pre" style="font-size: 12px !important; line-height: 16px !important; -moz-tab-size:4; -o-tab-size:4; -webkit-tab-size:4; tab-size:4;"><div class="crayon-line" id="crayon-5b79d860c06d9286429850-1"><span class="crayon-v">nCost</span><span class="crayon-h"> </span><span class="crayon-o">=</span><span class="crayon-h"> </span><span class="crayon-cn">57</span><span class="crayon-sy">;</span></div><div class="crayon-line crayon-striped-line" id="crayon-5b79d860c06d9286429850-2"><span class="crayon-v">nPricePerItem</span><span class="crayon-h"> </span><span class="crayon-o">=</span><span class="crayon-h"> </span><span class="crayon-cn">24</span><span class="crayon-sy">;</span></div><div class="crayon-line" id="crayon-5b79d860c06d9286429850-3"><span class="crayon-v">nValue</span><span class="crayon-h"> </span><span class="crayon-o">=</span><span class="crayon-h"> </span><span class="crayon-cn">5</span><span class="crayon-sy">;</span></div><div class="crayon-line crayon-striped-line" id="crayon-5b79d860c06d9286429850-4"><span class="crayon-v">nNumberOfItems</span><span class="crayon-h"> </span><span class="crayon-o">=</span><span class="crayon-h"> </span><span class="crayon-cn">17</span><span class="crayon-sy">;</span></div></div></td>
+					</tr>
+				</tbody></table>
+			</div>
+		</div>
+<!-- [Format Time: 0.0007 seconds] -->
+<p></p>
+<p>Easier to read:</p><!-- Crayon Syntax Highlighter v2.7.1 -->
+
+		<div id="crayon-5b79d860c06df299366609" class="crayon-syntax crayon-theme-familiar-learncppcom crayon-font-monaco crayon-os-pc print-yes notranslate crayon-wrapped" data-settings=" no-popup minimize scroll-mouseover wrap" style="margin-top: 12px; margin-bottom: 12px; font-size: 12px !important; line-height: 16px !important; height: auto;">
+		
+			<div class="crayon-plain-wrap"></div>
+			<div class="crayon-main" style="position: relative; z-index: 1; overflow: hidden;">
+				<table class="crayon-table" style="">
+					<tbody><tr class="crayon-row alt">
+				<td class="crayon-nums " data-settings="show">
+					<div class="crayon-nums-content" style="font-size: 12px !important; line-height: 16px !important;"><div class="crayon-num" data-line="crayon-5b79d860c06df299366609-1" style="height: 16px;">1</div><div class="crayon-num crayon-striped-num" data-line="crayon-5b79d860c06df299366609-2" style="height: 16px;">2</div><div class="crayon-num" data-line="crayon-5b79d860c06df299366609-3" style="height: 16px;">3</div><div class="crayon-num crayon-striped-num" data-line="crayon-5b79d860c06df299366609-4" style="height: 16px;">4</div></div>
+				</td>
+						<td class="crayon-code"><div class="crayon-pre" style="font-size: 12px !important; line-height: 16px !important; -moz-tab-size:4; -o-tab-size:4; -webkit-tab-size:4; tab-size:4;"><div class="crayon-line" id="crayon-5b79d860c06df299366609-1"><span class="crayon-v">nCost</span><span class="crayon-h">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="crayon-o">=</span><span class="crayon-h"> </span><span class="crayon-cn">57</span><span class="crayon-sy">;</span></div><div class="crayon-line crayon-striped-line" id="crayon-5b79d860c06df299366609-2"><span class="crayon-v">nPricePerItem</span><span class="crayon-h">&nbsp;&nbsp;</span><span class="crayon-o">=</span><span class="crayon-h"> </span><span class="crayon-cn">24</span><span class="crayon-sy">;</span></div><div class="crayon-line" id="crayon-5b79d860c06df299366609-3"><span class="crayon-v">nValue</span><span class="crayon-h">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><span class="crayon-o">=</span><span class="crayon-h"> </span><span class="crayon-cn">5</span><span class="crayon-sy">;</span></div><div class="crayon-line crayon-striped-line" id="crayon-5b79d860c06df299366609-4"><span class="crayon-v">nNumberOfItems</span><span class="crayon-h"> </span><span class="crayon-o">=</span><span class="crayon-h"> </span><span class="crayon-cn">17</span><span class="crayon-sy">;</span></div></div></td>
+					</tr>
+				</tbody></table>
+			</div>
+		</div>
+<!-- [Format Time: 0.0038 seconds] -->
+<p></p>
+<p>Harder to read:</p><!-- Crayon Syntax Highlighter v2.7.1 -->
+
+		<div id="crayon-5b79d860c06e5564005682" class="crayon-syntax crayon-theme-familiar-learncppcom crayon-font-monaco crayon-os-pc print-yes notranslate crayon-wrapped" data-settings=" no-popup minimize scroll-mouseover wrap" style="margin-top: 12px; margin-bottom: 12px; font-size: 12px !important; line-height: 16px !important; height: auto;">
+		
+			<div class="crayon-plain-wrap"></div>
+			<div class="crayon-main" style="position: relative; z-index: 1; overflow: hidden;">
+				<table class="crayon-table" style="">
+					<tbody><tr class="crayon-row">
+				<td class="crayon-nums " data-settings="show">
+					<div class="crayon-nums-content" style="font-size: 12px !important; line-height: 16px !important;"><div class="crayon-num" data-line="crayon-5b79d860c06e5564005682-1" style="height: 16px;">1</div><div class="crayon-num crayon-striped-num" data-line="crayon-5b79d860c06e5564005682-2" style="height: 16px;">2</div><div class="crayon-num" data-line="crayon-5b79d860c06e5564005682-3" style="height: 16px;">3</div></div>
+				</td>
+						<td class="crayon-code"><div class="crayon-pre" style="font-size: 12px !important; line-height: 16px !important; -moz-tab-size:4; -o-tab-size:4; -webkit-tab-size:4; tab-size:4;"><div class="crayon-line" id="crayon-5b79d860c06e5564005682-1"><span class="crayon-v">std</span><span class="crayon-o">::</span><span class="crayon-r">cout</span><span class="crayon-h"> </span><span class="crayon-o">&lt;&lt;</span><span class="crayon-h"> </span><span class="crayon-s">"Hello world!"</span><span class="crayon-h"> </span><span class="crayon-o">&lt;&lt;</span><span class="crayon-h"> </span><span class="crayon-v">std</span><span class="crayon-o">::</span><span class="crayon-v">endl</span><span class="crayon-sy">;</span><span class="crayon-h"> </span><span class="crayon-c">// std::cout and std::endl live in the iostream library</span></div><div class="crayon-line crayon-striped-line" id="crayon-5b79d860c06e5564005682-2"><span class="crayon-v">std</span><span class="crayon-o">::</span><span class="crayon-r">cout</span><span class="crayon-h"> </span><span class="crayon-o">&lt;&lt;</span><span class="crayon-h"> </span><span class="crayon-s">"It is very nice to meet you!"</span><span class="crayon-h"> </span><span class="crayon-o">&lt;&lt;</span><span class="crayon-h"> </span><span class="crayon-v">std</span><span class="crayon-o">::</span><span class="crayon-v">endl</span><span class="crayon-sy">;</span><span class="crayon-h"> </span><span class="crayon-c">// these comments make the code hard to read</span></div><div class="crayon-line" id="crayon-5b79d860c06e5564005682-3"><span class="crayon-v">std</span><span class="crayon-o">::</span><span class="crayon-r">cout</span><span class="crayon-h"> </span><span class="crayon-o">&lt;&lt;</span><span class="crayon-h"> </span><span class="crayon-s">"Yeah!"</span><span class="crayon-h"> </span><span class="crayon-o">&lt;&lt;</span><span class="crayon-h"> </span><span class="crayon-v">std</span><span class="crayon-o">::</span><span class="crayon-v">endl</span><span class="crayon-sy">;</span><span class="crayon-h"> </span><span class="crayon-c">// especially when lines are different lengths</span></div></div></td>
+					</tr>
+				</tbody></table>
+			</div>
+		</div>
+<!-- [Format Time: 0.0043 seconds] -->
+<p></p>
+<p>Easier to read:</p><!-- Crayon Syntax Highlighter v2.7.1 -->
+
+		<div id="crayon-5b79d860c06eb485158527" class="crayon-syntax crayon-theme-familiar-learncppcom crayon-font-monaco crayon-os-pc print-yes notranslate crayon-wrapped" data-settings=" no-popup minimize scroll-mouseover wrap" style="margin-top: 12px; margin-bottom: 12px; font-size: 12px !important; line-height: 16px !important; height: auto;">
+		
+			<div class="crayon-plain-wrap"></div>
+			<div class="crayon-main" style="position: relative; z-index: 1; overflow: hidden;">
+				<table class="crayon-table" style="">
+					<tbody><tr class="crayon-row alt">
+				<td class="crayon-nums " data-settings="show">
+					<div class="crayon-nums-content" style="font-size: 12px !important; line-height: 16px !important;"><div class="crayon-num" data-line="crayon-5b79d860c06eb485158527-1" style="height: 16px;">1</div><div class="crayon-num crayon-striped-num" data-line="crayon-5b79d860c06eb485158527-2" style="height: 16px;">2</div><div class="crayon-num" data-line="crayon-5b79d860c06eb485158527-3" style="height: 16px;">3</div></div>
+				</td>
+						<td class="crayon-code"><div class="crayon-pre" style="font-size: 12px !important; line-height: 16px !important; -moz-tab-size:4; -o-tab-size:4; -webkit-tab-size:4; tab-size:4;"><div class="crayon-line" id="crayon-5b79d860c06eb485158527-1"><span class="crayon-v">std</span><span class="crayon-o">::</span><span class="crayon-r">cout</span><span class="crayon-h"> </span><span class="crayon-o">&lt;&lt;</span><span class="crayon-h"> </span><span class="crayon-s">"Hello world!"</span><span class="crayon-h"> </span><span class="crayon-o">&lt;&lt;</span><span class="crayon-h"> </span><span class="crayon-v">std</span><span class="crayon-o">::</span><span class="crayon-v">endl</span><span class="crayon-sy">;</span><span class="crayon-h">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="crayon-c">// std::cout and std::endl live in the iostream library</span></div><div class="crayon-line crayon-striped-line" id="crayon-5b79d860c06eb485158527-2"><span class="crayon-v">std</span><span class="crayon-o">::</span><span class="crayon-r">cout</span><span class="crayon-h"> </span><span class="crayon-o">&lt;&lt;</span><span class="crayon-h"> </span><span class="crayon-s">"It is very nice to meet you!"</span><span class="crayon-h"> </span><span class="crayon-o">&lt;&lt;</span><span class="crayon-h"> </span><span class="crayon-v">std</span><span class="crayon-o">::</span><span class="crayon-v">endl</span><span class="crayon-sy">;</span><span class="crayon-h">&nbsp;&nbsp;</span><span class="crayon-c">// these comments are easier to read</span></div><div class="crayon-line" id="crayon-5b79d860c06eb485158527-3"><span class="crayon-v">std</span><span class="crayon-o">::</span><span class="crayon-r">cout</span><span class="crayon-h"> </span><span class="crayon-o">&lt;&lt;</span><span class="crayon-h"> </span><span class="crayon-s">"Yeah!"</span><span class="crayon-h"> </span><span class="crayon-o">&lt;&lt;</span><span class="crayon-h"> </span><span class="crayon-v">std</span><span class="crayon-o">::</span><span class="crayon-v">endl</span><span class="crayon-sy">;</span><span class="crayon-h">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><span class="crayon-c">// especially when all lined up</span></div></div></td>
+					</tr>
+				</tbody></table>
+			</div>
+		</div>
+<!-- [Format Time: 0.0013 seconds] -->
+<p></p>
+<p>Harder to read:</p><!-- Crayon Syntax Highlighter v2.7.1 -->
+
+		<div id="crayon-5b79d860c06f1348787968" class="crayon-syntax crayon-theme-familiar-learncppcom crayon-font-monaco crayon-os-pc print-yes notranslate crayon-wrapped" data-settings=" no-popup minimize scroll-mouseover wrap" style="margin-top: 12px; margin-bottom: 12px; font-size: 12px !important; line-height: 16px !important; height: auto;">
+		
+			<div class="crayon-plain-wrap"></div>
+			<div class="crayon-main" style="position: relative; z-index: 1; overflow: hidden;">
+				<table class="crayon-table" style="">
+					<tbody><tr class="crayon-row">
+				<td class="crayon-nums " data-settings="show">
+					<div class="crayon-nums-content" style="font-size: 12px !important; line-height: 16px !important;"><div class="crayon-num" data-line="crayon-5b79d860c06f1348787968-1" style="height: 16px;">1</div><div class="crayon-num crayon-striped-num" data-line="crayon-5b79d860c06f1348787968-2" style="height: 16px;">2</div><div class="crayon-num" data-line="crayon-5b79d860c06f1348787968-3" style="height: 16px;">3</div><div class="crayon-num crayon-striped-num" data-line="crayon-5b79d860c06f1348787968-4" style="height: 16px;">4</div><div class="crayon-num" data-line="crayon-5b79d860c06f1348787968-5" style="height: 16px;">5</div><div class="crayon-num crayon-striped-num" data-line="crayon-5b79d860c06f1348787968-6" style="height: 16px;">6</div></div>
+				</td>
+						<td class="crayon-code"><div class="crayon-pre" style="font-size: 12px !important; line-height: 16px !important; -moz-tab-size:4; -o-tab-size:4; -webkit-tab-size:4; tab-size:4;"><div class="crayon-line" id="crayon-5b79d860c06f1348787968-1"><span class="crayon-c">// std::cout and std::endl live in the iostream library</span></div><div class="crayon-line crayon-striped-line" id="crayon-5b79d860c06f1348787968-2"><span class="crayon-v">std</span><span class="crayon-o">::</span><span class="crayon-r">cout</span><span class="crayon-h"> </span><span class="crayon-o">&lt;&lt;</span><span class="crayon-h"> </span><span class="crayon-s">"Hello world!"</span><span class="crayon-h"> </span><span class="crayon-o">&lt;&lt;</span><span class="crayon-h"> </span><span class="crayon-v">std</span><span class="crayon-o">::</span><span class="crayon-v">endl</span><span class="crayon-sy">;</span></div><div class="crayon-line" id="crayon-5b79d860c06f1348787968-3"><span class="crayon-c">// these comments make the code hard to read</span></div><div class="crayon-line crayon-striped-line" id="crayon-5b79d860c06f1348787968-4"><span class="crayon-v">std</span><span class="crayon-o">::</span><span class="crayon-r">cout</span><span class="crayon-h"> </span><span class="crayon-o">&lt;&lt;</span><span class="crayon-h"> </span><span class="crayon-s">"It is very nice to meet you!"</span><span class="crayon-h"> </span><span class="crayon-o">&lt;&lt;</span><span class="crayon-h"> </span><span class="crayon-v">std</span><span class="crayon-o">::</span><span class="crayon-v">endl</span><span class="crayon-sy">;</span></div><div class="crayon-line" id="crayon-5b79d860c06f1348787968-5"><span class="crayon-c">// especially when all bunched together</span></div><div class="crayon-line crayon-striped-line" id="crayon-5b79d860c06f1348787968-6"><span class="crayon-v">std</span><span class="crayon-o">::</span><span class="crayon-r">cout</span><span class="crayon-h"> </span><span class="crayon-o">&lt;&lt;</span><span class="crayon-h"> </span><span class="crayon-s">"Yeah!"</span><span class="crayon-h"> </span><span class="crayon-o">&lt;&lt;</span><span class="crayon-h"> </span><span class="crayon-v">std</span><span class="crayon-o">::</span><span class="crayon-v">endl</span><span class="crayon-sy">;</span></div></div></td>
+					</tr>
+				</tbody></table>
+			</div>
+		</div>
+<!-- [Format Time: 0.0012 seconds] -->
+<p></p>
+<p>Easier to read:</p><!-- Crayon Syntax Highlighter v2.7.1 -->
+
+		<div id="crayon-5b79d860c06f8892997475" class="crayon-syntax crayon-theme-familiar-learncppcom crayon-font-monaco crayon-os-pc print-yes notranslate crayon-wrapped" data-settings=" no-popup minimize scroll-mouseover wrap" style="margin-top: 12px; margin-bottom: 12px; font-size: 12px !important; line-height: 16px !important; height: auto;">
+		
+			<div class="crayon-plain-wrap"></div>
+			<div class="crayon-main" style="position: relative; z-index: 1; overflow: hidden;">
+				<table class="crayon-table" style="">
+					<tbody><tr class="crayon-row alt">
+				<td class="crayon-nums " data-settings="show">
+					<div class="crayon-nums-content" style="font-size: 12px !important; line-height: 16px !important;"><div class="crayon-num" data-line="crayon-5b79d860c06f8892997475-1" style="height: 16px;">1</div><div class="crayon-num crayon-striped-num" data-line="crayon-5b79d860c06f8892997475-2" style="height: 16px;">2</div><div class="crayon-num" data-line="crayon-5b79d860c06f8892997475-3" style="height: 16px;">3</div><div class="crayon-num crayon-striped-num" data-line="crayon-5b79d860c06f8892997475-4" style="height: 16px;">4</div><div class="crayon-num" data-line="crayon-5b79d860c06f8892997475-5" style="height: 16px;">5</div><div class="crayon-num crayon-striped-num" data-line="crayon-5b79d860c06f8892997475-6" style="height: 16px;">6</div><div class="crayon-num" data-line="crayon-5b79d860c06f8892997475-7" style="height: 16px;">7</div><div class="crayon-num crayon-striped-num" data-line="crayon-5b79d860c06f8892997475-8" style="height: 16px;">8</div></div>
+				</td>
+						<td class="crayon-code"><div class="crayon-pre" style="font-size: 12px !important; line-height: 16px !important; -moz-tab-size:4; -o-tab-size:4; -webkit-tab-size:4; tab-size:4;"><div class="crayon-line" id="crayon-5b79d860c06f8892997475-1"><span class="crayon-c">// std::cout and std::endl live in the iostream library</span></div><div class="crayon-line crayon-striped-line" id="crayon-5b79d860c06f8892997475-2"><span class="crayon-v">std</span><span class="crayon-o">::</span><span class="crayon-r">cout</span><span class="crayon-h"> </span><span class="crayon-o">&lt;&lt;</span><span class="crayon-h"> </span><span class="crayon-s">"Hello world!"</span><span class="crayon-h"> </span><span class="crayon-o">&lt;&lt;</span><span class="crayon-h"> </span><span class="crayon-v">std</span><span class="crayon-o">::</span><span class="crayon-v">endl</span><span class="crayon-sy">;</span></div><div class="crayon-line" id="crayon-5b79d860c06f8892997475-3">&nbsp;</div><div class="crayon-line crayon-striped-line" id="crayon-5b79d860c06f8892997475-4"><span class="crayon-c">// these comments are easier to read</span></div><div class="crayon-line" id="crayon-5b79d860c06f8892997475-5"><span class="crayon-v">std</span><span class="crayon-o">::</span><span class="crayon-r">cout</span><span class="crayon-h"> </span><span class="crayon-o">&lt;&lt;</span><span class="crayon-h"> </span><span class="crayon-s">"It is very nice to meet you!"</span><span class="crayon-h"> </span><span class="crayon-o">&lt;&lt;</span><span class="crayon-h"> </span><span class="crayon-v">std</span><span class="crayon-o">::</span><span class="crayon-v">endl</span><span class="crayon-sy">;</span></div><div class="crayon-line crayon-striped-line" id="crayon-5b79d860c06f8892997475-6">&nbsp;</div><div class="crayon-line" id="crayon-5b79d860c06f8892997475-7"><span class="crayon-c">// when separated by whitespace</span></div><div class="crayon-line crayon-striped-line" id="crayon-5b79d860c06f8892997475-8"><span class="crayon-v">std</span><span class="crayon-o">::</span><span class="crayon-r">cout</span><span class="crayon-h"> </span><span class="crayon-o">&lt;&lt;</span><span class="crayon-h"> </span><span class="crayon-s">"Yeah!"</span><span class="crayon-h"> </span><span class="crayon-o">&lt;&lt;</span><span class="crayon-h"> </span><span class="crayon-v">std</span><span class="crayon-o">::</span><span class="crayon-v">endl</span><span class="crayon-sy">;</span></div></div></td>
+					</tr>
+				</tbody></table>
+			</div>
+		</div>
+<!-- [Format Time: 0.0012 seconds] -->
+<p></p>
+<p>We will follow these conventions throughout this tutorial, and they will become second nature to you.  As we introduce new topics to you, we will introduce new style recommendations to go with those features.</p>
+<p>Ultimately, C++ gives you the power to choose whichever style you are most comfortable with, or think is best.  However, we highly recommend you utilize the same style that we use for our examples.  It has been battle tested by thousands of programmers over billions of lines of code, and is optimized for success.</p>
+<table border="0" cellpadding="3">
+<tbody><tr><td>
+	<a href="https://www.learncpp.com/cpp-tutorial/17-forward-declarations/" style="text-decoration:none"><img src="./1.6 — Whitespace and basic formatting _ Learn C++_files/next.png" align="middle"> 1.7 -- Forward declarations and definitions</a>
+</td></tr>
+<tr class="alt"><td>
+        <a href="https://www.learncpp.com/" style="text-decoration:none"><img src="./1.6 — Whitespace and basic formatting _ Learn C++_files/up.png" align="middle"> Index</a>
+</td></tr>
+<tr><td>
+	<a href="https://www.learncpp.com/cpp-tutorial/15-a-first-look-at-operators/" style="text-decoration:none"><img src="./1.6 — Whitespace and basic formatting _ Learn C++_files/prev.png" align="middle"> 1.5 -- A first look at operators</a>
+</td></tr>
+</tbody></table>
+
+<div class="sharedaddy sd-sharing-enabled"><div class="robots-nocontent sd-block sd-social sd-social-icon-text sd-sharing"><h3 class="sd-title">Share this:</h3><div class="sd-content"><ul><li class="share-facebook"><a rel="nofollow" data-shared="sharing-facebook-24" class="share-facebook sd-button share-icon" href="https://www.learncpp.com/cpp-tutorial/16-whitespace-and-basic-formatting/?share=facebook&amp;nb=1" target="_blank" title="Click to share on Facebook"><span>Facebook</span></a></li><li class="share-twitter"><a rel="nofollow" data-shared="sharing-twitter-24" class="share-twitter sd-button share-icon" href="https://www.learncpp.com/cpp-tutorial/16-whitespace-and-basic-formatting/?share=twitter&amp;nb=1" target="_blank" title="Click to share on Twitter"><span>Twitter</span></a></li><li class="share-google-plus-1"><a rel="nofollow" data-shared="sharing-google-24" class="share-google-plus-1 sd-button share-icon" href="https://www.learncpp.com/cpp-tutorial/16-whitespace-and-basic-formatting/?share=google-plus-1&amp;nb=1" target="_blank" title="Click to share on Google+"><span>Google</span></a></li><li class="share-pinterest"><a rel="nofollow" data-shared="sharing-pinterest-24" class="share-pinterest sd-button share-icon" href="https://www.learncpp.com/cpp-tutorial/16-whitespace-and-basic-formatting/?share=pinterest&amp;nb=1" target="_blank" title="Click to share on Pinterest"><span>Pinterest</span></a></li><li class="share-end"></li></ul></div></div></div><div class="code-block code-block-2" style="float:left;margin:8px 8px 8px 0px;"><div class="cf_monitor">
+<script async="" src="./1.6 — Whitespace and basic formatting _ Learn C++_files/f(7).txt"></script>
+<!-- Post - Below Content - Large Rectangle -->
+<ins class="adsbygoogle" style="display:inline-block;width:336px;height:280px" data-ad-client="ca-pub-0588844875925051" data-ad-slot="8689484849" data-adsbygoogle-status="done"><ins id="aswift_3_expand" style="display:inline-table;border:none;height:280px;margin:0;padding:0;position:relative;visibility:visible;width:336px;background-color:transparent;"><ins id="aswift_3_anchor" style="display:block;border:none;height:280px;margin:0;padding:0;position:relative;visibility:visible;width:336px;background-color:transparent;"><iframe width="336" height="280" frameborder="0" marginwidth="0" marginheight="0" vspace="0" hspace="0" allowtransparency="true" scrolling="no" allowfullscreen="true" onload="var i=this.id,s=window.google_iframe_oncopy,H=s&amp;&amp;s.handlers,h=H&amp;&amp;H[i],w=this.contentWindow,d;try{d=w.document}catch(e){}if(h&amp;&amp;d&amp;&amp;(!d.body||!d.body.firstChild)){if(h.call){setTimeout(h,0)}else if(h.match){try{h=s.upd(h,i)}catch(e){}w.location.replace(h)}}" id="aswift_3" name="aswift_3" style="left:0;position:absolute;top:0;width:336px;height:280px;" src="./1.6 — Whitespace and basic formatting _ Learn C++_files/saved_resource(4).html"></iframe></ins></ins></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+</div>
+
+
+
+</div></div>						<div class="post-footer"><img src="./1.6 — Whitespace and basic formatting _ Learn C++_files/folder-gray.gif" alt=""> <a class="cpp-tutorial" href="https://www.learncpp.com/category/cpp-tutorial/" title="View all posts in C++ Tutorial">C++ Tutorial</a>   | <a href="https://www.learncpp.com/cpp-tutorial/16-whitespace-and-basic-formatting/print/" title="Print This Post" rel="nofollow"><img class="WP-PrintIcon" src="./1.6 — Whitespace and basic formatting _ Learn C++_files/printer_famfamfam.gif" alt="Print This Post" title="Print This Post" style="border: 0px;"></a>&nbsp;<a href="https://www.learncpp.com/cpp-tutorial/16-whitespace-and-basic-formatting/print/" title="Print This Post" rel="nofollow">Print This Post</a></div>		</div><!-- / Post -->	
+						
+	
+			
+
+	<a name="comments"></a><!-- named anchor for skip links -->
+	<h3 id="comments">74 comments to 1.6 — Whitespace and basic formatting</h3>
+
+	<div class="clearfix navigation-comments-above"><a class="prev page-numbers" href="https://www.learncpp.com/cpp-tutorial/16-whitespace-and-basic-formatting/comment-page-1/#comments">« Older Comments</a>
+<a class="page-numbers" href="https://www.learncpp.com/cpp-tutorial/16-whitespace-and-basic-formatting/comment-page-1/#comments">1</a>
+<span class="page-numbers current">2</span></div>
+	<!-- Comment List -->
+	<ul class="commentlist">
+		
+			<li class="comment even thread-even depth-1 clearfix" id="comment-322471">
+		<div id="div-comment-322471" class="clearfix comment-container">
+		<div class="comment-author vcard">
+		<img alt="" src="./1.6 — Whitespace and basic formatting _ Learn C++_files/288a83e6f815b3a138443f9e454746f4x96.png" srcset="//www.learncpp.com/blog/wp-content/uploads/fv-gravatar-cache/288a83e6f815b3a138443f9e454746f4x192.png 2x" class="avatar avatar-65 photo" height="65" width="65">		<span class="authorname">himanshu</span>
+		</div>
+				<div class="comment-meta commentmetadata">
+		<a href="https://www.learncpp.com/cpp-tutorial/16-whitespace-and-basic-formatting/comment-page-2/#comment-322471">
+		March 27, 2018 at 9:10 pm</a>
+        <span class="comment-reply-link"><a rel="nofollow" class="comment-reply-link" href="https://www.learncpp.com/cpp-tutorial/16-whitespace-and-basic-formatting/#comment-322471" onclick="return addComment.moveForm( &quot;comment-322471&quot;, &quot;322471&quot;, &quot;respond&quot;, &quot;24&quot; )" aria-label="Reply to himanshu"> · Reply</a></span>		 
+		</div>
+		<p>5) If a long line that is broken into pieces is broken with an operator (eg. &lt;&lt; or +), the operator should be placed at the end of the line, not the start of the next line:</p>
+<p>1<br>
+2<br>
+&nbsp;&nbsp;&nbsp;&nbsp;std::cout &lt;&lt; "This is a really, really, really, really, really, really, really, " &lt;&lt;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"really long line" &lt;</p>
+<p>HI'<br>
+HOW TO USE ,"+" AS A TAB<br>
+CAN YOU&nbsp;&nbsp;PLEASE GIVE A LITTLE EXAMPLE TO ME.</p>
+		</div>
+<ul class="children">
+		<li class="comment byuser comment-author-tarindel bypostauthor odd alt depth-2 clearfix" id="comment-322626">
+		<div id="div-comment-322626" class="clearfix comment-container bypostauthor">
+		<div class="comment-author vcard">
+		<img alt="" src="./1.6 — Whitespace and basic formatting _ Learn C++_files/a4e62d28c29f6c864923207d4c17993bx96.png" srcset="//www.learncpp.com/blog/wp-content/uploads/fv-gravatar-cache/a4e62d28c29f6c864923207d4c17993bx192.png 2x" class="avatar avatar-65 photo" height="65" width="65">		<span class="authorname">Alex</span>
+		</div>
+				<div class="comment-meta commentmetadata">
+		<a href="https://www.learncpp.com/cpp-tutorial/16-whitespace-and-basic-formatting/comment-page-2/#comment-322626">
+		March 30, 2018 at 4:37 pm</a>
+        <span class="comment-reply-link"><a rel="nofollow" class="comment-reply-link" href="https://www.learncpp.com/cpp-tutorial/16-whitespace-and-basic-formatting/#comment-322626" onclick="return addComment.moveForm( &quot;comment-322626&quot;, &quot;322626&quot;, &quot;respond&quot;, &quot;24&quot; )" aria-label="Reply to Alex"> · Reply</a></span>		 
+		</div>
+		<p>I'm not suggesting using + as a tab.  I'm suggesting making sure you put + at the end of the first line, not the start of the second:</p>
+<p></p><!-- Crayon Syntax Highlighter v2.7.1 -->
+
+		<div id="crayon-5b79d860c48e4240932379" class="crayon-syntax crayon-theme-familiar-learncppcom crayon-font-monaco crayon-os-pc print-yes notranslate crayon-wrapped" data-settings=" no-popup minimize scroll-mouseover wrap" style="margin-top: 12px; margin-bottom: 12px; font-size: 12px !important; line-height: 16px !important; height: auto;">
+		
+			<div class="crayon-plain-wrap"></div>
+			<div class="crayon-main" style="position: relative; z-index: 1; overflow: hidden;">
+				<table class="crayon-table" style="">
+					<tbody><tr class="crayon-row">
+				<td class="crayon-nums " data-settings="show">
+					<div class="crayon-nums-content" style="font-size: 12px !important; line-height: 16px !important;"><div class="crayon-num" data-line="crayon-5b79d860c48e4240932379-1" style="height: 16px;">1</div><div class="crayon-num crayon-striped-num" data-line="crayon-5b79d860c48e4240932379-2" style="height: 16px;">2</div></div>
+				</td>
+						<td class="crayon-code"><div class="crayon-pre" style="font-size: 12px !important; line-height: 16px !important; -moz-tab-size:4; -o-tab-size:4; -webkit-tab-size:4; tab-size:4;"><div class="crayon-line" id="crayon-5b79d860c48e4240932379-1"><span class="crayon-t">int</span><span class="crayon-h"> </span><span class="crayon-v">x</span><span class="crayon-h"> </span><span class="crayon-o">=</span><span class="crayon-h"> </span><span class="crayon-cn">4</span><span class="crayon-h"> </span><span class="crayon-o">+</span><span class="crayon-h"> </span><span class="crayon-cn">5</span><span class="crayon-h"> </span><span class="crayon-o">+</span><span class="crayon-h"> </span><span class="crayon-cn">6</span><span class="crayon-h"> </span><span class="crayon-o">+</span></div><div class="crayon-line crayon-striped-line" id="crayon-5b79d860c48e4240932379-2"><span class="crayon-h">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="crayon-cn">7</span><span class="crayon-h"> </span><span class="crayon-o">+</span><span class="crayon-h"> </span><span class="crayon-cn">8</span><span class="crayon-sy">;</span></div></div></td>
+					</tr>
+				</tbody></table>
+			</div>
+		</div>
+<!-- [Format Time: 0.0038 seconds] -->
+<p></p>
+<p>not:</p>
+<p></p><!-- Crayon Syntax Highlighter v2.7.1 -->
+
+		<div id="crayon-5b79d860c48f1412489521" class="crayon-syntax crayon-theme-familiar-learncppcom crayon-font-monaco crayon-os-pc print-yes notranslate crayon-wrapped" data-settings=" no-popup minimize scroll-mouseover wrap" style="margin-top: 12px; margin-bottom: 12px; font-size: 12px !important; line-height: 16px !important; height: auto;">
+		
+			<div class="crayon-plain-wrap"></div>
+			<div class="crayon-main" style="position: relative; z-index: 1; overflow: hidden;">
+				<table class="crayon-table" style="">
+					<tbody><tr class="crayon-row">
+				<td class="crayon-nums " data-settings="show">
+					<div class="crayon-nums-content" style="font-size: 12px !important; line-height: 16px !important;"><div class="crayon-num" data-line="crayon-5b79d860c48f1412489521-1" style="height: 16px;">1</div><div class="crayon-num crayon-striped-num" data-line="crayon-5b79d860c48f1412489521-2" style="height: 16px;">2</div></div>
+				</td>
+						<td class="crayon-code"><div class="crayon-pre" style="font-size: 12px !important; line-height: 16px !important; -moz-tab-size:4; -o-tab-size:4; -webkit-tab-size:4; tab-size:4;"><div class="crayon-line" id="crayon-5b79d860c48f1412489521-1"><span class="crayon-t">int</span><span class="crayon-h"> </span><span class="crayon-v">x</span><span class="crayon-h"> </span><span class="crayon-o">=</span><span class="crayon-h"> </span><span class="crayon-cn">4</span><span class="crayon-h"> </span><span class="crayon-o">+</span><span class="crayon-h"> </span><span class="crayon-cn">5</span><span class="crayon-h"> </span><span class="crayon-o">+</span><span class="crayon-h"> </span><span class="crayon-cn">6</span></div><div class="crayon-line crayon-striped-line" id="crayon-5b79d860c48f1412489521-2"><span class="crayon-h">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="crayon-o">+</span><span class="crayon-h"> </span><span class="crayon-cn">7</span><span class="crayon-h"> </span><span class="crayon-o">+</span><span class="crayon-h"> </span><span class="crayon-cn">8</span><span class="crayon-sy">;</span></div></div></td>
+					</tr>
+				</tbody></table>
+			</div>
+		</div>
+<!-- [Format Time: 0.0007 seconds] -->
+<p></p>
+		</div>
+<ul class="children">
+		<li class="comment even depth-3 clearfix" id="comment-322639">
+		<div id="div-comment-322639" class="clearfix comment-container">
+		<div class="comment-author vcard">
+		<img alt="" src="./1.6 — Whitespace and basic formatting _ Learn C++_files/288a83e6f815b3a138443f9e454746f4x96.png" srcset="//www.learncpp.com/blog/wp-content/uploads/fv-gravatar-cache/288a83e6f815b3a138443f9e454746f4x192.png 2x" class="avatar avatar-65 photo" height="65" width="65">		<span class="authorname">himanshu</span>
+		</div>
+				<div class="comment-meta commentmetadata">
+		<a href="https://www.learncpp.com/cpp-tutorial/16-whitespace-and-basic-formatting/comment-page-2/#comment-322639">
+		March 30, 2018 at 9:00 pm</a>
+        <span class="comment-reply-link"><a rel="nofollow" class="comment-reply-link" href="https://www.learncpp.com/cpp-tutorial/16-whitespace-and-basic-formatting/#comment-322639" onclick="return addComment.moveForm( &quot;comment-322639&quot;, &quot;322639&quot;, &quot;respond&quot;, &quot;24&quot; )" aria-label="Reply to himanshu"> · Reply</a></span>		 
+		</div>
+		<p>Now i think&nbsp;&nbsp;that i never use "+" as a tab</p>
+<p>i use this&nbsp;&nbsp;"&lt;&lt;"</p>
+<p>at the end<br>
+THANK YOU.</p>
+		</div>
+<ul class="children">
+		<li class="comment byuser comment-author-tarindel bypostauthor odd alt depth-4 clearfix" id="comment-322691">
+		<div id="div-comment-322691" class="clearfix comment-container bypostauthor">
+		<div class="comment-author vcard">
+		<img alt="" src="./1.6 — Whitespace and basic formatting _ Learn C++_files/a4e62d28c29f6c864923207d4c17993bx96.png" srcset="//www.learncpp.com/blog/wp-content/uploads/fv-gravatar-cache/a4e62d28c29f6c864923207d4c17993bx192.png 2x" class="avatar avatar-65 photo" height="65" width="65">		<span class="authorname">Alex</span>
+		</div>
+				<div class="comment-meta commentmetadata">
+		<a href="https://www.learncpp.com/cpp-tutorial/16-whitespace-and-basic-formatting/comment-page-2/#comment-322691">
+		March 31, 2018 at 3:47 pm</a>
+        <span class="comment-reply-link"><a rel="nofollow" class="comment-reply-link" href="https://www.learncpp.com/cpp-tutorial/16-whitespace-and-basic-formatting/#comment-322691" onclick="return addComment.moveForm( &quot;comment-322691&quot;, &quot;322691&quot;, &quot;respond&quot;, &quot;24&quot; )" aria-label="Reply to Alex"> · Reply</a></span>		 
+		</div>
+		<p>&lt;&lt; isn't a tab.  It's an operator that's used to send values to a stream (such as std::cout) to be printed.</p>
+<p>A tab is what you get when you press the tab key.</p>
+		</div>
+<ul class="children">
+		<li class="comment even depth-5 clearfix" id="comment-322707">
+		<div id="div-comment-322707" class="clearfix comment-container">
+		<div class="comment-author vcard">
+		<img alt="" src="./1.6 — Whitespace and basic formatting _ Learn C++_files/288a83e6f815b3a138443f9e454746f4x96.png" srcset="//www.learncpp.com/blog/wp-content/uploads/fv-gravatar-cache/288a83e6f815b3a138443f9e454746f4x192.png 2x" class="avatar avatar-65 photo" height="65" width="65">		<span class="authorname">himanshu</span>
+		</div>
+				<div class="comment-meta commentmetadata">
+		<a href="https://www.learncpp.com/cpp-tutorial/16-whitespace-and-basic-formatting/comment-page-2/#comment-322707">
+		March 31, 2018 at 7:10 pm</a>
+        <span class="comment-reply-link"><a rel="nofollow" class="comment-reply-link" href="https://www.learncpp.com/cpp-tutorial/16-whitespace-and-basic-formatting/#comment-322707" onclick="return addComment.moveForm( &quot;comment-322707&quot;, &quot;322707&quot;, &quot;respond&quot;, &quot;24&quot; )" aria-label="Reply to himanshu"> · Reply</a></span>		 
+		</div>
+		<p>ok now i understand<br>
+thank you very much.</p>
+		</div>
+</li><!-- #comment-## -->
+</ul><!-- .children -->
+</li><!-- #comment-## -->
+</ul><!-- .children -->
+</li><!-- #comment-## -->
+</ul><!-- .children -->
+</li><!-- #comment-## -->
+</ul><!-- .children -->
+</li><!-- #comment-## -->
+		<li class="comment odd alt thread-odd thread-alt depth-1 clearfix" id="comment-319526">
+		<div id="div-comment-319526" class="clearfix comment-container">
+		<div class="comment-author vcard">
+		<img alt="" src="./1.6 — Whitespace and basic formatting _ Learn C++_files/default96.png" srcset="//www.learncpp.com/blog/wp-content/uploads/fv-gravatar-cache/mystery192.png 2x" class="avatar avatar-65 photo" height="65" width="65">		<span class="authorname">Pork and Beans</span>
+		</div>
+				<div class="comment-meta commentmetadata">
+		<a href="https://www.learncpp.com/cpp-tutorial/16-whitespace-and-basic-formatting/comment-page-2/#comment-319526">
+		February 28, 2018 at 10:19 am</a>
+        <span class="comment-reply-link"><a rel="nofollow" class="comment-reply-link" href="https://www.learncpp.com/cpp-tutorial/16-whitespace-and-basic-formatting/#comment-319526" onclick="return addComment.moveForm( &quot;comment-319526&quot;, &quot;319526&quot;, &quot;respond&quot;, &quot;24&quot; )" aria-label="Reply to Pork and Beans"> · Reply</a></span>		 
+		</div>
+		<p>Hello Alex!</p>
+<p>Thank you as always for providing your amazing lessons.</p>
+<p>I found a tiny grammatical error that I'm sure you'll like to correct.&nbsp;&nbsp;It is near the beginning of this lesson, after the second code sample in the following text:</p><div class="google-auto-placed ap_container" style="text-align: center; width: 100%; height: auto; clear: none;"><ins data-ad-format="auto" class="adsbygoogle adsbygoogle-noablate" data-ad-client="ca-pub-0588844875925051" data-adsbygoogle-status="done" style="display: block; margin: auto; background-color: transparent;"><ins id="aswift_6_expand" style="display: inline-table; border: none; height: 0px; margin: 0px; padding: 0px; position: relative; visibility: visible; width: 845px; background-color: transparent;"><ins id="aswift_6_anchor" style="display: block; border: none; height: 0px; margin: 0px; padding: 0px; position: relative; visibility: visible; width: 845px; background-color: transparent; overflow: hidden; opacity: 0;"><iframe width="845" height="200" frameborder="0" marginwidth="0" marginheight="0" vspace="0" hspace="0" allowtransparency="true" scrolling="no" allowfullscreen="true" onload="var i=this.id,s=window.google_iframe_oncopy,H=s&amp;&amp;s.handlers,h=H&amp;&amp;H[i],w=this.contentWindow,d;try{d=w.document}catch(e){}if(h&amp;&amp;d&amp;&amp;(!d.body||!d.body.firstChild)){if(h.call){setTimeout(h,0)}else if(h.match){try{h=s.upd(h,i)}catch(e){}w.location.replace(h)}}" id="aswift_6" name="aswift_6" style="left:0;position:absolute;top:0;width:845px;height:200px;" src="./1.6 — Whitespace and basic formatting _ Learn C++_files/saved_resource(5).html"></iframe></ins></ins></ins></div>
+<p>"One exception where the C++ compiler does pays attention..."</p>
+<p>It should be "pay" instead of "pays".</p>
+<p>I feel that you would have wanted to know this.</p>
+<p>May you be right where you want to be.</p>
+<p>Have a great day.</p>
+		</div>
+<ul class="children">
+		<li class="comment byuser comment-author-tarindel bypostauthor even depth-2 clearfix" id="comment-319550">
+		<div id="div-comment-319550" class="clearfix comment-container bypostauthor">
+		<div class="comment-author vcard">
+		<img alt="" src="./1.6 — Whitespace and basic formatting _ Learn C++_files/a4e62d28c29f6c864923207d4c17993bx96.png" srcset="//www.learncpp.com/blog/wp-content/uploads/fv-gravatar-cache/a4e62d28c29f6c864923207d4c17993bx192.png 2x" class="avatar avatar-65 photo" height="65" width="65">		<span class="authorname">Alex</span>
+		</div>
+				<div class="comment-meta commentmetadata">
+		<a href="https://www.learncpp.com/cpp-tutorial/16-whitespace-and-basic-formatting/comment-page-2/#comment-319550">
+		February 28, 2018 at 4:26 pm</a>
+        <span class="comment-reply-link"><a rel="nofollow" class="comment-reply-link" href="https://www.learncpp.com/cpp-tutorial/16-whitespace-and-basic-formatting/#comment-319550" onclick="return addComment.moveForm( &quot;comment-319550&quot;, &quot;319550&quot;, &quot;respond&quot;, &quot;24&quot; )" aria-label="Reply to Alex"> · Reply</a></span>		 
+		</div>
+		<p>Fixed.  Thanks!</p>
+		</div>
+</li><!-- #comment-## -->
+</ul><!-- .children -->
+</li><!-- #comment-## -->
+		<li class="comment odd alt thread-even depth-1 clearfix" id="comment-316988">
+		<div id="div-comment-316988" class="clearfix comment-container">
+		<div class="comment-author vcard">
+		<img alt="" src="./1.6 — Whitespace and basic formatting _ Learn C++_files/default96.png" srcset="//www.learncpp.com/blog/wp-content/uploads/fv-gravatar-cache/mystery192.png 2x" class="avatar avatar-65 photo" height="65" width="65">		<span class="authorname">Linyuan</span>
+		</div>
+				<div class="comment-meta commentmetadata">
+		<a href="https://www.learncpp.com/cpp-tutorial/16-whitespace-and-basic-formatting/comment-page-2/#comment-316988">
+		February 5, 2018 at 6:40 am</a>
+        <span class="comment-reply-link"><a rel="nofollow" class="comment-reply-link" href="https://www.learncpp.com/cpp-tutorial/16-whitespace-and-basic-formatting/#comment-316988" onclick="return addComment.moveForm( &quot;comment-316988&quot;, &quot;316988&quot;, &quot;respond&quot;, &quot;24&quot; )" aria-label="Reply to Linyuan"> · Reply</a></span>		 
+		</div>
+		<p>I love this Tutorial from this website. I've been looking for more than 20+ different books and webs that teaching people how to code in C++.</p>
+<p>and this is the best i found until now.</p>
+		</div>
+</li><!-- #comment-## -->
+		<li class="comment even thread-odd thread-alt depth-1 clearfix" id="comment-314424">
+		<div id="div-comment-314424" class="clearfix comment-container">
+		<div class="comment-author vcard">
+		<img alt="" src="./1.6 — Whitespace and basic formatting _ Learn C++_files/default96.png" srcset="//www.learncpp.com/blog/wp-content/uploads/fv-gravatar-cache/mystery192.png 2x" class="avatar avatar-65 photo" height="65" width="65">		<span class="authorname">Tyler</span>
+		</div>
+				<div class="comment-meta commentmetadata">
+		<a href="https://www.learncpp.com/cpp-tutorial/16-whitespace-and-basic-formatting/comment-page-2/#comment-314424">
+		January 10, 2018 at 2:42 pm</a>
+        <span class="comment-reply-link"><a rel="nofollow" class="comment-reply-link" href="https://www.learncpp.com/cpp-tutorial/16-whitespace-and-basic-formatting/#comment-314424" onclick="return addComment.moveForm( &quot;comment-314424&quot;, &quot;314424&quot;, &quot;respond&quot;, &quot;24&quot; )" aria-label="Reply to Tyler"> · Reply</a></span>		 
+		</div>
+		<p>I've been coding for about 15 years now, reading up these pages as a refresher on C++ as I have not used it in several years. I have to say I very strongly disagree with Basic Formatting #1. I'm an extremely adamant believer in "tabs for indentation, spaced for alignment". Your reasoning for using spaces was to allow the indentation to stay the same between editors, there is no reason for this to be an advantage, maintaining alignment with code like that displayed in Basic Formatting #4 would not suffer from using tabs, you'd use a tab to indent to the scope level, then spaces to align further, in the first case for example for Basic Formatting #4 it double be 1 tab and then 4 spaces. Changing the tab size will then still maintain alignment and this way has many advantages over using only spaces that I would prefer not spend hours writing about.</p>
+<p>Honestly most of the people who argue for exclusively using spaces almost always come off as overly pretentious, and many of the most popular arguments for using spaces exclusively are plain and simply false or work with tabs as well. Instead of coming off as a pretentious coder version of a grammar nazi, at least discuss the alternatives instead of forcing users down a route that is highly debated. If pure space coding was entirely superior, there would be no argument, the fact that there is shows immediately that there are benefits to the other that are being ignored. Coding with spaces only is literally one of the most painful times coding I've ever dealt with, the pure added tedium dealing with the negative consequences of a system based on using more characters to solve a trivial problem is enough that my productivity goes down approximately 30% when dealing with using pure spaces. I'm more productive with keyboard navigation through code and having 24 spaces versus a handful of tabs and then a handful of spaces for additional alignment is just about the most irritating thing in the entirety of programming. I dislike dealing with 4 or 5 levels of indentation of spaces more than I get annoyed at debugging memory allocation/deallocation problems.</p>
+		</div>
+<ul class="children">
+		<li class="comment byuser comment-author-tarindel bypostauthor odd alt depth-2 clearfix" id="comment-314453">
+		<div id="div-comment-314453" class="clearfix comment-container bypostauthor">
+		<div class="comment-author vcard">
+		<img alt="" src="./1.6 — Whitespace and basic formatting _ Learn C++_files/a4e62d28c29f6c864923207d4c17993bx96.png" srcset="//www.learncpp.com/blog/wp-content/uploads/fv-gravatar-cache/a4e62d28c29f6c864923207d4c17993bx192.png 2x" class="avatar avatar-65 photo" height="65" width="65">		<span class="authorname">Alex</span>
+		</div>
+				<div class="comment-meta commentmetadata">
+		<a href="https://www.learncpp.com/cpp-tutorial/16-whitespace-and-basic-formatting/comment-page-2/#comment-314453">
+		January 10, 2018 at 5:59 pm</a>
+        <span class="comment-reply-link"><a rel="nofollow" class="comment-reply-link" href="https://www.learncpp.com/cpp-tutorial/16-whitespace-and-basic-formatting/#comment-314453" onclick="return addComment.moveForm( &quot;comment-314453&quot;, &quot;314453&quot;, &quot;respond&quot;, &quot;24&quot; )" aria-label="Reply to Alex"> · Reply</a></span>		 
+		</div>
+		<p>To be clear, I'm not trying to advocate a position in the eternal tabs vs spaces debate.  Personally, I use tabs, but many companies and style guides recommend spaces.</p>
+<p>I've rewritten recommendation 1 to try to make this a little more clear.</p>
+		</div>
+</li><!-- #comment-## -->
+</ul><!-- .children -->
+</li><!-- #comment-## -->
+		<li class="comment even thread-even depth-1 clearfix" id="comment-289481">
+		<div id="div-comment-289481" class="clearfix comment-container">
+		<div class="comment-author vcard">
+		<img alt="" src="./1.6 — Whitespace and basic formatting _ Learn C++_files/default96.png" srcset="//www.learncpp.com/blog/wp-content/uploads/fv-gravatar-cache/mystery192.png 2x" class="avatar avatar-65 photo" height="65" width="65">		<span class="authorname">Porter</span>
+		</div>
+				<div class="comment-meta commentmetadata">
+		<a href="https://www.learncpp.com/cpp-tutorial/16-whitespace-and-basic-formatting/comment-page-2/#comment-289481">
+		April 29, 2017 at 4:16 pm</a>
+        <span class="comment-reply-link"><a rel="nofollow" class="comment-reply-link" href="https://www.learncpp.com/cpp-tutorial/16-whitespace-and-basic-formatting/#comment-289481" onclick="return addComment.moveForm( &quot;comment-289481&quot;, &quot;289481&quot;, &quot;respond&quot;, &quot;24&quot; )" aria-label="Reply to Porter"> · Reply</a></span>		 
+		</div>
+		<p>I find it more readable to do:</p><!-- Crayon Syntax Highlighter v2.7.1 -->
+
+		<div id="crayon-5b79d860c4c05862272868" class="crayon-syntax crayon-theme-familiar-learncppcom crayon-font-monaco crayon-os-pc print-yes notranslate crayon-wrapped" data-settings=" no-popup minimize scroll-mouseover wrap" style="margin-top: 12px; margin-bottom: 12px; font-size: 12px !important; line-height: 16px !important; height: auto;">
+		
+			<div class="crayon-plain-wrap"></div>
+			<div class="crayon-main" style="position: relative; z-index: 1; overflow: hidden;">
+				<table class="crayon-table" style="">
+					<tbody><tr class="crayon-row">
+				<td class="crayon-nums " data-settings="show">
+					<div class="crayon-nums-content" style="font-size: 12px !important; line-height: 16px !important;"><div class="crayon-num" data-line="crayon-5b79d860c4c05862272868-1" style="height: 16px;">1</div><div class="crayon-num crayon-striped-num" data-line="crayon-5b79d860c4c05862272868-2" style="height: 16px;">2</div><div class="crayon-num" data-line="crayon-5b79d860c4c05862272868-3" style="height: 16px;">3</div></div>
+				</td>
+						<td class="crayon-code"><div class="crayon-pre" style="font-size: 12px !important; line-height: 16px !important; -moz-tab-size:4; -o-tab-size:4; -webkit-tab-size:4; tab-size:4;"><div class="crayon-line" id="crayon-5b79d860c4c05862272868-1"><span class="crayon-t">int</span><span class="crayon-h"> </span><span class="crayon-e">main</span><span class="crayon-sy">(</span><span class="crayon-sy">)</span><span class="crayon-h"> </span><span class="crayon-sy">{</span></div><div class="crayon-line crayon-striped-line" id="crayon-5b79d860c4c05862272868-2"><span class="crayon-st">return</span><span class="crayon-h"> </span><span class="crayon-cn">0</span><span class="crayon-sy">;</span></div><div class="crayon-line" id="crayon-5b79d860c4c05862272868-3"><span class="crayon-sy">}</span></div></div></td>
+					</tr>
+				</tbody></table>
+			</div>
+		</div>
+<!-- [Format Time: 0.0005 seconds] -->
+<p>Rather than:</p><!-- Crayon Syntax Highlighter v2.7.1 -->
+
+		<div id="crayon-5b79d860c4c1d681087103" class="crayon-syntax crayon-theme-familiar-learncppcom crayon-font-monaco crayon-os-pc print-yes notranslate crayon-wrapped" data-settings=" no-popup minimize scroll-mouseover wrap" style="margin-top: 12px; margin-bottom: 12px; font-size: 12px !important; line-height: 16px !important; height: auto;">
+		
+			<div class="crayon-plain-wrap"></div>
+			<div class="crayon-main" style="position: relative; z-index: 1; overflow: hidden;">
+				<table class="crayon-table" style="">
+					<tbody><tr class="crayon-row">
+				<td class="crayon-nums " data-settings="show">
+					<div class="crayon-nums-content" style="font-size: 12px !important; line-height: 16px !important;"><div class="crayon-num" data-line="crayon-5b79d860c4c1d681087103-1" style="height: 16px;">1</div><div class="crayon-num crayon-striped-num" data-line="crayon-5b79d860c4c1d681087103-2" style="height: 16px;">2</div><div class="crayon-num" data-line="crayon-5b79d860c4c1d681087103-3" style="height: 16px;">3</div><div class="crayon-num crayon-striped-num" data-line="crayon-5b79d860c4c1d681087103-4" style="height: 16px;">4</div></div>
+				</td>
+						<td class="crayon-code"><div class="crayon-pre" style="font-size: 12px !important; line-height: 16px !important; -moz-tab-size:4; -o-tab-size:4; -webkit-tab-size:4; tab-size:4;"><div class="crayon-line" id="crayon-5b79d860c4c1d681087103-1"><span class="crayon-t">int</span><span class="crayon-h"> </span><span class="crayon-e">main</span><span class="crayon-sy">(</span><span class="crayon-sy">)</span></div><div class="crayon-line crayon-striped-line" id="crayon-5b79d860c4c1d681087103-2"><span class="crayon-sy">{</span></div><div class="crayon-line" id="crayon-5b79d860c4c1d681087103-3"><span class="crayon-st">return</span><span class="crayon-h"> </span><span class="crayon-cn">0</span><span class="crayon-sy">;</span></div><div class="crayon-line crayon-striped-line" id="crayon-5b79d860c4c1d681087103-4"><span class="crayon-sy">}</span></div></div></td>
+					</tr>
+				</tbody></table>
+			</div>
+		</div>
+<!-- [Format Time: 0.0004 seconds] -->
+<p>Just a personal preference.</p>
+		</div>
+<ul class="children">
+		<li class="comment byuser comment-author-tarindel bypostauthor odd alt depth-2 clearfix" id="comment-289498">
+		<div id="div-comment-289498" class="clearfix comment-container bypostauthor">
+		<div class="comment-author vcard">
+		<img alt="" src="./1.6 — Whitespace and basic formatting _ Learn C++_files/a4e62d28c29f6c864923207d4c17993bx96.png" srcset="//www.learncpp.com/blog/wp-content/uploads/fv-gravatar-cache/a4e62d28c29f6c864923207d4c17993bx192.png 2x" class="avatar avatar-65 photo" height="65" width="65">		<span class="authorname">Alex</span>
+		</div>
+				<div class="comment-meta commentmetadata">
+		<a href="https://www.learncpp.com/cpp-tutorial/16-whitespace-and-basic-formatting/comment-page-2/#comment-289498">
+		April 29, 2017 at 8:54 pm</a>
+        <span class="comment-reply-link"><a rel="nofollow" class="comment-reply-link" href="https://www.learncpp.com/cpp-tutorial/16-whitespace-and-basic-formatting/#comment-289498" onclick="return addComment.moveForm( &quot;comment-289498&quot;, &quot;289498&quot;, &quot;respond&quot;, &quot;24&quot; )" aria-label="Reply to Alex"> · Reply</a></span>		 
+		</div>
+		<p>A lot of people agree with you because that style is more compact, and you can fit more code on the screen.</p>
+<p>Personally, I like having my opening and closing braces at the same level of indentation.  It makes it easier to see the indentation structure of a function or class and generally makes reading more pleasant.</p><div class="google-auto-placed ap_container" style="text-align: center; width: 100%; height: auto; clear: none;"><ins data-ad-format="auto" class="adsbygoogle adsbygoogle-noablate" data-ad-client="ca-pub-0588844875925051" data-adsbygoogle-status="done" style="display: block; margin: auto; background-color: transparent;"><ins id="aswift_7_expand" style="display: inline-table; border: none; height: 0px; margin: 0px; padding: 0px; position: relative; visibility: visible; width: 803px; background-color: transparent;"><ins id="aswift_7_anchor" style="display: block; border: none; height: 0px; margin: 0px; padding: 0px; position: relative; visibility: visible; width: 803px; background-color: transparent; overflow: hidden; opacity: 0;"><iframe width="803" height="200" frameborder="0" marginwidth="0" marginheight="0" vspace="0" hspace="0" allowtransparency="true" scrolling="no" allowfullscreen="true" onload="var i=this.id,s=window.google_iframe_oncopy,H=s&amp;&amp;s.handlers,h=H&amp;&amp;H[i],w=this.contentWindow,d;try{d=w.document}catch(e){}if(h&amp;&amp;d&amp;&amp;(!d.body||!d.body.firstChild)){if(h.call){setTimeout(h,0)}else if(h.match){try{h=s.upd(h,i)}catch(e){}w.location.replace(h)}}" id="aswift_7" name="aswift_7" style="left:0;position:absolute;top:0;width:803px;height:200px;" src="./1.6 — Whitespace and basic formatting _ Learn C++_files/saved_resource(6).html"></iframe></ins></ins></ins></div>
+<p>It's less important which style you choose/prefer and more important that you're consistent.</p>
+		</div>
+</li><!-- #comment-## -->
+</ul><!-- .children -->
+</li><!-- #comment-## -->
+		<li class="comment even thread-odd thread-alt depth-1 clearfix" id="comment-287712">
+		<div id="div-comment-287712" class="clearfix comment-container">
+		<div class="comment-author vcard">
+		<img alt="" src="./1.6 — Whitespace and basic formatting _ Learn C++_files/default96.png" srcset="//www.learncpp.com/blog/wp-content/uploads/fv-gravatar-cache/mystery192.png 2x" class="avatar avatar-65 photo" height="65" width="65">		<span class="authorname">Richard</span>
+		</div>
+				<div class="comment-meta commentmetadata">
+		<a href="https://www.learncpp.com/cpp-tutorial/16-whitespace-and-basic-formatting/comment-page-2/#comment-287712">
+		April 14, 2017 at 7:22 pm</a>
+        <span class="comment-reply-link"><a rel="nofollow" class="comment-reply-link" href="https://www.learncpp.com/cpp-tutorial/16-whitespace-and-basic-formatting/#comment-287712" onclick="return addComment.moveForm( &quot;comment-287712&quot;, &quot;287712&quot;, &quot;respond&quot;, &quot;24&quot; )" aria-label="Reply to Richard"> · Reply</a></span>		 
+		</div>
+		<p>BASIC FORMATTING point one, paragraph two. Do you have the words 'space' and 'tab' the wrong way around?</p>
+		</div>
+<ul class="children">
+		<li class="comment byuser comment-author-tarindel bypostauthor odd alt depth-2 clearfix" id="comment-287946">
+		<div id="div-comment-287946" class="clearfix comment-container bypostauthor">
+		<div class="comment-author vcard">
+		<img alt="" src="./1.6 — Whitespace and basic formatting _ Learn C++_files/a4e62d28c29f6c864923207d4c17993bx96.png" srcset="//www.learncpp.com/blog/wp-content/uploads/fv-gravatar-cache/a4e62d28c29f6c864923207d4c17993bx192.png 2x" class="avatar avatar-65 photo" height="65" width="65">		<span class="authorname">Alex</span>
+		</div>
+				<div class="comment-meta commentmetadata">
+		<a href="https://www.learncpp.com/cpp-tutorial/16-whitespace-and-basic-formatting/comment-page-2/#comment-287946">
+		April 16, 2017 at 11:58 am</a>
+        <span class="comment-reply-link"><a rel="nofollow" class="comment-reply-link" href="https://www.learncpp.com/cpp-tutorial/16-whitespace-and-basic-formatting/#comment-287946" onclick="return addComment.moveForm( &quot;comment-287946&quot;, &quot;287946&quot;, &quot;respond&quot;, &quot;24&quot; )" aria-label="Reply to Alex"> · Reply</a></span>		 
+		</div>
+		<p>Nope it's correct as written.  Most IDEs treat a tab as 3 or 4 spaces, but let you configure it to whatever you like.</p>
+		</div>
+</li><!-- #comment-## -->
+</ul><!-- .children -->
+</li><!-- #comment-## -->
+		<li class="comment even thread-even depth-1 clearfix" id="comment-274288">
+		<div id="div-comment-274288" class="clearfix comment-container">
+		<div class="comment-author vcard">
+		<img alt="" src="./1.6 — Whitespace and basic formatting _ Learn C++_files/default96.png" srcset="//www.learncpp.com/blog/wp-content/uploads/fv-gravatar-cache/mystery192.png 2x" class="avatar avatar-65 photo" height="65" width="65">		<span class="authorname"><a href="http://georgeschristian.blogspot.com/" rel="external nofollow" class="url">Georges Theodosiou</a></span>
+		</div>
+				<div class="comment-meta commentmetadata">
+		<a href="https://www.learncpp.com/cpp-tutorial/16-whitespace-and-basic-formatting/comment-page-2/#comment-274288">
+		January 19, 2017 at 7:07 am</a>
+        <span class="comment-reply-link"><a rel="nofollow" class="comment-reply-link" href="https://www.learncpp.com/cpp-tutorial/16-whitespace-and-basic-formatting/#comment-274288" onclick="return addComment.moveForm( &quot;comment-274288&quot;, &quot;274288&quot;, &quot;respond&quot;, &quot;24&quot; )" aria-label="Reply to Georges Theodosiou"> · Reply</a></span>		 
+		</div>
+		<p>My dear c++ Teacher,<br>
+Please comment following comment:<br>
+Regarding 2nd easier to read example, I see more easier following:</p><!-- Crayon Syntax Highlighter v2.7.1 -->
+
+		<div id="crayon-5b79d860c4dd7874890367" class="crayon-syntax crayon-theme-familiar-learncppcom crayon-font-monaco crayon-os-pc print-yes notranslate crayon-wrapped" data-settings=" no-popup minimize scroll-mouseover wrap" style="margin-top: 12px; margin-bottom: 12px; font-size: 12px !important; line-height: 16px !important; height: auto;">
+		
+			<div class="crayon-plain-wrap"></div>
+			<div class="crayon-main" style="position: relative; z-index: 1; overflow: hidden;">
+				<table class="crayon-table" style="">
+					<tbody><tr class="crayon-row">
+				<td class="crayon-nums " data-settings="show">
+					<div class="crayon-nums-content" style="font-size: 12px !important; line-height: 16px !important;"><div class="crayon-num" data-line="crayon-5b79d860c4dd7874890367-1" style="height: 16px;">1</div><div class="crayon-num crayon-striped-num" data-line="crayon-5b79d860c4dd7874890367-2" style="height: 16px;">2</div><div class="crayon-num" data-line="crayon-5b79d860c4dd7874890367-3" style="height: 16px;">3</div><div class="crayon-num crayon-striped-num" data-line="crayon-5b79d860c4dd7874890367-4" style="height: 16px;">4</div><div class="crayon-num" data-line="crayon-5b79d860c4dd7874890367-5" style="height: 16px;">5</div><div class="crayon-num crayon-striped-num" data-line="crayon-5b79d860c4dd7874890367-6" style="height: 16px;">6</div></div>
+				</td>
+						<td class="crayon-code"><div class="crayon-pre" style="font-size: 12px !important; line-height: 16px !important; -moz-tab-size:4; -o-tab-size:4; -webkit-tab-size:4; tab-size:4;"><div class="crayon-line" id="crayon-5b79d860c4dd7874890367-1"><span class="crayon-v">std</span><span class="crayon-o">::</span><span class="crayon-r">cout</span><span class="crayon-h"> </span><span class="crayon-o">&lt;&lt;</span><span class="crayon-h"> </span><span class="crayon-s">"Hello world!"</span><span class="crayon-h"> </span><span class="crayon-o">&lt;&lt;</span><span class="crayon-h"> </span><span class="crayon-v">std</span><span class="crayon-o">::</span><span class="crayon-v">endl</span><span class="crayon-sy">;</span></div><div class="crayon-line crayon-striped-line" id="crayon-5b79d860c4dd7874890367-2"><span class="crayon-c">// std::cout and std::endl live in the iostream library</span></div><div class="crayon-line" id="crayon-5b79d860c4dd7874890367-3"><span class="crayon-v">std</span><span class="crayon-o">::</span><span class="crayon-r">cout</span><span class="crayon-h"> </span><span class="crayon-o">&lt;&lt;</span><span class="crayon-h"> </span><span class="crayon-s">"It is very nice to meet you!"</span><span class="crayon-h"> </span><span class="crayon-o">&lt;&lt;</span><span class="crayon-h"> </span><span class="crayon-v">std</span><span class="crayon-o">::</span><span class="crayon-v">endl</span><span class="crayon-sy">;</span></div><div class="crayon-line crayon-striped-line" id="crayon-5b79d860c4dd7874890367-4"><span class="crayon-c">// these comments are easier to read</span></div><div class="crayon-line" id="crayon-5b79d860c4dd7874890367-5"><span class="crayon-v">std</span><span class="crayon-o">::</span><span class="crayon-r">cout</span><span class="crayon-h"> </span><span class="crayon-o">&lt;&lt;</span><span class="crayon-h"> </span><span class="crayon-s">"Yeah!"</span><span class="crayon-h"> </span><span class="crayon-o">&lt;&lt;</span><span class="crayon-h"> </span><span class="crayon-v">std</span><span class="crayon-o">::</span><span class="crayon-v">endl</span><span class="crayon-sy">;</span></div><div class="crayon-line crayon-striped-line" id="crayon-5b79d860c4dd7874890367-6"><span class="crayon-c">// especially when all lined up</span></div></div></td>
+					</tr>
+				</tbody></table>
+			</div>
+		</div>
+<!-- [Format Time: 0.0044 seconds] -->
+<p>Indeed comments are below statements.<br>
+Is it disadvantage?<br>
+With regards and friendship.</p>
+		</div>
+<ul class="children">
+		<li class="comment byuser comment-author-tarindel bypostauthor odd alt depth-2 clearfix" id="comment-274322">
+		<div id="div-comment-274322" class="clearfix comment-container bypostauthor">
+		<div class="comment-author vcard">
+		<img alt="" src="./1.6 — Whitespace and basic formatting _ Learn C++_files/a4e62d28c29f6c864923207d4c17993bx96.png" srcset="//www.learncpp.com/blog/wp-content/uploads/fv-gravatar-cache/a4e62d28c29f6c864923207d4c17993bx192.png 2x" class="avatar avatar-65 photo" height="65" width="65">		<span class="authorname">Alex</span>
+		</div>
+				<div class="comment-meta commentmetadata">
+		<a href="https://www.learncpp.com/cpp-tutorial/16-whitespace-and-basic-formatting/comment-page-2/#comment-274322">
+		January 19, 2017 at 11:33 am</a>
+        <span class="comment-reply-link"><a rel="nofollow" class="comment-reply-link" href="https://www.learncpp.com/cpp-tutorial/16-whitespace-and-basic-formatting/#comment-274322" onclick="return addComment.moveForm( &quot;comment-274322&quot;, &quot;274322&quot;, &quot;respond&quot;, &quot;24&quot; )" aria-label="Reply to Alex"> · Reply</a></span>		 
+		</div>
+		<p>Generally, comments not placed on the same line as the code are placed before the line, not after.  This is because the comment normally provides some sort of enlightening information about the line to come -- and you want to know that information before you try and understand the line, not after.</p>
+<p>I've never seen anybody place comments after the lines.  That's not to say it never happens, but it's certainly not best practice, and I would not recommend it.</p>
+		</div>
+</li><!-- #comment-## -->
+</ul><!-- .children -->
+</li><!-- #comment-## -->
+		<li class="comment even thread-odd thread-alt depth-1 clearfix" id="comment-274075">
+		<div id="div-comment-274075" class="clearfix comment-container">
+		<div class="comment-author vcard">
+		<img alt="" src="./1.6 — Whitespace and basic formatting _ Learn C++_files/default96.png" srcset="//www.learncpp.com/blog/wp-content/uploads/fv-gravatar-cache/mystery192.png 2x" class="avatar avatar-65 photo" height="65" width="65">		<span class="authorname"><a href="http://georgechristian.blogspot.com/" rel="external nofollow" class="url">Georges Theodosiou</a></span>
+		</div>
+				<div class="comment-meta commentmetadata">
+		<a href="https://www.learncpp.com/cpp-tutorial/16-whitespace-and-basic-formatting/comment-page-2/#comment-274075">
+		January 18, 2017 at 6:05 am</a>
+        <span class="comment-reply-link"><a rel="nofollow" class="comment-reply-link" href="https://www.learncpp.com/cpp-tutorial/16-whitespace-and-basic-formatting/#comment-274075" onclick="return addComment.moveForm( &quot;comment-274075&quot;, &quot;274075&quot;, &quot;respond&quot;, &quot;24&quot; )" aria-label="Reply to Georges Theodosiou"> · Reply</a></span>		 
+		</div>
+		<p>My dear c++ Teacher,<br>
+Please let me say that in "Basic formatting", 4th recommendation, in program, in 2nd statement, text is not aligned with the previous line. In the following program is aligned:</p><!-- Crayon Syntax Highlighter v2.7.1 -->
+
+		<div id="crayon-5b79d860c4ee5652975637" class="crayon-syntax crayon-theme-familiar-learncppcom crayon-font-monaco crayon-os-pc print-yes notranslate crayon-wrapped" data-settings=" no-popup minimize scroll-mouseover wrap" style="margin-top: 12px; margin-bottom: 12px; font-size: 12px !important; line-height: 16px !important; height: auto;">
+		
+			<div class="crayon-plain-wrap"></div>
+			<div class="crayon-main" style="position: relative; z-index: 1; overflow: hidden;">
+				<table class="crayon-table" style="">
+					<tbody><tr class="crayon-row">
+				<td class="crayon-nums " data-settings="show">
+					<div class="crayon-nums-content" style="font-size: 12px !important; line-height: 16px !important;"><div class="crayon-num" data-line="crayon-5b79d860c4ee5652975637-1" style="height: 16px;">1</div><div class="crayon-num crayon-striped-num" data-line="crayon-5b79d860c4ee5652975637-2" style="height: 16px;">2</div><div class="crayon-num" data-line="crayon-5b79d860c4ee5652975637-3" style="height: 16px;">3</div><div class="crayon-num crayon-striped-num" data-line="crayon-5b79d860c4ee5652975637-4" style="height: 16px;">4</div><div class="crayon-num" data-line="crayon-5b79d860c4ee5652975637-5" style="height: 16px;">5</div><div class="crayon-num crayon-striped-num" data-line="crayon-5b79d860c4ee5652975637-6" style="height: 16px;">6</div><div class="crayon-num" data-line="crayon-5b79d860c4ee5652975637-7" style="height: 16px;">7</div><div class="crayon-num crayon-striped-num" data-line="crayon-5b79d860c4ee5652975637-8" style="height: 16px;">8</div><div class="crayon-num" data-line="crayon-5b79d860c4ee5652975637-9" style="height: 16px;">9</div><div class="crayon-num crayon-striped-num" data-line="crayon-5b79d860c4ee5652975637-10" style="height: 16px;">10</div><div class="crayon-num" data-line="crayon-5b79d860c4ee5652975637-11" style="height: 16px;">11</div></div>
+				</td>
+						<td class="crayon-code"><div class="crayon-pre" style="font-size: 12px !important; line-height: 16px !important; -moz-tab-size:4; -o-tab-size:4; -webkit-tab-size:4; tab-size:4;"><div class="crayon-line" id="crayon-5b79d860c4ee5652975637-1"><span class="crayon-p">#include &lt;iostream&gt;</span></div><div class="crayon-line crayon-striped-line" id="crayon-5b79d860c4ee5652975637-2"><span class="crayon-t">int</span><span class="crayon-h"> </span><span class="crayon-e">main</span><span class="crayon-sy">(</span><span class="crayon-sy">)</span></div><div class="crayon-line" id="crayon-5b79d860c4ee5652975637-3"><span class="crayon-sy">{</span></div><div class="crayon-line crayon-striped-line" id="crayon-5b79d860c4ee5652975637-4">&nbsp;&nbsp;&nbsp;&nbsp;<span class="crayon-v">std</span><span class="crayon-o">::</span><span class="crayon-r">cout</span><span class="crayon-h"> </span><span class="crayon-o">&lt;&lt;</span><span class="crayon-h"> </span><span class="crayon-s">"This is a really, really, really, really, really, really, really, "</span><span class="crayon-h"> </span><span class="crayon-o">&lt;&lt;</span></div><div class="crayon-line" id="crayon-5b79d860c4ee5652975637-5">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="crayon-s">"really long line"</span><span class="crayon-h"> </span><span class="crayon-o">&lt;&lt;</span><span class="crayon-h"> </span><span class="crayon-v">std</span><span class="crayon-o">::</span><span class="crayon-v">endl</span><span class="crayon-sy">;</span><span class="crayon-h"> </span><span class="crayon-c">// one extra indentation for continuation line</span></div><div class="crayon-line crayon-striped-line" id="crayon-5b79d860c4ee5652975637-6"><span class="crayon-h"> </span></div><div class="crayon-line" id="crayon-5b79d860c4ee5652975637-7">&nbsp;&nbsp;&nbsp;&nbsp;<span class="crayon-v">std</span><span class="crayon-o">::</span><span class="crayon-r">cout</span><span class="crayon-h"> </span><span class="crayon-o">&lt;&lt;</span><span class="crayon-h"> </span><span class="crayon-s">"This is another really, really, really, really, really, really, really, "</span><span class="crayon-h"> </span><span class="crayon-o">&lt;&lt;</span></div><div class="crayon-line crayon-striped-line" id="crayon-5b79d860c4ee5652975637-8">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="crayon-h"> </span><span class="crayon-s">"really long line"</span><span class="crayon-h"> </span><span class="crayon-o">&lt;&lt;</span><span class="crayon-h"> </span><span class="crayon-v">std</span><span class="crayon-o">::</span><span class="crayon-v">endl</span><span class="crayon-sy">;</span><span class="crayon-h"> </span><span class="crayon-c">// text aligned with the previous line for continuation line</span></div><div class="crayon-line" id="crayon-5b79d860c4ee5652975637-9"><span class="crayon-h"> </span></div><div class="crayon-line crayon-striped-line" id="crayon-5b79d860c4ee5652975637-10">&nbsp;&nbsp;&nbsp;&nbsp;<span class="crayon-v">std</span><span class="crayon-o">::</span><span class="crayon-r">cout</span><span class="crayon-h"> </span><span class="crayon-o">&lt;&lt;</span><span class="crayon-h"> </span><span class="crayon-s">"This one is short"</span><span class="crayon-h"> </span><span class="crayon-o">&lt;&lt;</span><span class="crayon-h"> </span><span class="crayon-v">std</span><span class="crayon-o">::</span><span class="crayon-v">endl</span><span class="crayon-sy">;</span></div><div class="crayon-line" id="crayon-5b79d860c4ee5652975637-11"><span class="crayon-sy">}</span></div></div></td>
+					</tr>
+				</tbody></table>
+			</div>
+		</div>
+<!-- [Format Time: 0.0050 seconds] -->
+<p>Also in 5th recommendation, in program, edl are not preceded by std::.<br>
+With regards and friendship.</p>
+		</div>
+<ul class="children">
+		<li class="comment byuser comment-author-tarindel bypostauthor odd alt depth-2 clearfix" id="comment-274171">
+		<div id="div-comment-274171" class="clearfix comment-container bypostauthor">
+		<div class="comment-author vcard">
+		<img alt="" src="./1.6 — Whitespace and basic formatting _ Learn C++_files/a4e62d28c29f6c864923207d4c17993bx96.png" srcset="//www.learncpp.com/blog/wp-content/uploads/fv-gravatar-cache/a4e62d28c29f6c864923207d4c17993bx192.png 2x" class="avatar avatar-65 photo" height="65" width="65">		<span class="authorname">Alex</span>
+		</div>
+				<div class="comment-meta commentmetadata">
+		<a href="https://www.learncpp.com/cpp-tutorial/16-whitespace-and-basic-formatting/comment-page-2/#comment-274171">
+		January 18, 2017 at 4:43 pm</a>
+        <span class="comment-reply-link"><a rel="nofollow" class="comment-reply-link" href="https://www.learncpp.com/cpp-tutorial/16-whitespace-and-basic-formatting/#comment-274171" onclick="return addComment.moveForm( &quot;comment-274171&quot;, &quot;274171&quot;, &quot;respond&quot;, &quot;24&quot; )" aria-label="Reply to Alex"> · Reply</a></span>		 
+		</div>
+		<p>Thanks for pointing out these discrepancies.  They should be fixed now.</p>
+		</div>
+</li><!-- #comment-## -->
+</ul><!-- .children -->
+</li><!-- #comment-## -->
+		<li class="comment even thread-even depth-1 clearfix" id="comment-274072">
+		<div id="div-comment-274072" class="clearfix comment-container">
+		<div class="comment-author vcard">
+		<img alt="" src="./1.6 — Whitespace and basic formatting _ Learn C++_files/default96.png" srcset="//www.learncpp.com/blog/wp-content/uploads/fv-gravatar-cache/mystery192.png 2x" class="avatar avatar-65 photo" height="65" width="65">		<span class="authorname"><a href="http://georgechristian.blogspot.com/" rel="external nofollow" class="url">Georges Theodosiou</a></span>
+		</div>
+				<div class="comment-meta commentmetadata">
+		<a href="https://www.learncpp.com/cpp-tutorial/16-whitespace-and-basic-formatting/comment-page-2/#comment-274072">
+		January 18, 2017 at 5:38 am</a>
+        <span class="comment-reply-link"><a rel="nofollow" class="comment-reply-link" href="https://www.learncpp.com/cpp-tutorial/16-whitespace-and-basic-formatting/#comment-274072" onclick="return addComment.moveForm( &quot;comment-274072&quot;, &quot;274072&quot;, &quot;respond&quot;, &quot;24&quot; )" aria-label="Reply to Georges Theodosiou"> · Reply</a></span>		 
+		</div>
+		<p>My dear c++ Teacher,<br>
+please let me send you program with your second snippet and output capability.</p><!-- Crayon Syntax Highlighter v2.7.1 -->
+
+		<div id="crayon-5b79d860c4fb4501106823" class="crayon-syntax crayon-theme-familiar-learncppcom crayon-font-monaco crayon-os-pc print-yes notranslate crayon-wrapped" data-settings=" no-popup minimize scroll-mouseover wrap" style="margin-top: 12px; margin-bottom: 12px; font-size: 12px !important; line-height: 16px !important; height: auto;">
+		
+			<div class="crayon-plain-wrap"></div>
+			<div class="crayon-main" style="position: relative; z-index: 1; overflow: hidden;">
+				<table class="crayon-table" style="">
+					<tbody><tr class="crayon-row">
+				<td class="crayon-nums " data-settings="show">
+					<div class="crayon-nums-content" style="font-size: 12px !important; line-height: 16px !important;"><div class="crayon-num" data-line="crayon-5b79d860c4fb4501106823-1" style="height: 16px;">1</div><div class="crayon-num crayon-striped-num" data-line="crayon-5b79d860c4fb4501106823-2" style="height: 16px;">2</div><div class="crayon-num" data-line="crayon-5b79d860c4fb4501106823-3" style="height: 16px;">3</div><div class="crayon-num crayon-striped-num" data-line="crayon-5b79d860c4fb4501106823-4" style="height: 16px;">4</div><div class="crayon-num" data-line="crayon-5b79d860c4fb4501106823-5" style="height: 16px;">5</div><div class="crayon-num crayon-striped-num" data-line="crayon-5b79d860c4fb4501106823-6" style="height: 16px;">6</div><div class="crayon-num" data-line="crayon-5b79d860c4fb4501106823-7" style="height: 16px;">7</div><div class="crayon-num crayon-striped-num" data-line="crayon-5b79d860c4fb4501106823-8" style="height: 16px;">8</div><div class="crayon-num" data-line="crayon-5b79d860c4fb4501106823-9" style="height: 16px;">9</div><div class="crayon-num crayon-striped-num" data-line="crayon-5b79d860c4fb4501106823-10" style="height: 16px;">10</div><div class="crayon-num" data-line="crayon-5b79d860c4fb4501106823-11" style="height: 16px;">11</div><div class="crayon-num crayon-striped-num" data-line="crayon-5b79d860c4fb4501106823-12" style="height: 16px;">12</div><div class="crayon-num" data-line="crayon-5b79d860c4fb4501106823-13" style="height: 16px;">13</div><div class="crayon-num crayon-striped-num" data-line="crayon-5b79d860c4fb4501106823-14" style="height: 16px;">14</div><div class="crayon-num" data-line="crayon-5b79d860c4fb4501106823-15" style="height: 16px;">15</div><div class="crayon-num crayon-striped-num" data-line="crayon-5b79d860c4fb4501106823-16" style="height: 16px;">16</div><div class="crayon-num" data-line="crayon-5b79d860c4fb4501106823-17" style="height: 16px;">17</div><div class="crayon-num crayon-striped-num" data-line="crayon-5b79d860c4fb4501106823-18" style="height: 16px;">18</div><div class="crayon-num" data-line="crayon-5b79d860c4fb4501106823-19" style="height: 16px;">19</div><div class="crayon-num crayon-striped-num" data-line="crayon-5b79d860c4fb4501106823-20" style="height: 16px;">20</div><div class="crayon-num" data-line="crayon-5b79d860c4fb4501106823-21" style="height: 16px;">21</div><div class="crayon-num crayon-striped-num" data-line="crayon-5b79d860c4fb4501106823-22" style="height: 16px;">22</div></div>
+				</td>
+						<td class="crayon-code"><div class="crayon-pre" style="font-size: 12px !important; line-height: 16px !important; -moz-tab-size:4; -o-tab-size:4; -webkit-tab-size:4; tab-size:4;"><div class="crayon-line" id="crayon-5b79d860c4fb4501106823-1"><span class="crayon-p">#include &lt;iostream&gt;</span></div><div class="crayon-line crayon-striped-line" id="crayon-5b79d860c4fb4501106823-2">&nbsp;</div><div class="crayon-line" id="crayon-5b79d860c4fb4501106823-3"><span class="crayon-t">int</span><span class="crayon-h"> </span><span class="crayon-e">add1</span><span class="crayon-sy">(</span><span class="crayon-t">int</span><span class="crayon-h"> </span><span class="crayon-v">x</span><span class="crayon-sy">,</span><span class="crayon-h"> </span><span class="crayon-t">int</span><span class="crayon-h"> </span><span class="crayon-v">y</span><span class="crayon-sy">)</span><span class="crayon-h"> </span><span class="crayon-sy">{</span><span class="crayon-h"> </span><span class="crayon-st">return</span><span class="crayon-h"> </span><span class="crayon-v">x</span><span class="crayon-h"> </span><span class="crayon-o">+</span><span class="crayon-h"> </span><span class="crayon-v">y</span><span class="crayon-sy">;</span><span class="crayon-h"> </span><span class="crayon-sy">}</span></div><div class="crayon-line crayon-striped-line" id="crayon-5b79d860c4fb4501106823-4"><span class="crayon-h"> </span></div><div class="crayon-line" id="crayon-5b79d860c4fb4501106823-5"><span class="crayon-t">int</span><span class="crayon-h"> </span><span class="crayon-e">add2</span><span class="crayon-sy">(</span><span class="crayon-t">int</span><span class="crayon-h"> </span><span class="crayon-v">x</span><span class="crayon-sy">,</span><span class="crayon-h"> </span><span class="crayon-t">int</span><span class="crayon-h"> </span><span class="crayon-v">y</span><span class="crayon-sy">)</span><span class="crayon-h"> </span><span class="crayon-sy">{</span></div><div class="crayon-line crayon-striped-line" id="crayon-5b79d860c4fb4501106823-6">&nbsp;&nbsp;&nbsp;&nbsp;<span class="crayon-st">return</span><span class="crayon-h"> </span><span class="crayon-v">x</span><span class="crayon-h"> </span><span class="crayon-o">+</span><span class="crayon-h"> </span><span class="crayon-v">y</span><span class="crayon-sy">;</span><span class="crayon-h"> </span><span class="crayon-sy">}</span></div><div class="crayon-line" id="crayon-5b79d860c4fb4501106823-7"><span class="crayon-h"> </span></div><div class="crayon-line crayon-striped-line" id="crayon-5b79d860c4fb4501106823-8"><span class="crayon-t">int</span><span class="crayon-h"> </span><span class="crayon-e">add3</span><span class="crayon-sy">(</span><span class="crayon-t">int</span><span class="crayon-h"> </span><span class="crayon-v">x</span><span class="crayon-sy">,</span><span class="crayon-h"> </span><span class="crayon-t">int</span><span class="crayon-h"> </span><span class="crayon-v">y</span><span class="crayon-sy">)</span></div><div class="crayon-line" id="crayon-5b79d860c4fb4501106823-9"><span class="crayon-sy">{</span>&nbsp;&nbsp;&nbsp;&nbsp;<span class="crayon-st">return</span><span class="crayon-h"> </span><span class="crayon-v">x</span><span class="crayon-h"> </span><span class="crayon-o">+</span><span class="crayon-h"> </span><span class="crayon-v">y</span><span class="crayon-sy">;</span><span class="crayon-h"> </span><span class="crayon-sy">}</span></div><div class="crayon-line crayon-striped-line" id="crayon-5b79d860c4fb4501106823-10"><span class="crayon-h"> </span></div><div class="crayon-line" id="crayon-5b79d860c4fb4501106823-11"><span class="crayon-t">int</span><span class="crayon-h"> </span><span class="crayon-e">add4</span><span class="crayon-sy">(</span><span class="crayon-t">int</span><span class="crayon-h"> </span><span class="crayon-v">x</span><span class="crayon-sy">,</span><span class="crayon-h"> </span><span class="crayon-t">int</span><span class="crayon-h"> </span><span class="crayon-v">y</span><span class="crayon-sy">)</span></div><div class="crayon-line crayon-striped-line" id="crayon-5b79d860c4fb4501106823-12"><span class="crayon-sy">{</span></div><div class="crayon-line" id="crayon-5b79d860c4fb4501106823-13">&nbsp;&nbsp;&nbsp;&nbsp;<span class="crayon-st">return</span><span class="crayon-h"> </span><span class="crayon-v">x</span><span class="crayon-h"> </span><span class="crayon-o">+</span><span class="crayon-h"> </span><span class="crayon-v">y</span><span class="crayon-sy">;</span></div><div class="crayon-line crayon-striped-line" id="crayon-5b79d860c4fb4501106823-14"><span class="crayon-sy">}</span></div><div class="crayon-line" id="crayon-5b79d860c4fb4501106823-15"><span class="crayon-t">int</span><span class="crayon-h"> </span><span class="crayon-e">main</span><span class="crayon-sy">(</span><span class="crayon-sy">)</span></div><div class="crayon-line crayon-striped-line" id="crayon-5b79d860c4fb4501106823-16"><span class="crayon-sy">{</span></div><div class="crayon-line" id="crayon-5b79d860c4fb4501106823-17">&nbsp;&nbsp;&nbsp;&nbsp;<span class="crayon-v">std</span><span class="crayon-o">::</span><span class="crayon-r">cout</span><span class="crayon-h"> </span><span class="crayon-o">&lt;&lt;</span><span class="crayon-h"> </span><span class="crayon-e">add1</span><span class="crayon-sy">(</span><span class="crayon-cn">1</span><span class="crayon-sy">,</span><span class="crayon-cn">2</span><span class="crayon-sy">)</span><span class="crayon-h"> </span><span class="crayon-o">&lt;&lt;</span><span class="crayon-h"> </span><span class="crayon-v">std</span><span class="crayon-o">::</span><span class="crayon-v">endl</span><span class="crayon-sy">;</span></div><div class="crayon-line crayon-striped-line" id="crayon-5b79d860c4fb4501106823-18">&nbsp;&nbsp;&nbsp;&nbsp;<span class="crayon-v">std</span><span class="crayon-o">::</span><span class="crayon-r">cout</span><span class="crayon-h"> </span><span class="crayon-o">&lt;&lt;</span><span class="crayon-h"> </span><span class="crayon-e">add2</span><span class="crayon-sy">(</span><span class="crayon-cn">3</span><span class="crayon-sy">,</span><span class="crayon-cn">4</span><span class="crayon-sy">)</span><span class="crayon-h"> </span><span class="crayon-o">&lt;&lt;</span><span class="crayon-h"> </span><span class="crayon-v">std</span><span class="crayon-o">::</span><span class="crayon-v">endl</span><span class="crayon-sy">;</span></div><div class="crayon-line" id="crayon-5b79d860c4fb4501106823-19">&nbsp;&nbsp;&nbsp;&nbsp;<span class="crayon-v">std</span><span class="crayon-o">::</span><span class="crayon-r">cout</span><span class="crayon-h"> </span><span class="crayon-o">&lt;&lt;</span><span class="crayon-h"> </span><span class="crayon-e">add3</span><span class="crayon-sy">(</span><span class="crayon-cn">5</span><span class="crayon-sy">,</span><span class="crayon-cn">6</span><span class="crayon-sy">)</span><span class="crayon-h"> </span><span class="crayon-o">&lt;&lt;</span><span class="crayon-h"> </span><span class="crayon-v">std</span><span class="crayon-o">::</span><span class="crayon-v">endl</span><span class="crayon-sy">;</span></div><div class="crayon-line crayon-striped-line" id="crayon-5b79d860c4fb4501106823-20">&nbsp;&nbsp;&nbsp;&nbsp;<span class="crayon-v">std</span><span class="crayon-o">::</span><span class="crayon-r">cout</span><span class="crayon-h"> </span><span class="crayon-o">&lt;&lt;</span><span class="crayon-h"> </span><span class="crayon-e">add4</span><span class="crayon-sy">(</span><span class="crayon-cn">7</span><span class="crayon-sy">,</span><span class="crayon-cn">8</span><span class="crayon-sy">)</span><span class="crayon-h"> </span><span class="crayon-o">&lt;&lt;</span><span class="crayon-h"> </span><span class="crayon-v">std</span><span class="crayon-o">::</span><span class="crayon-v">endl</span><span class="crayon-sy">;</span></div><div class="crayon-line" id="crayon-5b79d860c4fb4501106823-21">&nbsp;&nbsp;&nbsp;&nbsp;<span class="crayon-st">return</span><span class="crayon-h"> </span><span class="crayon-cn">0</span><span class="crayon-sy">;</span></div><div class="crayon-line crayon-striped-line" id="crayon-5b79d860c4fb4501106823-22"><span class="crayon-sy">}</span></div></div></td>
+					</tr>
+				</tbody></table>
+			</div>
+		</div>
+<!-- [Format Time: 0.0183 seconds] -->
+<p>With regards and friendship.</p>
+		</div>
+</li><!-- #comment-## -->
+		<li class="comment odd alt thread-odd thread-alt depth-1 clearfix" id="comment-263721">
+		<div id="div-comment-263721" class="clearfix comment-container">
+		<div class="comment-author vcard">
+		<img alt="" src="./1.6 — Whitespace and basic formatting _ Learn C++_files/default96.png" srcset="//www.learncpp.com/blog/wp-content/uploads/fv-gravatar-cache/mystery192.png 2x" class="avatar avatar-65 photo" height="65" width="65">		<span class="authorname">Leander</span>
+		</div>
+				<div class="comment-meta commentmetadata">
+		<a href="https://www.learncpp.com/cpp-tutorial/16-whitespace-and-basic-formatting/comment-page-2/#comment-263721">
+		November 29, 2016 at 9:01 am</a>
+        <span class="comment-reply-link"><a rel="nofollow" class="comment-reply-link" href="https://www.learncpp.com/cpp-tutorial/16-whitespace-and-basic-formatting/#comment-263721" onclick="return addComment.moveForm( &quot;comment-263721&quot;, &quot;263721&quot;, &quot;respond&quot;, &quot;24&quot; )" aria-label="Reply to Leander"> · Reply</a></span>		 
+		</div>
+		<p>Love these sort of guidelines. As a new programmer it's hard to tell what is considered good practice and what is frowned upon even if it won't prevent your program from functioning correctly.</p>
+		</div>
+</li><!-- #comment-## -->
+	
+	</ul>
+	<!-- / Comment List -->
+
+	<div class="clearfix navigation-comments-below"><a class="prev page-numbers" href="https://www.learncpp.com/cpp-tutorial/16-whitespace-and-basic-formatting/comment-page-1/#comments">« Older Comments</a>
+<a class="page-numbers" href="https://www.learncpp.com/cpp-tutorial/16-whitespace-and-basic-formatting/comment-page-1/#comments">1</a>
+<span class="page-numbers current">2</span></div>
+
+
+
+	<div id="respond" class="comment-respond">
+		<h3 id="reply-title" class="comment-reply-title">Leave a Comment <small><a rel="nofollow" id="cancel-comment-reply-link" href="https://www.learncpp.com/cpp-tutorial/16-whitespace-and-basic-formatting/#respond" style="display:none;">Cancel reply</a></small></h3>			<form action="https://www.learncpp.com/blog/wp-comments-post.php" method="post" id="commentform" class="comment-form">
+				<p><textarea autocomplete="nope" id="comment" name="e5f24caa48" rows="10" cols="10" tabindex="4"></textarea><textarea id="514543458ac56d13a62460ead1d80c15" aria-hidden="true" name="comment" autocomplete="nope" style="padding:0;clip:rect(1px, 1px, 1px, 1px);position:absolute !important;white-space:nowrap;height:1px;width:1px;overflow:hidden;" tabindex="-1"></textarea><script type="text/javascript">document.getElementById("comment").setAttribute( "id", "514543458ac56d13a62460ead1d80c15" );document.getElementById("bbe48b3d0b").setAttribute( "id", "comment" );</script></p><div class="useCode">Put all code inside code tags: [code]your code here[/code]</div><p><input class="text author" id="author" name="author" type="text" value="" size="30" tabindex="1">&nbsp;&nbsp;<label for="author"><strong>Name </strong> (required)</label></p>
+<p><input class="text email" id="email" name="email" type="text" value="" size="30" tabindex="2">&nbsp;&nbsp;<label for="email"><strong>Email</strong> (will not be published) (required)</label></p>
+<p><input class="text url" id="url" name="url" type="text" value="" size="30" tabindex="3">&nbsp;&nbsp;<label for="url">Website</label></p>
+<p class="form-submit"><input name="submit" type="submit" id="submit" class="submit" value="Post Comment"> <input type="hidden" name="comment_post_ID" value="24" id="comment_post_ID">
+<input type="hidden" name="comment_parent" id="comment_parent" value="0">
+</p>			</form>
+			</div><!-- #respond -->
+	<div class="code-block code-block-7" style="margin:8px 0px;"><div class="cf_monitor">
+<script async="" src="./1.6 — Whitespace and basic formatting _ Learn C++_files/f(7).txt"></script>
+<!-- Post - Below Content - Responsive -->
+<ins class="adsbygoogle" style="display: block; height: 90px;" data-ad-client="ca-pub-0588844875925051" data-ad-slot="5999600639" data-ad-format="auto" data-adsbygoogle-status="done"><ins id="aswift_4_expand" style="display:inline-table;border:none;height:90px;margin:0;padding:0;position:relative;visibility:visible;width:865px;background-color:transparent;"><ins id="aswift_4_anchor" style="display:block;border:none;height:90px;margin:0;padding:0;position:relative;visibility:visible;width:865px;background-color:transparent;"><iframe width="865" height="90" frameborder="0" marginwidth="0" marginheight="0" vspace="0" hspace="0" allowtransparency="true" scrolling="no" allowfullscreen="true" onload="var i=this.id,s=window.google_iframe_oncopy,H=s&amp;&amp;s.handlers,h=H&amp;&amp;H[i],w=this.contentWindow,d;try{d=w.document}catch(e){}if(h&amp;&amp;d&amp;&amp;(!d.body||!d.body.firstChild)){if(h.call){setTimeout(h,0)}else if(h.match){try{h=s.upd(h,i)}catch(e){}w.location.replace(h)}}" id="aswift_4" name="aswift_4" style="left:0;position:absolute;top:0;width:865px;height:90px;" src="./1.6 — Whitespace and basic formatting _ Learn C++_files/saved_resource(7).html"></iframe></ins></ins></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+</div>
+
+</div>		
+    
+
+</td>
+<!-- / Main Column -->
+
+<!-- Right Inner Sidebar -->
+
+<!-- Right Sidebar -->
+<td id="right">
+
+	<div id="text-7" class="widget widget_text">			<div class="textwidget"><div class="cf_monitor">
+<!-- Post - Right Sidebar - Wide Sky -->
+<script type="text/javascript">
+    google_ad_client = "ca-pub-0588844875925051";
+    google_ad_slot = "0955932809";
+    google_ad_width = 160;
+    google_ad_height = 600;
+</script>
+<!-- Post - Right Sidebar - Wide Sky -->
+<script type="text/javascript" src="./1.6 — Whitespace and basic formatting _ Learn C++_files/f(10).txt">
+</script><ins id="aswift_5_expand" style="display:inline-table;border:none;height:600px;margin:0;padding:0;position:relative;visibility:visible;width:160px;background-color:transparent;"><ins id="aswift_5_anchor" style="display:block;border:none;height:600px;margin:0;padding:0;position:relative;visibility:visible;width:160px;background-color:transparent;"><iframe width="160" height="600" frameborder="0" marginwidth="0" marginheight="0" vspace="0" hspace="0" allowtransparency="true" scrolling="no" allowfullscreen="true" onload="var i=this.id,s=window.google_iframe_oncopy,H=s&amp;&amp;s.handlers,h=H&amp;&amp;H[i],w=this.contentWindow,d;try{d=w.document}catch(e){}if(h&amp;&amp;d&amp;&amp;(!d.body||!d.body.firstChild)){if(h.call){setTimeout(h,0)}else if(h.match){try{h=s.upd(h,i)}catch(e){}w.location.replace(h)}}" id="aswift_5" name="aswift_5" style="left:0;position:absolute;top:0;width:160px;height:600px;" src="./1.6 — Whitespace and basic formatting _ Learn C++_files/saved_resource(8).html"></iframe></ins></ins>
+</div></div>
+		</div>    
+<!-- 
+	Plugin: Custom Meta Widget	Plugin URL: http://shinraholdings.com/plugins/custom-meta-widget/-->
+
+
+	<div id="custommetawidget-2" class="widget customMetaWidget">	<div class="widget-title"><h3>Admin</h3></div>	<ul>
+	
+	
+    <li><a href="https://www.learncpp.com/blog/wp-login.php">Log in</a></li>	
+	</ul>
+    
+	</div>
+</td>
+<!-- / Right Sidebar -->
+
+</tr>
+<!-- / Main Body -->
+
+
+</tbody></table><!-- / layout -->
+</div><!-- / container -->
+</div><ins class="adsbygoogle adsbygoogle-noablate" data-adsbygoogle-status="done" style="display: none;"><ins id="aswift_1_expand" style="display:inline-table;border:none;height:NaNpx;margin:0;padding:0;position:relative;visibility:visible;width:NaNpx;background-color:transparent;"><ins id="aswift_1_anchor" style="display:block;border:none;height:NaNpx;margin:0;padding:0;position:relative;visibility:visible;width:NaNpx;background-color:transparent;"><iframe frameborder="0" marginwidth="0" marginheight="0" vspace="0" hspace="0" allowtransparency="true" scrolling="no" allowfullscreen="true" onload="var i=this.id,s=window.google_iframe_oncopy,H=s&amp;&amp;s.handlers,h=H&amp;&amp;H[i],w=this.contentWindow,d;try{d=w.document}catch(e){}if(h&amp;&amp;d&amp;&amp;(!d.body||!d.body.firstChild)){if(h.call){setTimeout(h,0)}else if(h.match){try{h=s.upd(h,i)}catch(e){}w.location.replace(h)}}" id="aswift_1" name="aswift_1" style="left:0;position:absolute;top:0;width:NaNpx;height:NaNpx;" src="./1.6 — Whitespace and basic formatting _ Learn C++_files/saved_resource(9).html"></iframe></ins></ins></ins><iframe id="google_osd_static_frame_1937691709004" name="google_osd_static_frame" style="display: none; width: 0px; height: 0px;" src="./1.6 — Whitespace and basic formatting _ Learn C++_files/saved_resource(10).html"></iframe><!-- / wrapper -->
+		<!-- Full Width Footer -->
+		<div id="footer" class="full-width">
+    LearnCpp.com -- Teaching you how to program in C++ since May 25, 2007.&nbsp;&nbsp;Copyright © 2018 <a href="https://www.learncpp.com/">Learn C++</a> - All Rights Reserved<br>Powered by <a href="http://wordpress.org/">WordPress</a> &amp; <a href="http://forum.bytesforall.com/">Atahualpa</a>    
+    
+    
+	<script type="text/javascript">
+		window.WPCOM_sharing_counts = {"https:\/\/www.learncpp.com\/cpp-tutorial\/16-whitespace-and-basic-formatting\/":24};
+	</script>
+		<script type="text/javascript">
+			var windowOpen;
+		jQuery(document).on( 'ready post-load', function(){
+			jQuery( 'a.share-facebook' ).on( 'click', function() {
+				if ( 'undefined' !== typeof windowOpen ){ // If there's another sharing window open, close it.
+					windowOpen.close();
+				}
+				windowOpen = window.open( jQuery(this).attr( 'href' ), 'wpcomfacebook', 'menubar=1,resizable=1,width=600,height=400' );
+				return false;
+			});
+		});
+		</script>
+				<script type="text/javascript">
+			var windowOpen;
+		jQuery(document).on( 'ready post-load', function(){
+			jQuery( 'a.share-twitter' ).on( 'click', function() {
+				if ( 'undefined' !== typeof windowOpen ){ // If there's another sharing window open, close it.
+					windowOpen.close();
+				}
+				windowOpen = window.open( jQuery(this).attr( 'href' ), 'wpcomtwitter', 'menubar=1,resizable=1,width=600,height=350' );
+				return false;
+			});
+		});
+		</script>
+				<script type="text/javascript">
+			var windowOpen;
+		jQuery(document).on( 'ready post-load', function(){
+			jQuery( 'a.share-google-plus-1' ).on( 'click', function() {
+				if ( 'undefined' !== typeof windowOpen ){ // If there's another sharing window open, close it.
+					windowOpen.close();
+				}
+				windowOpen = window.open( jQuery(this).attr( 'href' ), 'wpcomgoogle-plus-1', 'menubar=1,resizable=1,width=480,height=550' );
+				return false;
+			});
+		});
+		</script>
+				<script type="text/javascript" src="./1.6 — Whitespace and basic formatting _ Learn C++_files/comment-reply.min.js.download"></script>
+<script type="text/javascript" src="./1.6 — Whitespace and basic formatting _ Learn C++_files/devicepx-jetpack.js.download"></script>
+<script type="text/javascript" src="./1.6 — Whitespace and basic formatting _ Learn C++_files/wp-embed.min.js.download"></script>
+<script type="text/javascript">
+/* <![CDATA[ */
+var sharing_js_options = {"lang":"en","counts":"1"};
+/* ]]> */
+</script>
+<script type="text/javascript" src="./1.6 — Whitespace and basic formatting _ Learn C++_files/sharing.js.download"></script>
+<script type="text/javascript" src="./1.6 — Whitespace and basic formatting _ Learn C++_files/e-201833.js.download" async="" defer=""></script>
+<script type="text/javascript">
+	_stq = window._stq || [];
+	_stq.push([ 'view', {v:'ext',j:'1:4.1.1',blog:'3928254',post:'24',tz:'-8',srv:'www.learncpp.com'} ]);
+	_stq.push([ 'clickTrackerInit', '3928254', '24' ]);
+</script>
+		</div>
+		<!-- / Full Width Footer -->
+
+
+
+<!-- Dynamic page generated in 1.224 seconds. -->
+<!-- Cached page generated by WP-Super-Cache on 2018-08-19 12:51:45 -->
+
+<!-- Compression = gzip --><img src="./1.6 — Whitespace and basic formatting _ Learn C++_files/g.gif" alt=":)" width="6" height="5" id="wpstats"></body></html>

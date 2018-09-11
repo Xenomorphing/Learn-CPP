@@ -1,0 +1,13 @@
+/**/ WPCOMSharing.update_facebook_count({
+   "https://www.learncpp.com/cpp-tutorial/112-comprehensive-quiz/": {
+      "share": {
+         "comment_count": 0,
+         "share_count": 0
+      },
+      "og_object": {
+         "id": "808075445914958",
+         "type": "website"
+      },
+      "id": "https://www.learncpp.com/cpp-tutorial/112-comprehensive-quiz/"
+   }
+});
